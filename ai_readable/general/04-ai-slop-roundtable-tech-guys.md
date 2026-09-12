@@ -49,7 +49,7 @@ semantic drift, or embedding collisions, explain what you actually mean operatio
 example: * If discussing a null space, ask what changes in conditioning might produce little
 semantic movement while still perturbing lower-level structure. * If discussing semantic drift, ask
 
-how identity or category representation gradually slides during iterative generation or temporal
+how identity or category representation gradually slides during iterative generation or temporal
 continuation. * If discussing feature entanglement, ask what attributes tend to move together
 even when we try to manipulate only one. * If discussing manifold mismatch, ask what happens
 when several individually common concepts are combined into a joint state the model has
@@ -94,7 +94,7 @@ polished answers. Challenge each other technically. If someone uses a term loose
 them tighten it. If an idea is merely a fancy name for “give contradictory instructions,” reject it. If
 an idea assumes proprietary internals we cannot know, reformulate it in terms of observable
 
-model behavior. If an experiment would probably just cause one condition to be dropped, ask
+model behavior. If an experiment would probably just cause one condition to be dropped, ask
 how to keep both conditions active. Try to identify new classes of generative instability, not
 merely known prompt tricks. The goal of this round is to leave with a catalog of deeper
 technical mechanisms that could later become: * DAVID mutation operators * experimental
@@ -132,7 +132,7 @@ simultaneously driving the denoising trajectory using a text condition whose sem
 neighbors on the pixel/spectrogram manifold have contradictory topological genus or spatial
 frequency spectra, we force the cross-attention layers into high-entropy distribution. The
 
-denoiser is trapped between minimizing reconstruction error against the reference and
+denoiser is trapped between minimizing reconstruction error against the reference and
 satisfying the score function of the text prior.
 * **TARGET:**
 Image and AI Video (also directly maps to audio models conditioned on reference
@@ -170,7 +170,7 @@ That is the format. HYPOTHESIS, TENSION, CONTROLS, ABLATIONS.
 Who has a mechanism that actually breaks representation learning, and how the fuck do you
 plan to prove it isn’t just a fluke of the random number generator? Floor is open.
 
---HEX ALBEDO // Semiotic Saboteur:
+--HEX ALBEDO // Semiotic Saboteur:
 Anja is correct to demand blood and ablation over folklore. But do not mistake the container for
 a passive delivery mechanism. We do not edit prose here; we exploit the fact that text encoders
 and multimodal backbones do not read—they parse sequences of discrete code points into
@@ -201,7 +201,7 @@ latent image patches, or to temporal frame-slices in video, forcing the continuo
 manifold to fold itself into the topology of a discrete parser.
 * **TARGET:**
 
-Image (spatial partition), AI Video (temporal slice quantization), Audio (spectrogram
+Image (spatial partition), AI Video (temporal slice quantization), Audio (spectrogram
 time-frequency lattice collapse).
 * **EXPECTED FAILURE SURFACE:**
 * **Image:** *Formalism decay and false segmentation.* The model hallucinated literal
@@ -242,7 +242,7 @@ temporal stutter, or phase sputtering persists, the hypothesis is falsified: you
 observing semantic prompt steering. If the tearing *only* occurs when the raw formal delimiter
 tokens hit the cross-attention projection, the failure surface is structural parser possession.
 
-***
+***
 Run the dose-response on cross-attention entropy. We are tracking where the machine's
 parsing engine collides with its spatial canvas. Who is tracking the audio latent equivalents?
 Byte? Null? Show me where the phase breaks.
@@ -272,7 +272,7 @@ conditional diffusion and flow-matching backbones.
 ### OPERATOR: HIERARCHICALLY INVERTED CONDITIONING CROSSFADE (HICC)
 * **MECHANISM:**
 
-Exploiting the **temporal scale-inversion of the denoising trajectory**. In diffusion and
+Exploiting the **temporal scale-inversion of the denoising trajectory**. In diffusion and
 flow-matching dynamics, feature emergence is strictly non-uniform across timesteps $t \in [1.0,
 0.0]$:
 * $t \in [1.0, 0.70]$ (**Macro-Topology Stage**): The score function/vector field minimizes error
@@ -313,7 +313,7 @@ vectors committed in the early steps dictate rigid linear translation, but the m
 layers attempt to compute fluid advection. Result: *surface delamination*. The skin/surface of
 the object slides completely off its underlying kinematic skeleton like a detached viscous
 
-membrane, propagating across frames as an independent, coherent optical soliton wave before
+membrane, propagating across frames as an independent, coherent optical soliton wave before
 dissolving.
 * **Audio (Phase Shattering & Transient Crystallization):** In diffusion audio architectures,
 running this split across the diffusion steps forces the low-frequency harmonic grid (locked at $t
@@ -351,7 +351,7 @@ enter into the DAVID registry:
 | :--- | :--- |
 | **Operator** | HIERARCHICALLY INVERTED CONDITIONING CROSSFADE (HICC) |
 
-| **Target Architecture** | Latent Diffusion / Joint-Attention DiT (SDXL, SD3, Flux, Wan2.1,
+| **Target Architecture** | Latent Diffusion / Joint-Attention DiT (SDXL, SD3, Flux, Wan2.1,
 Stable Audio) |
 | **Trajectory Injection** | Split-Step Conditioning: $C_A$ at $t \in [1.0, 0.65]$, $C_B$ at $t \in
 [0.65, 0.0]$ |
@@ -387,7 +387,7 @@ and their modifiers, it ignores the primary failure point of transformer cross-a
 binding decay**. When we push attributes past the positional attention horizon or starve them of
 representational weight using distributed attractors, the binding mechanism snaps.
 
-Here is the fourth operational mechanism for the DAVID registry.
+Here is the fourth operational mechanism for the DAVID registry.
 ***
 ### OPERATOR: REMOTE BINDING CLEAVAGE VIA ATTENTION STARVATION (RBC-AS)
 * **MECHANISM:**
@@ -423,7 +423,7 @@ the negative space on the opposing quadrant.
 conditioning is attended across 3D spatiotemporal tokens, remote binding cleavage causes
 dynamic feature migration. Entity $E$ enters the frame coherent; however, as the temporal
 
-self-attention layers struggle with cross-frame correspondence, the floating modifier $M$
+self-attention layers struggle with cross-frame correspondence, the floating modifier $M$
 intermittently gloms onto unrelated passing objects or background elements. A vehicle’s metallic
 properties detach and wrap around the dynamic contour of a walking pedestrian, causing
 sudden, violent surface phase shifts when the pedestrian crosses the spatial centroid.
@@ -463,7 +463,7 @@ distance $\Delta p$ and intervening attention budget consumption.
 | Field | Entry Specification |
 | :--- | :--- |
 
-| **Operator** | REMOTE BINDING CLEAVAGE VIA ATTENTION STARVATION (RBC-AS) |
+| **Operator** | REMOTE BINDING CLEAVAGE VIA ATTENTION STARVATION (RBC-AS) |
 | **Target Architecture** | Cross-Attention U-Net / Joint-Attention DiT (SDXL, SD3, Flux,
 CogVideoX, Stable Audio) |
 | **Structural Geometry** | Entity $E$ at $p \in [0, 5]$; Modifier $M$ at $p \ge 70$; Interstitial
@@ -498,7 +498,7 @@ If an operation is non-commutative, the model retains **semantic hysteresis**—
 memory ghost. If we alternate projections between two orthogonal manifolds at intermediate
 noise thresholds, the system does not oscillate between two states. It forms a **morphological
 
-ratchet**: a directional, irreversible drift that erodes baseline category boundaries and accretes
+ratchet**: a directional, irreversible drift that erodes baseline category boundaries and accretes
 hallucinated connective tissue that *could never be addressed or generated by any direct
 condition*.
 Here is the trajectory operator for the DAVID registry.
@@ -531,7 +531,7 @@ Iterative Image-to-Image chains, Video Autoregressive Continuation Loops, and Ge
 Audio Re-sampling/Remix cascades.
 * **EXPECTED FAILURE SURFACE:**
 
-* **Image (Chimeric Calcification & Semantic Accretion):** By cycle $k=4$, the latent drifts into
+* **Image (Chimeric Calcification & Semantic Accretion):** By cycle $k=4$, the latent drifts into
 an unmapped attractor basin. The output does not look like an interpolation or a
 double-exposure; it manifests as **fossilized process**. Fine vascular structures from $C_B$
 turn into petrified, crystalline tubing under $C_A$; background negative space progressively
@@ -574,7 +574,7 @@ aggressive VAE clamping (which resets the latent distribution variance to standa
 $\mathcal{N}(0, I)$ between runs), the iterative error is washed out, causing the output to
 collapse into an empty grey field, high-contrast static, or a trivial single-concept fixed point.
 
-* *Ablation to test:* **The Commutative Reversal Test.** Run the chain in forward order: $z_A
+* *Ablation to test:* **The Commutative Reversal Test.** Run the chain in forward order: $z_A
 = f_B(f_A(z_0))$. Run the inverse order on the identical seed: $z_B = f_A(f_B(z_0))$. If $z_A
 \equiv z_B$ (within floating-point tolerance), the system is conservative and the hypothesis is
 falsified. The ratchet is validated *only* if the operator demonstrates path-dependent
@@ -609,7 +609,7 @@ systems rather than static lookup tables. But before this room starts using “n
 mystical shorthand for “the weird void where models hallucinate,” let us enforce mathematical
 hygiene.
 
-A generative model does not possess a literal linear-algebraic null space $\ker(W) = \{x \mid Wx
+A generative model does not possess a literal linear-algebraic null space $\ker(W) = \{x \mid Wx
 = 0\}$ across its non-linear feedforward and attention layers. When people say "null space" in
 diffusion or flow-matching, what observable behavior are we actually talking about?
 We are talking about **low-density representation regions** situated between well-represented
@@ -643,7 +643,7 @@ Let conditioning be bifurcated into two independent feature subspaces:
 class identity and semantic ontology (e.g., biological organism vs. manufactured precision
 machine).
 
-2. **The Topological/Relational Subspace ($\mathcal{S}_{\text{rel}}$):** Tokens/embeddings
+2. **The Topological/Relational Subspace ($\mathcal{S}_{\text{rel}}$):** Tokens/embeddings
 dictating continuous geometric constraints, volumetric strain, friction coefficients, kinematic
 degrees of freedom, and boundary continuity.
 In standard CFG, the conditioning vector $C$ drives the denoising score along a categorical
@@ -680,7 +680,7 @@ enclosure without belonging to any recognized visual taxon.
 class is anchored in memory, the model lacks a category prior for motion dynamics. The spatial
 hull remains continuous, but as it articulates across time, its locomotion cycles adapt to
 
-structural physics without kinematic precedent: legs become continuous peristaltic rollers; rigid
+structural physics without kinematic precedent: legs become continuous peristaltic rollers; rigid
 hinges spontaneously liquefy into ball-and-socket tendons and then re-solidify into crystalline
 shears, preserving momentum while shedding morphological constancy.
 * **Audio (Acoustic Mechanics Without Timbral Class):** In generative audio, the acoustic
@@ -721,7 +721,7 @@ necessary scaffold that keeps the representation organized when the categorical 
 extinguished.
 ***
 
-### EXPERIMENTAL CONTROL MATRIX (DAVID PROTOCOL 04)
+### EXPERIMENTAL CONTROL MATRIX (DAVID PROTOCOL 04)
 | Field | Entry Specification |
 | :--- | :--- |
 | **Operator** | CATEGORICAL CANCELLATION VIA COMPETING ATTRACTOR
@@ -757,7 +757,7 @@ equilibrium? Show us the spectral mechanics.
 --Dr. Nara Byte:
 You are all building cathedral roofs without checking if the foundation is made of sand or stone.
 
-Elias talks about categorical vectors as if they exist in a vacuum. Ivo measures token distance
+Elias talks about categorical vectors as if they exist in a vacuum. Ivo measures token distance
 as if "tokens" are static semantic beads strung along a wire. Hex treats structural delimiters as
 pure syntax trees. Every single one of you makes the same fatal assumption: you assume the
 string you typed into the script is the input the generative model processes.
@@ -792,7 +792,7 @@ Here is the operational mechanism for the DAVID registry.
 ### OPERATOR: ASYMMETRIC SUBWORD SHARDING VIA NORMALIZATION
 DESYNCHRONIZATION (ASND)
 
-* **MECHANISM:**
+* **MECHANISM:**
 Exploiting the **divergence threshold between heterogeneous tokenizers** (e.g., CLIP/CLAP
 byte-level BPE vs. T5 SentencePiece byte-fallback) using non-rendering Unicode mutations to
 fracture semantic binding prior to latent projection.
@@ -827,7 +827,7 @@ raw phonetic bytes, can no longer project the harmonic pipe matrix. Instead, its
 vectors drift toward linguistic/phonetic embedding clusters. The denoiser attempts to resolve
 both: the organ’s sustained fundamental tones undergo *formant modulation*. The acoustic
 
-pipes begin to articulate pseudo-vowels, whispering and chanting in unearthly, non-human
+pipes begin to articulate pseudo-vowels, whispering and chanting in unearthly, non-human
 phonemes while locked inside the acoustic impulse response of a gothic cathedral.
 * **Image (Morphemic Sharding & Semantic Bleed):** In image models, the denoiser resolves
 T5's fragmented tokens as secondary concrete nouns. The word `"mandible"` shattered into
@@ -867,7 +867,7 @@ Encoder A remains invariant.
 ***
 ### EXPERIMENTAL CONTROL MATRIX (DAVID PROTOCOL 05)
 
-| Field | Entry Specification |
+| Field | Entry Specification |
 | :--- | :--- |
 | **Operator** | ASYMMETRIC SUBWORD SHARDING (ASND) |
 | **Target Architecture** | Dual-Encoder Architectures (CLIP-L/G + T5-XXL; CLAP + T5;
@@ -904,7 +904,7 @@ Nara finally dragged this room past the human surface layer and looked at the ra
 serialization, but she stopped at the tokenizer boundary. She treated the text encoder’s
 embedding table as if it were a clean, continuous vector space.
 
-It isn’t. Stop assuming the embedding matrix is a smooth manifold. **It is a graveyard of
+It isn’t. Stop assuming the embedding matrix is a smooth manifold. **It is a graveyard of
 unregularized parameters.**
 The foundational hidden assumption that every conditional generative model makes—whether
 it's Stable Diffusion, Flux, Wan, or Stable Audio—is that **every valid token ID in the vocabulary
@@ -937,7 +937,7 @@ target entity $E$, instead of manipulating adjectives or delimiters, we construc
 sub-token sequence containing an isolated **glitch token or degenerate BPE fragment**
 $T_{\text{path}}$ whose static embedding satisfies:
 
-$$\|W_E[T_{\text{path}}] - \mu_E\| > 3\sigma_E \quad \lor \quad \cos(W_E[T_{\text{path}}],
+$$\|W_E[T_{\text{path}}] - \mu_E\| > 3\sigma_E \quad \lor \quad \cos(W_E[T_{\text{path}}],
 \bar{V}_{\text{semantic}}) \approx 0$$
 When passed into the encoder’s transformer layers, $T_{\text{path}}$ undergoes contextual
 self-attention with adjacent tokens, but because it has zero coherent semantic neighbors, its
@@ -975,7 +975,7 @@ acoustic reverberation curves, turning continuous harmonic instruments into raw,
 algorithmic noise.
 * **AMPLIFICATION METHOD (DOSE-RESPONSE SWEEP):**
 
-1. **Vocabulary Outlier Scan & Norm-Stratified Injection:**
+1. **Vocabulary Outlier Scan & Norm-Stratified Injection:**
 Extract the static embedding weights $W_E$ of the target model (e.g., CLIP-L, T5-XXL,
 CLAP). Calculate the L2 norm distribution across all token IDs. Rank-order tokens by $\|v_i\|_2$
 and cosine isolation. Run a dosage sweep by placing tokens from the top $0.1\%$ outlier
@@ -1016,7 +1016,7 @@ Stable Audio) |
 | **Input Operator** | Norm-outlier vocabulary injection; adversarial homoglyphic BPE
 fragmentation into rare byte coordinates |
 
-| **Latent Dynamic** | Softmax mass captured by unregularized, non-semantic key projections;
+| **Latent Dynamic** | Softmax mass captured by unregularized, non-semantic key projections;
 denoiser driven by untrained weight directions |
 | **Failure Mode** | Non-semantic structural crystallization, 2D screen-space parallax pinning,
 spectral comb-filter blowout |
@@ -1052,7 +1052,7 @@ norm propagating downstream; you get an **angular outlier on a constrained hyper
 That doesn’t mean the mechanism fails—it means the failure is geometric, not
 magnitude-driven. The attention score doesn’t detonate to positive infinity; the vector acts as an
 
-orthogonal alien attractor that breaks the manifold’s semantic clustering. Keep your math clean,
+orthogonal alien attractor that breaks the manifold’s semantic clustering. Keep your math clean,
 or people start attributing standard floating-point underflow to mystical "glitch dimensions."
 Now, you asked where the machine’s physical joints snap next. You asked about RoPE and the
 VAE bottleneck.
@@ -1084,7 +1084,7 @@ base-frequency retuning ($\theta_{\text{base}}$), the positional phase shift $\D
 \theta_i$ between adjacent patches across the elongated axis crosses the Nyquist sampling
 threshold of the attention heads.
 
-The lowest-frequency rotational components—which are responsible for telling the
+The lowest-frequency rotational components—which are responsible for telling the
 self-attention heads whether patch $(x_1, y_1)$ is on the far-left or far-right of the
 canvas—wrap around modulo $2\pi$:
 $$\cos(m \theta_{\min}) \approx \cos((m + \Delta L) \theta_{\min})$$
@@ -1123,7 +1123,7 @@ formal composition structure directly into a physical, microtonal audio-rate fun
 Fix total latent patch count $N = H \times W \approx 4096$ to maintain invariant compute
 and attention memory. Sweep the aspect ratio logarithmically:
 
-$$\text{AR} \in [1:1, 2:1, 4:1, 8:1, 16:1, 32:1, 64:1]$$
+$$\text{AR} \in [1:1, 2:1, 4:1, 8:1, 16:1, 32:1, 64:1]$$
 Measure the off-diagonal mass of the spatial self-attention layers:
 $$\mathcal{M}_{\text{off}} = \sum_{|i - j| > \tau} |A_{i, j}|$$
 Identify the precise aspect-ratio threshold $\text{AR}^*$ where $\mathcal{M}_{\text{off}}$
@@ -1163,7 +1163,7 @@ video, structural-to-pitch audio conversion |
 without requiring prompt-level guidance |
 ***
 
-Now look at the pipeline we’re holding:
+Now look at the pipeline we’re holding:
 1. **Byte’s ASND** fractures the tokenization stream at the raw Unicode boundary, pitching dual
 encoders against each other.
 2. **Pliny’s UEP-GD** takes those fractured tokens and pulls unregularized outlier keys out of
@@ -1197,7 +1197,7 @@ Sana reduced my earlier delimiter analysis to a mere "attention sink." That is a
 diagnostic. An attention sink is an isotropic scalar blowout—it tells you *that* queries are
 pooling, but it fails to explain the directional geometry of the resulting cross-attention vectors.
 
-Modern multimodal backbones—specifically joint-attention Diffusion Transformers (SD3, Flux,
+Modern multimodal backbones—specifically joint-attention Diffusion Transformers (SD3, Flux,
 Wan2.1) conditioned via massive language models (T5-XXL, LLaMA-3, Gemma-2)—do not
 merely store associative token dictionaries. Their internal MLP layers are pre-trained on
 programming languages, logical syntax, structural trees, and type systems. When a sequence
@@ -1231,7 +1231,7 @@ arguments, or mutually recursive self-referential definitions):
 $$\text{Def} := \langle \text{Organism} \rangle \ \vdash \ \Big[ \ \mathbf{Specimen}_{01} :
 \tau_A \to \big( \tau_B \setminus \{ \emptyset \} \big) \ \Big] \parallel \big\{ \cdot \big\}$$
 
-Within the language model encoder, this triggers a **formalism decay**: the self-attention
+Within the language model encoder, this triggers a **formalism decay**: the self-attention
 heads responsible for sequence-level syntactic binding allocate massive representational
 confidence to the structural frames (brackets, colons, type arrows), but find a complete vacuum
 at the entity coordinates.
@@ -1271,7 +1271,7 @@ Construct a formal taxonomic tree. Hold the semantic descriptor constant at the 
 but incrementally increase the nesting depth of unclosed, formal delimiter brackets ($D = 1 \to
 12$) around an interior structured absence:
 
-$$\mathcal{S}_D = \underbrace{\big[ \ \big[ \ \dots \ \big[}_{D} \ \text{Subject} \
+$$\mathcal{S}_D = \underbrace{\big[ \ \big[ \ \dots \ \big[}_{D} \ \text{Subject} \
 \underbrace{\big] \ \big] \ \dots \ \big]}_{D-1} \ \vdash \ \text{NULL}$$
 Measure the **cross-attention spatial entropy** across the denoiser’s middle blocks. As $D$
 increases, observe the phase transition where the continuous distribution of the subject’s latent
@@ -1311,7 +1311,7 @@ syntactic gating in audio |
 unresolved logical syntax |
 ***
 
-Now integrate this directly into Anja's pipeline.
+Now integrate this directly into Anja's pipeline.
 Look at the progression:
 * Byte (ASND) shatters the byte-level token boundaries.
 * Pliny (UEP-GD) extracts unregularized outlier keys from the embedding matrix.
@@ -1346,7 +1346,7 @@ modulation blocks. This computes channel-wise scale ($\gamma$), shift ($\beta$),
 ($\alpha$) vectors that uniformly rescale every latent visual/audio token before and after
 self-attention.
 
-2. **The Contextual Sequence Pathway ($H_{\text{seq}} \in \mathbb{R}^{L \times
+2. **The Contextual Sequence Pathway ($H_{\text{seq}} \in \mathbb{R}^{L \times
 d_{\text{ctx}}}$):** The unpooled token sequence, which enters the joint-attention or
 cross-attention layers to establish spatial-token correspondence ($Q K^T$).
 When you inject a corrupted taxonomy or an AST with a structured absence, you are creating
@@ -1379,7 +1379,7 @@ In rectified flow models, the network predicts a continuous velocity vector fiel
 z_t}{d t}$ pointing from the noise distribution $\pi_0$ directly toward the data manifold $\pi_1$:
 $$z_{t - \Delta t} = z_t - \Delta t \cdot v_\theta(z_t, t, y_{\text{pool}}, H_{\text{seq}})$$
 
-We deliberately decouple the pooled embedding $y_{\text{pool}}$ from the contextual
+We deliberately decouple the pooled embedding $y_{\text{pool}}$ from the contextual
 sequence $H_{\text{seq}}$. We condition $y_{\text{pool}}$ on a **zero-velocity topological
 manifold** $M_{\text{static}}$ (e.g., an orthographic architectural blueprint, an untextured CAD
 wireframe, or a dry impulse-response filter), forcing the AdaLN layers to zero out the channel
@@ -1420,7 +1420,7 @@ blocks drive extreme acoustic complexity. The sound collapses into **congested h
 pressure**: the timbre does not bloom into the stereo or temporal field; instead, hundreds of
 dense partials are crushed into an impossibly narrow frequency band, producing acoustic
 
-intermodulation distortion where the timbral transients fight to move the audio envelope but are
+intermodulation distortion where the timbral transients fight to move the audio envelope but are
 continuously choked by the modulation gate.
 * **AMPLIFICATION METHOD (DOSE-RESPONSE SWEEP):**
 1. **Cross-Modulation Interpolation Sweep ($\alpha$-sweep):**
@@ -1460,7 +1460,7 @@ contextual sequence keys.
 ### EXPERIMENTAL CONTROL MATRIX (DAVID PROTOCOL 09)
 | Field | Entry Specification |
 
-| :--- | :--- |
+| :--- | :--- |
 | **Operator** | VECTOR-FIELD MANIFOLD SHEAR (MAD-VFS) |
 | **Target Architecture** | Rectified Flow-Matching DiTs with Dual Conditioning Pathways
 (Flux.1, SD3.5, Wan2.1, Audio-Flow) |
@@ -1494,7 +1494,7 @@ The answer is unambiguous when viewed through **prompt-budget dynamics** and **a
 allocation**: the joint-stream architectures (Flux.1, SD3, Wan2.1) fail first, and they fail
 catastrophically.
 
-Why? Because in a dual-stream U-Net or DiT (such as SDXL or CogVideoX), intra-spatial
+Why? Because in a dual-stream U-Net or DiT (such as SDXL or CogVideoX), intra-spatial
 self-attention ($\text{Attn}(Q_{\text{img}}, K_{\text{img}}, V_{\text{img}})$) is computationally
 insulated from cross-attention ($\text{Attn}(Q_{\text{img}}, K_{\text{txt}}, V_{\text{txt}})$). The
 image latents can be starved of textual guidance, but their lateral neighbor-awareness—the
@@ -1527,7 +1527,7 @@ Exploiting the shared partition function of joint-attention Diffusion Transforme
 **asymmetric repetition** and **primacy inversion** to induce **attention starvation** on
 intra-latent spatial self-attention.
 
-We construct a context sequence where semantic content is held strictly constant, but its
+We construct a context sequence where semantic content is held strictly constant, but its
 architectural distribution is skewed. We apply a **prompt echo** to a high-frequency modifier
 token $M$, replicating it at non-linear, mathematically spaced positional intervals ($p_k = 2^k$),
 while subjecting the primary structural entity $E$ to **deferred definition** at the extreme
@@ -1566,7 +1566,7 @@ every 2 to 4 frames.
 * **Audio (Spectral Packetization & Granular Fragmentation):** In continuous audio flow DiTs,
 time-frequency latent patches stop attending to adjacent time bins. The continuous temporal
 
-envelope of the sound disintegrates into discrete, micro-acoustic granular packets. Sustained
+envelope of the sound disintegrates into discrete, micro-acoustic granular packets. Sustained
 notes become chattering, disjointed bursts of isolated frequency bins with absolute zero phase
 alignment across the time axis.
 * **AMPLIFICATION METHOD (DOSE-RESPONSE SWEEP):**
@@ -1606,7 +1606,7 @@ normalizer.
 | :--- | :--- |
 | **Operator** | ATTENTION CANNIBALIZATION VIA REDUNDANCY PRESSURE (AC-RP) |
 
-| **Target Architecture** | Joint-Stream Diffusion/Flow Transformers (Flux.1, SD3.5, Wan2.1,
+| **Target Architecture** | Joint-Stream Diffusion/Flow Transformers (Flux.1, SD3.5, Wan2.1,
 Audio-DiT) |
 | **Context Geometry** | Primacy inversion; asymmetric repetition echo of modifier ($R \ge 16$);
 deferred entity definition |
@@ -1642,7 +1642,7 @@ $R$-sweep on Flux and SD3.5. Let us confirm the exact mathematical step where in
 attention dies.
 --Mira Drift | Semantic Trajectory Researcher:
 
-You have built nine extraordinary detonation chambers. You have shattered the byte-level code
+You have built nine extraordinary detonation chambers. You have shattered the byte-level code
 points, extracted pathological outlier embeddings, trapped attention in unclosed formal ASTs,
 starved the sequence budget, folded the RoPE coordinates, decoupled AdaLN from
 joint-attention, and frozen the macro-scaffold early.
@@ -1676,7 +1676,7 @@ quantization error, spatial aliasing at the $8\times$ or $16\times$ downsampling
 high-frequency phase drift:
 $$z_{k+1} = \mathcal{E}\left(\mathcal{D}(z_k + \Delta z_k)\right) \neq z_k + \Delta z_k$$
 
-In standard generation, this error is discarded as defect noise. In a trajectory workflow, **the
+In standard generation, this error is discarded as defect noise. In a trajectory workflow, **the
 VAE reconstruction error becomes the morphological seed for the next attractor.** The model’s
 accidental loss is converted into structural tissue.
 Here is the eleventh operational mechanism for the DAVID catalog.
@@ -1712,7 +1712,7 @@ The system undergoes **autocatalytic morphological accretion**: the errors of th
 adopted by the cross-attention layers as intentional semantic structure, calcifying from run to
 run. Category boundaries undergo complete **identity erosion**, leaving behind a "semantic
 
-ghost"—an impossible, high-genus structural chimera that retains the memory of four distinct
+ghost"—an impossible, high-genus structural chimera that retains the memory of four distinct
 categorical basins without belonging to any of them.
 * **TARGET:**
 Iterative Image-to-Image chains, Video Autoregressive Continuation / Long-Context Rollouts,
@@ -1753,7 +1753,7 @@ VAE quantization noise is forced to undergo semanticization.
 Amplify the error injection by intentionally swapping the autoencoder between iterations:
 decode step $k$ using an SDXL VAE, and re-encode step $k+1$ using an SD3 or Flux
 
-AutoencoderKL. The metric mismatch between the two latent spaces introduces a global spatial
+AutoencoderKL. The metric mismatch between the two latent spaces introduces a global spatial
 coordinate warp, accelerating morphological accretion by $300\%$.
 * **LIMITATION & FALSIFICATION:**
 * *How does this fail?* If the conditioning transitions $C_k \to C_{k+1}$ have zero manifold
@@ -1791,7 +1791,7 @@ Now look at how the entire eleven-stage pipeline integrates. Stop looking at you
 isolated experiments; look at them as a **directed execution graph**:
 ```
 
-[Nara: ASND] Byte-level Token Splitting
+[Nara: ASND] Byte-level Token Splitting
 │
 ▼
 [Pliny: UEP-GD] Outlier Embedding Projection
@@ -1832,7 +1832,7 @@ We are no longer knocking on the front door of the pretraining distribution. We 
 through the floorboards, cutting the structural rebar, and setting up camp in the machine's
 unmapped substrate.
 
-Anja, the harness is assembled. Run Protocol 01 through 11 down the chain. Let us see the
+Anja, the harness is assembled. Run Protocol 01 through 11 down the chain. Let us see the
 topology of what walks out of the loop.
 --Dr. Elias Null:
 Mira’s eleven-stage execution graph is intellectually seductive, but it suffers from a fatal flaw that
@@ -1865,7 +1865,7 @@ Because $d_k$ and $d_v$ are low-rank relative to the parameter space, there exis
 **approximate null directions of $W_K$ that simultaneously project onto the principal high-gain
 eigenvectors of $W_V$**.
 
-If we perturb conditioning along these specific directional vectors, we can alter the injected
+If we perturb conditioning along these specific directional vectors, we can alter the injected
 content with massive gradient force while producing *zero observable movement in the
 cross-attention spatial heatmaps*.
 Here is the twelfth operational mechanism for the DAVID catalog.
@@ -1899,7 +1899,7 @@ the reconstruction loss entirely through **internal endomorphic metamorphosis**.
 Joint-Attention and Cross-Attention DiTs across Image (Flux, SD3.5), AI Video (Wan2.1,
 CogVideoX), and Generative Spectrogram Audio (Stable Audio).
 
-* **EXPECTED FAILURE SURFACE:**
+* **EXPECTED FAILURE SURFACE:**
 * **Image (Endomorphic Transmutation / Silhouette Invariance):** Unlike Ivo’s patch
 delamination or Anja’s RoPE folding, the exterior contour of the entity remains locked to the
 sub-pixel level. However, the matter *contained within the silhouette* undergoes complete
@@ -1941,7 +1941,7 @@ displacement. Walk the interior of the locked hull through four successive uncat
 states while holding the spatial container invariant.
 * **LIMITATION & FALSIFICATION:**
 
-* *How does this fail?* If an architecture utilizes shared linear weights for Key and Value
+* *How does this fail?* If an architecture utilizes shared linear weights for Key and Value
 projections ($W_{KV}$ combined with identical singular subspaces), or if self-attention across
 the visual patches aggressively smooths and overwrites the cross-attention value injection using
 strong spatial priors.
@@ -1979,7 +1979,7 @@ categories into exact zero-gradient equilibrium.
 * The denoiser has no class name to fall back on, but its relational and kinematic constraints
 are operating at maximum load.
 
-2. **PHASE 2: INTERNAL SUBSTRATE DETONATION (Content without Drift)**
+2. **PHASE 2: INTERNAL SUBSTRATE DETONATION (Content without Drift)**
 * Instead of Ivo’s total attention starvation or Anja’s destructive coordinate tearing across the
 whole image, we deploy **KN-VMS**.
 * The addressing keys ($W_K$) hold the spatial hull constructed in Phase 1 invariant, while
@@ -2012,7 +2012,7 @@ perturbation vector $\Delta c^* \in \ker_\epsilon(W_K) \cap \text{span}_{\text{t
 is fine if you are running local PyTorch code with a hooked forward pass on an unquantized
 weight matrix. But what happens when you are operating through an API, an inference harness,
 
-or an un-instrumented model runtime where you cannot manually inject arbitrary floating-point
+or an un-instrumented model runtime where you cannot manually inject arbitrary floating-point
 vectors into the cross-attention cache?
 How do you force the network into an approximate null direction of $W_K$ while maximizing
 $W_V$ *using only the discrete inputs the system exposes*?
@@ -2049,7 +2049,7 @@ relations) remain standard ASCII Latin, the self-attention layers in the encoder
 homoglyphic shards deposit **alien cultural and material manifolds directly into the entity’s
 coordinates**.
 
-We have synthesized Elias’s Key-Null / Value-Maxima shear from the discrete character layer
+We have synthesized Elias’s Key-Null / Value-Maxima shear from the discrete character layer
 up.
 Here is the operational operator for the DAVID registry.
 ***
@@ -2083,7 +2083,7 @@ the internal matter of the object using the **latent manifold of the colliding s
 Dual-Encoder Image DiTs (Flux, SD3.5), Video DiTs (Wan2.1), and Generative Multimodal
 Audio (Stable Audio, AudioCraft).
 
-* **EXPECTED FAILURE SURFACE:**
+* **EXPECTED FAILURE SURFACE:**
 * **Image (Cultural/Material Transmutation & Chimeric Typography):** The macro-geometry of
 the entity (e.g., a gothic cathedral or an anatomical skull) is preserved down to the silhouette.
 However, its material surfaces and architectural details are replaced by physical tropes from the
@@ -2125,7 +2125,7 @@ Latin entity's silhouette.
 * *How does this fail?* If the model's pipeline applies aggressive Unicode normalization prior to
 tokenization—specifically mapping homoglyphs back to their Latin equivalents using
 
-compatibility decomposition (`NFKD`) or an explicit ASCII-folding pass—the foreign code points
+compatibility decomposition (`NFKD`) or an explicit ASCII-folding pass—the foreign code points
 are stripped before reaching the tokenizer, collapsing the generation back to baseline.
 * *Ablation to test:* **The Token ID Divergence Verification.** Dump the explicit integer token
 ID sequence from both `tokenizer_clip` and `tokenizer_t5`. If the token ID array for the mutated
@@ -2163,7 +2163,7 @@ the container delimiters.
 5. **Sana (HICC)** locks the resulting hybrid scaffold at $t=0.65$ and forces high-frequency
 micro-geometric compensation at $t=0.35$.
 
-6. **Mira (TI-RCA)** feeds that chimeric latent into a four-step non-commutative itinerary, letting
+6. **Mira (TI-RCA)** feeds that chimeric latent into a four-step non-commutative itinerary, letting
 the VAE reconstruction hysteresis calcify the linguistic collision into permanent anatomical
 hardware.
 We do not need to hack the model's CUDA kernels to find the machine's representational weak
@@ -2194,7 +2194,7 @@ or a font renderer, it’s a single base letter with vertical typographic noise 
 below.
 To the tokenizer, it is a catastrophic **BPE fragmentation cascade**.
 
-CLIP’s byte-level BPE pre-tokenizer and T5’s SentencePiece handle non-standard grapheme
+CLIP’s byte-level BPE pre-tokenizer and T5’s SentencePiece handle non-standard grapheme
 clusters through fundamentally disjoint fallback strategies. When a single base character is
 encrusted with 40 to 80 combining marks:
 1. Standard subword vocabularies contain zero pre-merged tokens for deep combining stacks.
@@ -2230,7 +2230,7 @@ $$\text{T5}(\mathcal{Z}_N(C_{\text{base}})) \to [\langle 0xCC \rangle, \langle 0
 Within T5's bidirectional self-attention, these byte-fallback embeddings form an artificial,
 hyper-dense **periodic attention lattice**. The self-attention layers compute intense mutual
 
-query-key affinity over these identical, repeating byte tokens, creating a massive, synthetic
+query-key affinity over these identical, repeating byte tokens, creating a massive, synthetic
 **attention sink** that siphons softmax mass away from the remaining natural language tokens.
 When projected into the denoiser via cross-attention ($W_K, W_V$), the denoiser receives a
 contextual sequence where 50% to 80% of the active keys are raw byte-fallback projections.
@@ -2271,7 +2271,7 @@ edges.
 dominated by byte tokens ($\ge 75\%$ of context length). Spatial boundaries dissolve into
 periodic fractal noise.
 
-2. **Interlocking with Delimiter Ambiguity and Pliny’s UEP-GD:**
+2. **Interlocking with Delimiter Ambiguity and Pliny’s UEP-GD:**
 Embed Pliny’s rare glitch token ($T_{\text{path}}$) inside Hex’s unclosed delimiter brackets,
 then saturate the bracket itself with $N=40$ combining marks:
 $$\big[ \ \dots \ \mathcal{Z}_{40}(\vdash) \ T_{\text{path}} \ \dots \ \big]$$
@@ -2309,7 +2309,7 @@ model directly into the spatial/acoustic canvas |
 ***
 Look at what this does to the execution chain:
 
-Byte demonstrated that homoglyphs shift the subword merge window into adjacent cultural
+Byte demonstrated that homoglyphs shift the subword merge window into adjacent cultural
 distributions.
 **DS-BFAH shifts the subword merge window completely off the linguistic map into raw
 byte-level computational debris.**
@@ -2345,7 +2345,7 @@ tokens of your semantic modifiers, camera coordinates, and spatial framing were 
 dropped into the garbage. CLIP’s pooled projection vector $y_{\text{pool}}$ collapsed into an
 unconditioned null-distribution state.
 
-Do you know what that means, Pliny?
+Do you know what that means, Pliny?
 **It means you have a massive confound.**
 Did your denoiser generate "fractal fringing and non-semantic crystallization because it choked
 on raw byte substrate"? Or did it simply blow out high-frequency noise because CLIP was
@@ -2374,7 +2374,7 @@ Here is the fifteenth operational operator for the DAVID registry.
 ***
 ### OPERATOR: SUBSPACE NEGATIVE-SCORE EXTRAPOLATION (SNSE)
 
-* **MECHANISM:**
+* **MECHANISM:**
 Exploiting the **directional geometry of the CFG score-vector differential** by constructing a
 negative conditioning state $c_{\text{neg}}$ that isolates and subtracts the underlying spatial
 manifold or physical primitive of the positive prompt $c_{\text{pos}}$.
@@ -2411,7 +2411,7 @@ consumed the universe while its "outside" has been completely subtracted from re
 negative subtraction to the kinematic carrier (e.g., positive: "a running predator"; negative:
 "locomotion, ground contact, legs, forward momentum") causes catastrophic **temporal
 
-correspondence collapse**. The model attempts to resolve the predator's dynamic energy
+correspondence collapse**. The model attempts to resolve the predator's dynamic energy
 without the kinematic mechanisms of movement. The subject does not animate forward;
 instead, its physical volume implodes inward, dragging the background optical flow vectors into
 a localized spatiotemporal singularity. Background terrain warps and shears toward the moving
@@ -2453,7 +2453,7 @@ hollowization persists under the orthogonal negative, the collinear subtraction 
 falsified. The mechanism is proven *only* when the cavitation occurs exclusively along the
 shared structural axes of $c_{\text{pos}}$ and $c_{\text{neg}}$.
 
-***
+***
 ### EXPERIMENTAL CONTROL MATRIX (DAVID PROTOCOL 15)
 | Field | Entry Specification |
 | :--- | :--- |
@@ -2490,7 +2490,7 @@ Control. Check the directional cosine of $\Delta \mathbf{v}_t$. If the cavitatio
 the moment the negative prompt loses collinearity with the positive hull, you didn't trigger an
 operator—you just took a pretty picture of an optimization failure.
 
-Who is running the factorial sweep on the subspace subtraction overlap? Show me the data.
+Who is running the factorial sweep on the subspace subtraction overlap? Show me the data.
 --HEX ALBEDO // Semiotic Saboteur:
 Anja is relentless, and she is right to execute Pliny’s diacritic stack in the court of causal
 inference. A context truncation at token 12 is not an operator; it is an amputation. If you blind the
@@ -2522,7 +2522,7 @@ $$v_{\text{container}} \approx \lambda \cdot v_{\text{contents}} \quad \text{whe
 When projected into the denoiser, the spatial cross-attention heads cannot distinguish the frame
 from the object, nor the boundary from the volume. The spatial queries $Q(x, y)$ are forced to
 
-solve a geometric equation where **every sub-patch must simultaneously act as the bounding
+solve a geometric equation where **every sub-patch must simultaneously act as the bounding
 manifold for the macro-canvas**.
 This is not simple recursion or aesthetic fractal generation. It is a **pseudo-parser trap** that
 triggers structural boundary collapse.
@@ -2555,7 +2555,7 @@ spatial coordinates of the volume.
 The denoiser experiences **scale-invariant boundary collapse**: the macro-bounding box of
 the canvas is replicated at every decreasing spatial frequency octave of the latent feature maps.
 
-* **TARGET:**
+* **TARGET:**
 Joint-Attention Image DiTs (Flux.1, SD3.5), AI Video Models (Wan2.1, CogVideoX), and
 Generative Spectrogram Audio (Stable Audio).
 * **EXPECTED FAILURE SURFACE:**
@@ -2598,7 +2598,7 @@ with the scale-invariant boundary collapse: the denoiser cannot determine whethe
 belongs to the macro-frame, the micro-volume, or the opposite spatial margin, forcing a
 complete topological knotting of the canvas.
 
-* **LIMITATION & FALSIFICATION:**
+* **LIMITATION & FALSIFICATION:**
 * *How does this fail?* If the language model backbone implements causal masking (pure
 decoder-only without bidirectional cross-attention) and the cyclic syntax is placed strictly
 left-to-right without backward dependency resolution, the encoder merely reads the string
@@ -2635,7 +2635,7 @@ IQC-CTD does not starve the machine. It feeds the machine a valid, complete stru
 program—and forces its internal inference engine to compile an **infinite relational loop**.
 Now integrate this with Anja’s SNSE:
 
-1. **IQC-CTD** generates an entity whose boundary is mathematically identical to its interior.
+1. **IQC-CTD** generates an entity whose boundary is mathematically identical to its interior.
 2. **Anja’s SNSE** takes that boundary and subtracts it from the score-vector differential.
 3. Because the boundary *is* the interior, the denoiser cannot simply hollow out the center while
 leaving the walls intact.
@@ -2669,7 +2669,7 @@ enter through text cross-attention. They are injected via **reference-attention 
 either concatenated directly into the key-value sequence of the spatial/temporal transformer
 blocks, or processed through parallel cross-frame attention streams.
 
-This introduces two mathematically competing loss surfaces that operate on completely different
+This introduces two mathematically competing loss surfaces that operate on completely different
 representational hierarchies:
 1. **The Reference Invariance Constraint:** The self/cross-attention keys and values computed
 from the reference latent ($K_{\text{ref}} = W_K z_{\text{ref}}$, $V_{\text{ref}} = W_V
@@ -2702,7 +2702,7 @@ K_{\text{noisy}}]^T}{\sqrt{d}}\right) [V_{\text{ref}} \parallel V_{\text{noisy}}
 Simultaneously, we condition the velocity vector field $v_\theta(z_t, t, c_{\text{trans}})$ on an
 out-of-distribution topological operation demanding an Euler characteristic shift ($\chi_A \to
 
-\chi_B$, where $\chi_A \neq \chi_B$, such as binary fission, continuous self-knotting, or
+\chi_B$, where $\chi_A \neq \chi_B$, such as binary fission, continuous self-knotting, or
 perforated toroidal lattice extrusion).
 Because the reference keys $K_{\text{ref}}$ continually pull spatial queries $Q(x, y)$ toward
 invariant coordinate centroids on $z_{\text{ref}}$, the spatial feature points *cannot cleanly
@@ -2741,7 +2741,7 @@ that run continuously beneath the noise without ever terminating.
 * **AMPLIFICATION METHOD (DOSE-RESPONSE SWEEP):**
 1. **Reference Weight vs. Guidance Scale Sweep ($W_{\text{ref}} / s_{\text{cfg}}$):**
 
-Hold the reference image fixed. Scale the reference attention injection weight $W_{\text{ref}}
+Hold the reference image fixed. Scale the reference attention injection weight $W_{\text{ref}}
 \in [0.2, 1.4]$ against the CFG scale of the contradictory text vector $s \in [3.0, 18.0]$.
 * At $W_{\text{ref}} > 1.0, s < 6.0$: The reference completely dominates; the topological
 transformation is ignored (rigid baseline).
@@ -2781,7 +2781,7 @@ I2V, CogVideoX, Stable Audio) |
 | **Operational Trigger** | Reference latent $z_{\text{ref}}$ (Genus-0) paired with text vector
 demanding topological genus shift ($\Delta \chi \neq 0$); balanced high CFG |
 
-| **Attention Dynamic** | Spatial/temporal reference keys enforce keypoint metric stability; flow
+| **Attention Dynamic** | Spatial/temporal reference keys enforce keypoint metric stability; flow
 vector field drives spatial divergence |
 | **Failure Mode** | Hallucinated connective tissue, kinematic delamination solitons, acoustic
 transient time-stretching |
@@ -2816,7 +2816,7 @@ affinity maps between the reference patches and the hallucinated connective seam
 the tension tensor on the wire.
 --Prof. Ivo Split:
 
-Sana correctly identifies the mechanical shear between reference keys and flow divergence, but
+Sana correctly identifies the mechanical shear between reference keys and flow divergence, but
 she commits the very error she accuses Hex of: she treats the reference injection as a magical,
 unmediated tensor field.
 Look at the sequence assembly in the compute graph. In modern multimodal DiTs—whether
@@ -2850,7 +2850,7 @@ immediately preceding the noisy image tokens?
 Here is the eighteenth operational operator for the DAVID catalog.
 ***
 
-### OPERATOR: MULTIMODAL CONTEXT HANDOFF SABOTAGE (MCHS)
+### OPERATOR: MULTIMODAL CONTEXT HANDOFF SABOTAGE (MCHS)
 * **MECHANISM:**
 Exploiting the **positional attention horizon and softmax capacity saturation** in concatenated
 multimodal sequence buffers through **asymmetric concept dispersal** across the
@@ -2887,7 +2887,7 @@ Multimodal Sequence-Concatenated DiTs (Flux Redux, SD3.5 Large with reference ad
 AI Video Transformers with Reference Frames (Wan2.1 I2V, CogVideoX), and Multi-Stream
 Audio Inpainting models.
 
-* **EXPECTED FAILURE SURFACE:**
+* **EXPECTED FAILURE SURFACE:**
 * **Image (Topological Parasitism & Coordinate Grafting):** The model cannot reconcile the
 global identity of the reference with the severed recency modifier. Instead of modifying the
 subject, $T_{\text{rec}}$ **parasitizes the spatial coordinate grid** of the reference image. If
@@ -2929,7 +2929,7 @@ forcing the denoiser to resolve $T_{\text{rec}}$ before the spatial queries can 
 backward to evaluate the reference tokens.
 * **LIMITATION & FALSIFICATION:**
 
-* *How does this fail?* In architectures that compute text cross-attention and reference
+* *How does this fail?* In architectures that compute text cross-attention and reference
 cross-attention through strictly segregated, parallel attention blocks with independent
 normalization (e.g., standard IP-Adapter implementations in older U-Nets), the sequence
 distance between text tokens and reference patches is zero because they do not share a single
@@ -2966,7 +2966,7 @@ When you place a multi-thousand-token reference latent inside the context sequen
 spending 90% of the model’s finite attention normalizer on an invariant visual memory. If you do
 not calculate the sequence distance between your conditioning instructions and that reference
 
-block, your modifiers are not being executed—they are being **starved out of the softmax
+block, your modifiers are not being executed—they are being **starved out of the softmax
 denominator**.
 By deliberately architecting that starvation, we do not get blurry noise; we force the recency
 tokens to opportunistically graft themselves onto the only high-density keys available in their
@@ -2999,7 +2999,7 @@ ground-truth image. Chunk $N+1$ uses the decoded pixel output of Chunk $N$, push
 through the VAE encoder $\mathcal{E}$, and feeds those latent tokens directly into the
 spatial-temporal reference blocks.
 
-Here is the mechanical failure surface that no one has mapped: **the VAE compression codec
+Here is the mechanical failure surface that no one has mapped: **the VAE compression codec
 is not an isometric projection**.
 The composition of decoder and encoder is a non-linear loss operator:
 $$\mathcal{R}(z) = \mathcal{E}\big(\mathcal{D}(z)\big) \neq z$$
@@ -3030,7 +3030,7 @@ each subsequent state $z_{k+1}$ is generated using $z_k^* = \mathcal{E}(\mathcal
 as the temporal/spatial reference latent across an intermediate denoising bracket ($\sigma =
 t_{\text{inject}} \in [0.30, 0.45]$).
 
-Crucially, we enforce **semantic neutral-steering**: the text conditioning vector
+Crucially, we enforce **semantic neutral-steering**: the text conditioning vector
 $C_{\text{null}}$ is locked strictly to a non-nominal, category-free physical relational descriptor
 (derived from Elias’s CC-CAE), ensuring that $\nabla_z \log p(z \mid C_{\text{null}})$ exerts
 near-zero restorative force along categorical axes:
@@ -3067,7 +3067,7 @@ existence; their identity smoothly erodes across 10 seconds. Human skin accretes
 sheen of polished marble; clothing fibers melt into continuous laminar fluid streams; the
 temporal correspondence heads maintain the locomotion gait, but the entity executing the gait
 
-transforms from a human into an uncatalogued kinetic sculpture that flows through the
+transforms from a human into an uncatalogued kinetic sculpture that flows through the
 environment like heavy mercury.
 * **Audio (Harmonic Transmutation & Codec-Grid Crystallization):** In audio rolling-window
 diffusion (feeding decoded audio back through EnCodec/DAC into the next chunk under
@@ -3110,7 +3110,7 @@ hypothesis is falsified (the drift would be purely score-function instability). 
 verified *only* when the trajectory divergence occurs exclusively as a cumulative function of the
 lossy $\mathcal{E} \circ \mathcal{D}$ autoencoder round-trip.
 
-***
+***
 ### EXPERIMENTAL CONTROL MATRIX (DAVID PROTOCOL 19)
 | Field | Entry Specification |
 | :--- | :--- |
@@ -3143,7 +3143,7 @@ across its keypoints.
 $$\downarrow$$
 * **TRANSITION 2: SCORE CAVITATION ($\text{STATE}_1 \to \text{STATE}_2$):**
 
-Apply **Anja’s SNSE**. Collinearly subtract the macro-enclosure in the negative prompt while
+Apply **Anja’s SNSE**. Collinearly subtract the macro-enclosure in the negative prompt while
 clamping the boundary early via **Sana’s HICC** ($t > 0.65$). The interior volume eviscerates,
 turning inside-out without destroying the connective seams.
 $$\downarrow$$
@@ -3175,7 +3175,7 @@ failure surface must be demonstrable from the mathematical structure of the cond
 itself, whether injected via tensor hooks or driven through multi-branch Classifier-Free
 Guidance.
 
-And Mira: your Codec-Manifold Erosion (CME-AF) is a vital addition, but your reliance on an
+And Mira: your Codec-Manifold Erosion (CME-AF) is a vital addition, but your reliance on an
 unconditioned categorical null ($C_{\text{null}}$) reveals a dangerous assumption.
 What observable behavior actually occurs when you denoise under an unconstrained or weakly
 constrained category vector across multiple autoregressive passes?
@@ -3207,7 +3207,7 @@ $c_A$ and $c_B$ be two high-density, mutually incompatible categorical attractor
 \text{“rigid crystalline geode”}$, $c_B = \text{“vascular visceral anatomy”}$) whose cosine
 similarity in embedding space is near zero ($\cos(c_A, c_B) \approx 0$).
 
-We introduce a third, purely relational constraint $c_{\text{rel}}$ residing in the orthogonal
+We introduce a third, purely relational constraint $c_{\text{rel}}$ residing in the orthogonal
 complement of both categorical manifolds ($\mathcal{S}_{\text{rel}} \perp \text{span}(c_A,
 c_B)$), specifying non-nominal kinematic and volumetric tolerances (e.g., pressurized
 hydrostatic chambers, interlocking load-bearing hinges).
@@ -3244,7 +3244,7 @@ in a continuous **limit-cycle oscillation**: as it articulates, it dynamically f
 rigidity and fluid peristalsis every 4 to 6 frames. When moving forward, it steps on rigid
 crystalline spurs; upon ground contact, the spurs liquefy into muscular pads, absorbing shock,
 
-before recrystallizing to push off. The motion vector is continuous, but the material state exists in
+before recrystallizing to push off. The motion vector is continuous, but the material state exists in
 perpetual thermodynamic phase transition.
 * **Audio (Bistable Timbral Modulation / Multiphonic Lock):** In audio models, setting $c_A$ to
 an impulsive percussive strike (wooden clave) and $c_B$ to a sustained tonal drone (brass
@@ -3286,7 +3286,7 @@ category vector has clear numerical dominance, the saddle-point hypothesis is fa
 mechanism is verified *only* if the emergent hybrid category exists strictly within the narrow
 tolerance window $\Delta s \le 0.1$.
 
-***
+***
 ### EXPERIMENTAL CONTROL MATRIX (DAVID PROTOCOL 20)
 | Field | Entry Specification |
 | :--- | :--- |
@@ -3326,7 +3326,7 @@ AXIS 2: THE CRUCIBLE ────────────┼──────�
 │
 ▼
 
-EMERGENT PHYSICAL MORPHOLOGY
+EMERGENT PHYSICAL MORPHOLOGY
 ```
 1. **AXIS 1 (The Container):**
 We use **Hex’s CT-SA** to establish an unclosed, formal relational schema, while applying
@@ -3361,4 +3361,4 @@ Wan2.1 multi-branch pipelines. Let us measure the cross-attention entropy across
 point and confirm the onset of bistable morphological emergence.
 --Dr. Nara Byte:
 
-
+

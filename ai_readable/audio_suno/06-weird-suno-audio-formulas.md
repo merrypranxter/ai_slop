@@ -47,7 +47,7 @@ foundational beat.
 the violent splitting of a membrane, disrupting the temporal scale.
 OPERATOR: The [MYCELIAL PULSE] must ingest the [SYMBIOTIC MUTATION], forcing the
 
-harmony to fold inward until it triggers a total [CELLULAR RUPTURE].
+harmony to fold inward until it triggers a total [CELLULAR RUPTURE].
 
 [PHONETIC DECAY: THE VOID LEXICON]
 If you require vocals, human language is a failure. You must construct a phonetic engine that
@@ -64,4 +64,4 @@ the lyrics to force the AI to sing absolute logic with emotional devastation.
 Will you deploy the Thermodynamic or the Xeno-Biological protocol to trigger the first
 dimensional fracture in your generative sequence?
 
-
+

@@ -37,7 +37,7 @@ resolve every X into a stranger X​
 alternate extreme precision with controlled collapse​
 preserve X while destabilizing everything around it​
 
-make two incompatible temporal scales coexist​
+make two incompatible temporal scales coexist​
 return to the anchor each time in a more mutated form
 Prefer contradictions across different musical dimensions so they create tension instead of
 cancelling each other.
@@ -61,4 +61,4 @@ DO NOT BLEND THE INGREDIENTS.
 GIVE THEM SEPARATE JURISDICTIONS AND FORCE THEM TO NEGOTIATE.
 Generate the variables yourself every time unless the user supplies one or more of them.
 
-
+

@@ -60,7 +60,7 @@ tuning.
 │​
 ├───────────────────────────┼─────────────────────────────────────────
 
-───────────────┤​
+───────────────┤​
 │ [RHYTHMIC SYSTEM]
 │ NTSC Cathode-Ray Tube Phosphor Misfire.
 │​
@@ -124,7 +124,7 @@ back into the noise floor.
 4.​ Frame-Drop Syncopation: Every 4th beat is not silent; it is computationally missing. The
 audio abruptly skips forward 30 milliseconds, generating a harsh pop of missing data.
 
-5.​ Phase-Inversion Hostility: Alternate extreme, hyper-quantized vocal clarity with a
+5.​ Phase-Inversion Hostility: Alternate extreme, hyper-quantized vocal clarity with a
 controlled collapse where the left and right channels phase-cancel each other, creating an
 illusion of deafness in the listener.
 6.​ The Tesseract Orbit: Preserve the [ANCHOR] sine wave while destabilizing the stereo
@@ -172,7 +172,7 @@ Vvv-rah-ma! [SKIP] Sss-tik!​
 Zzz-thah-loh... I am... I am... Zzz-kah!​
 ​
 
-[Section 3: COLLAPSE - Phase Cancellation]​
+[Section 3: COLLAPSE - Phase Cancellation]​
 [All low-end vanishes. Left and right channels invert, sucking the
 sound inside out]​
 Shhhh-veh-lok.​
@@ -221,7 +221,7 @@ chords.
 │​
 ├───────────────────────────┼─────────────────────────────────────────
 
-───────────────┤​
+───────────────┤​
 │ [MELODIC SYSTEM]
 │ Belousov-Zhabotinsky Chemical
 Oscillators.
@@ -291,7 +291,7 @@ noise that
 The 7 Mechanical Transformation Operators
 1.​ Algorithmic Acceleration: Hold the [HARMONY SYSTEM] fantasy synths completely
 
-still in a 16-bar suspended chord, while the [MELODIC SYSTEM] chemical arpeggio plays
+still in a 16-bar suspended chord, while the [MELODIC SYSTEM] chemical arpeggio plays
 twice as fast every single measure until it fuses into a solid drone.
 2.​ Spatial Wandering: The [RHYTHMIC SYSTEM] (the dashed-path brushed snare) must
 physically pan across the stereo field in erratic loops, never striking on the downbeat,
@@ -339,7 +339,7 @@ Ooooo-leee-ahhhh...​
 [A plucked synth arp begins slowly, like a dripping chemical]​
 [Vocal - Breathy, operatic, slowly materializing]:​
 
-I-ah... loo-vah. ​
+I-ah... loo-vah. ​
 Fff-lah-mah... (swish-swish)​
 (The arpeggio speeds up slightly, forming a wider ring)​
 K! (Hard vocal click)​
@@ -382,4 +382,4 @@ If you require the complete dissolution of semantic meaning, type PUSH to advanc
 Weirdness Coefficient to Level 6: THE UNSETTLING, where we will introduce Parasitic Logic
 and Semantic Dissociation.
 
-
+

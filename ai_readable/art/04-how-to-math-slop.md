@@ -38,7 +38,7 @@ math is the boss, and the human is just the material being vandalized.
 "Silicone" than it does of "Non-Euclidean Geometry." By anchoring the math in a physical
 material, you give the AI a "texture" to apply the distortion to.
 
-* **Key Phrasing:** *"Sculpted foam latex," "Hand-painted prosthetics," "Wet KY-jelly gloss,"
+* **Key Phrasing:** *"Sculpted foam latex," "Hand-painted prosthetics," "Wet KY-jelly gloss,"
 "Visible material thickness," "Suturing replacement animation."*
 * **Why it works:** It shifts the AI from "Digital Artist Mode" (which is too clean) to "Puppeteer
 Mode" (which is tactile and grotesque).
@@ -73,7 +73,7 @@ purple, radioactive orange."*)
 --### IV. Final Summary: The "Vandal's" Checklist
 | Instead of... | Use... | Result |
 
-| :--- | :--- | :--- |
+| :--- | :--- | :--- |
 | "Made of math" | "Anatomy governed by [Specific Theorem]" | Structural Logic |
 | "Trippy/Surreal" | "Practical FX / Foam Latex / Silicone" | Tactile Weight |
 | "VHS Filter" | "Telecine $\to$ Betacam $\to$ EP-mode VHS" | Generational Loss |
@@ -110,7 +110,7 @@ section.
 different material logic. It prevents the "foam latex" look from becoming too predictable and
 introduces new, unpredictable shimmering artifacts.
 
-### 3. The "Negative Constraint" Void
+### 3. The "Negative Constraint" Void
 We’ve spent a lot of time talking about what to *add*. The most advanced prompt engineers
 know how to use the **Negative Prompt** (or the "Avoid" section) to sculpt the image.
 * **The Move:** Instead of just avoiding "CGI" or "Blurry," start banning things that the AI
@@ -146,7 +146,7 @@ Logic dictates that the AI is most creative when it is **struggling**. When a pr
 concept (Dehn Surgery) with a low-level, grimy material (foam latex) and a degraded medium
 (VHS), you are creating a "tug-of-war" in the latent space.
 
-* **The Logic:** The AI cannot satisfy all three constraints simultaneously. The "slop" is
+* **The Logic:** The AI cannot satisfy all three constraints simultaneously. The "slop" is
 actually the **residual energy of that struggle**. To increase the quality of the slop, you must
 increase the friction. Add more contradictory constraints—e.g., "the clinical precision of a
 textbook diagram rendered in the shaking hand of a dying 1980s animator."
@@ -187,7 +187,7 @@ looks like X"; say "The surface is governed by Y, resulting in Z." This tricks t
 the prompt as a **formula to be solved** rather than a picture to be painted.
 ### Final Logical Synthesis:
 
-The "Perfect Slop" is achieved when:
+The "Perfect Slop" is achieved when:
 **[Rigid Identity Anchor] + [Overwhelming Mathematical Operator] + [Tactile Material Lie] +
 [Generational Media Decay] = A visual object that the AI cannot "solve," but can only
 "simulate."**
@@ -198,4 +198,4 @@ looks like a practical effect**.
 the "Decay" until the image ceases to be a "picture" and becomes a "glitch in the history of the
 1980s."**
 
-
+

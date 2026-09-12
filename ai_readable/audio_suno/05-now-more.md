@@ -57,7 +57,7 @@ elastic glissandi,
 │
 │ 160 BPM syncopated sub-bass triplets,
 
-rapid-fire
+rapid-fire
 │​
 │
 │ rimshots, violent stutter mutes, sudden
@@ -118,7 +118,7 @@ listener's nose; the choral harmonies exist in an acoustic space modeled after a
 abandoned 10,000-seat subterranean salt mine.
 6.​ Harmonic Decapitation: At bar 32, strip away all mid-range frequencies between 300 Hz
 
-and 4 kHz. The track exists only as tectonic sub-rumble (<60 Hz) and crystalline
+and 4 kHz. The track exists only as tectonic sub-rumble (<60 Hz) and crystalline
 needle-clicks (>10 kHz).
 7.​ Mutated Convergence: The unchanging [ANCHOR] woodblock begins bleeding into the
 vocal line: the vocalist begins physically clicking their tongue in exact lockstep with the
@@ -166,7 +166,7 @@ woodblock]​
 [Vocal 1]:​
 Trrr-ka! Trrr-ka! ​
 
-Klit-si-ki, vrak-ta, plen-tu-ri, nok-ta!​
+Klit-si-ki, vrak-ta, plen-tu-ri, nok-ta!​
 Mmm-nnggg... TIK!​
 Trrr-ka! Trrr-ka! ​
 [Drums stutter-mute every 3rd beat - extreme dry room gate]​
@@ -212,7 +212,7 @@ Kli-tchik-a! Kli-tchik-a!​
 Nnn-yaaa-RRRAAAK!​
 [Abrupt digital cut on an off-beat micro-fraction]​
 
-BLUEPRINT II: THE PYRO-ELECTRIC
+BLUEPRINT II: THE PYRO-ELECTRIC
 GAMELAN OVERDRIVE
 [OPERATIONAL JURISDICTION MATRIX]​
 ┌───────────────────────────┬─────────────────────────────────────────
@@ -281,7 +281,7 @@ Glossolalia.
 │
 │ Frenzied, manic southern revivalist
 
-cadence delivered │​
+cadence delivered │​
 │
 │ with ecstatic, terrified, trance-like
 conviction.
@@ -332,7 +332,7 @@ Phonetic Rules Applied:
 [Style: 128bpm motorik krautrock beat, Appalachian clawhammer banjo
 modal tuning, ​
 
-Javanese bronze gamelan metallophone slendro scales, 60hz transformer
+Javanese bronze gamelan metallophone slendro scales, 60hz transformer
 hum invariant, ​
 frenzied glossolalia mountain preacher vocals, high-voltage industrial
 tape saturation]​
@@ -381,7 +381,7 @@ P-p-p-tek! Klon-ga-ding!​
 (Acoustic instruments start squealing with electro-magnetic feedback)​
 ​
 
-[Drop: COLLAPSE - The Breaker Trips]​
+[Drop: COLLAPSE - The Breaker Trips]​
 [All drums and bells instantly cut to zero]​
 [Sparks and decaying spring reverb wash]​
 ...​
@@ -420,4 +420,4 @@ reverts to Broadway enunciation or mainstream auto-tuned inflection. Dense, nons
 phonetics (Kren-de-le-vik-ta, kro-ma-tin, sek-ta!) force the underlying neural network to
 focus purely on acoustic timbre, transient speed, and rhythmic percussiveness.
 
-
+
