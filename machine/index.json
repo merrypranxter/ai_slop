@@ -1,12 +1,14 @@
 {
-  "schema_version": "0.3",
+  "schema_version": "0.4",
   "project": "AI SLOP — Structured Instability Lab",
   "canonical_root": "docs/",
   "ai_entrypoint": "AI_CONTEXT.md",
   "human_entrypoint": "README.md",
+  "machine_entrypoint": "machine/README.md",
   "core_question": "What problem can we give a generative system such that its attempt to solve the problem becomes the artwork?",
   "source_layers": {
     "canonical": "docs/",
+    "machine_routing": "machine/",
     "searchable_transcripts": "ai_readable/",
     "original_archive": "originals/",
     "legacy_sources": ["art/", "general/", "suno_slop/"],
@@ -15,6 +17,7 @@
   "routing": {
     "project_map": "docs/00-project-map.md",
     "source_audit": "docs/08-reference/source-audit.md",
+    "repository_map_audit": "docs/08-reference/repository-map-files.md",
     "source_index": "machine/sources.json",
     "provenance": "docs/08-reference/provenance-map.md",
     "glossary": "docs/08-reference/glossary.md",
