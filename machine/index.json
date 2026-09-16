@@ -1,0 +1,34 @@
+{
+  "schema_version": "0.1",
+  "project": "AI SLOP — Structured Instability Lab",
+  "canonical_root": "docs/",
+  "ai_entrypoint": "AI_CONTEXT.md",
+  "core_question": "What problem can we give a generative system such that its attempt to solve the problem becomes the artwork?",
+  "source_layers": {
+    "canonical": "docs/",
+    "searchable_transcripts": "ai_readable/",
+    "original_archive": "originals/",
+    "legacy_sources": ["art/", "general/", "suno_slop/"]
+  },
+  "canonical_sections": [
+    {"id":"principles","path":"docs/01-principles/","status":"active"},
+    {"id":"mechanisms","path":"docs/02-mechanisms/","status":"building"},
+    {"id":"media","path":"docs/03-media/","status":"building"},
+    {"id":"cognitive_systems","path":"docs/04-cognitive-systems/","status":"building"},
+    {"id":"architectures","path":"docs/05-architectures/","status":"building"},
+    {"id":"experimentation","path":"docs/06-experimentation/","status":"active"},
+    {"id":"prompts","path":"docs/07-prompts/","status":"building"},
+    {"id":"reference","path":"docs/08-reference/","status":"active"},
+    {"id":"backlog","path":"docs/09-backlog/","status":"building"}
+  ],
+  "epistemic_statuses": ["OBSERVED","SUPPORTED","HYPOTHESIS","PROCEDURAL","METAPHOR","SPECULATIVE","ARCHIVED","SUPERSEDED"],
+  "rules": [
+    "Prefer mechanisms over adjectives.",
+    "Keep competing constraints active rather than letting one condition drop out.",
+    "Translate concepts into operations before compiling them into media instructions.",
+    "Preserve path-dependent scars when a route is claimed to matter.",
+    "Separate creative utility from mechanism confidence.",
+    "Do not claim prompts literally modify hidden weights, activations, embeddings, or safeguards.",
+    "Do not delete source history when canonicalizing it."
+  ]
+}
