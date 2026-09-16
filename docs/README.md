@@ -29,6 +29,7 @@ This directory is the **curated knowledge layer**. It is organized by what an id
 
 - [`../machine/index.json`](../machine/index.json) — routing and canonical-section index.
 - [`../machine/operators.json`](../machine/operators.json) — compact operator lookup for software/AI agents.
+- [`../machine/sources.json`](../machine/sources.json) — compact source disposition and canonical-route lookup.
 
 ## Canonicalization rule
 
