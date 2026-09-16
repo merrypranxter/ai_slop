@@ -15,6 +15,7 @@
   "routing": {
     "project_map": "docs/00-project-map.md",
     "source_audit": "docs/08-reference/source-audit.md",
+    "source_index": "machine/sources.json",
     "provenance": "docs/08-reference/provenance-map.md",
     "glossary": "docs/08-reference/glossary.md",
     "lens_palette": "docs/08-reference/lens-palette.md",
