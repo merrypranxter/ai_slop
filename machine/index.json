@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.2",
+  "schema_version": "0.3",
   "project": "AI SLOP — Structured Instability Lab",
   "canonical_root": "docs/",
   "ai_entrypoint": "AI_CONTEXT.md",
@@ -19,9 +19,14 @@
     "provenance": "docs/08-reference/provenance-map.md",
     "glossary": "docs/08-reference/glossary.md",
     "lens_palette": "docs/08-reference/lens-palette.md",
+    "intake_workflow": "docs/08-reference/intake-workflow.md",
     "operator_index": "machine/operators.json",
     "operator_registry": "docs/02-mechanisms/operator-registry.md",
-    "experimental_method": "docs/06-experimentation/experimental-method.md"
+    "david_protocol_index": "machine/david_protocols.json",
+    "david_protocol_registry": "docs/02-mechanisms/david-technical-hypotheses.md",
+    "experimental_method": "docs/06-experimentation/experimental-method.md",
+    "run_log_template": "docs/06-experimentation/run-log-template.md",
+    "experiment_schema": "machine/experiment.schema.json"
   },
   "canonical_sections": [
     {"id":"principles","path":"docs/01-principles/","status":"active"},
