@@ -1,0 +1,39 @@
+{
+  "schema_version": "0.1",
+  "authority": "Routing/summary only; canonical caveats and definitions live in docs/02-mechanisms/david-technical-hypotheses.md",
+  "primary_source": "ai_readable/general/04-ai-slop-roundtable-tech-guys.md",
+  "global_status": "HYPOTHESIS_REGISTRY",
+  "rule": "Creative utility and mechanism confidence are separate. Exact architecture claims and numerical thresholds must be verified per implementation.",
+  "pre_registry": [
+    {"id":"CMMS","name":"Cross-Modal Manifold Shear","status":"HYPOTHESIS","scope":["black-box-reduced","architecture-specific"],"family":"conditioning-conflict"},
+    {"id":"SP-DUS","name":"Syntactic Possession via Dual-Use Strata","status":"SPECULATIVE","scope":["black-box-input","instrumentation-preferred"],"family":"formal-structure-pressure"}
+  ],
+  "protocols": [
+    {"number":1,"id":"HICC","name":"Hierarchically Inverted Conditioning Crossfade","status":"HYPOTHESIS","scope":["architecture-specific","staged-conditioning"],"family":"conditioning-path-conflict","test":"Compare early-only, late-only, staged swap, and simultaneous conditioning while sweeping transition timing."},
+    {"number":2,"id":"RBC-AS","name":"Remote Binding Cleavage via Attention Starvation","status":"HYPOTHESIS","scope":["black-box-testable"],"family":"binding-sequence-stress","test":"Sweep entity-modifier distance and competing context; compare with adjacent-token control."},
+    {"number":3,"id":"NCHR","name":"Non-Commutative Hysteretic Ratchet","status":"HYPOTHESIS","scope":["path","iteration"],"family":"path-dependence","test":"Compare A→B→A, B→A→B, repeated single-operator paths, and direct endpoints."},
+    {"number":4,"id":"CC-CAE","name":"Categorical Cancellation via Competing Attractor Equilibrium","status":"HYPOTHESIS","scope":["black-box-reduced","instrumentation-for-vector-claim"],"family":"category-equilibrium","test":"Balance competing categories under a strong structural scaffold; ablate the scaffold."},
+    {"number":5,"id":"ASND","name":"Asymmetric Subword Sharding via Normalization Desynchronization","status":"HIGHLY_SPECULATIVE","scope":["local","instrumented","multi-encoder"],"family":"tokenization-encoding-stress","test":"Dump token IDs for each encoder; no tokenizer divergence means the claimed operator did not execute."},
+    {"number":6,"id":"UEP-GD","name":"Unconstrained Embedding Projection via Glitch Dispersion","status":"SPECULATIVE","scope":["local","instrumented"],"family":"tokenization-encoding-stress","test":"Measure tokenizer/embedding behavior and compare against rarity-matched ordinary tokens."},
+    {"number":7,"id":"ARS-FBA","name":"Anisotropic RoPE Shear via Frequency-Band Aliasing","status":"HIGHLY_ARCHITECTURE_SPECIFIC","scope":["local","instrumented"],"family":"positional-encoding","test":"Verify target RoPE implementation; compare unsupported coordinates/aspects with corrected/interpolated scaling."},
+    {"number":8,"id":"CT-SA","name":"Corrupted Taxonomy via Structured Absence","status":"SPECULATIVE","scope":["black-box-input"],"family":"formal-structure-pressure","test":"Compare formal/taxonomic structured absence with an ordinary-prose relational equivalent."},
+    {"number":9,"id":"MAD-VFS","name":"Vector-Field Manifold Shear via Modulation-Attention Decoupling","status":"ARCHITECTURE_SPECIFIC_HYPOTHESIS","scope":["local","instrumented"],"family":"conditioning-path-conflict","test":"Verify separable global-modulation and sequence-routing pathways, then manipulate them independently."},
+    {"number":10,"id":"AC-RP","name":"Attention Cannibalization via Redundancy Pressure","status":"HYPOTHESIS","scope":["black-box-reduced","architecture-specific"],"family":"binding-sequence-stress","test":"Compare asymmetric repetition against meaning-matched nonredundant conditioning."},
+    {"number":11,"id":"TI-RCA","name":"Transmanifold Itinerary via Recursive Codec Accretion","status":"HYPOTHESIS","scope":["path","iteration"],"family":"path-dependence","test":"Traverse a multi-stage route with repeated re-encoding and compare against direct endpoint generation."},
+    {"number":12,"id":"KN-VMS","name":"Key-Null / Value-Maxima Shear","status":"HIGHLY_TECHNICAL_HYPOTHESIS","scope":["local","instrumented-only"],"family":"projection-internals","test":"Search accessible projection subspaces and compare candidate perturbations with matched random perturbations."},
+    {"number":13,"id":"HMC-SPS","name":"Homoglyphic Manifold Collision via Subword Phase Shift","status":"SPECULATIVE","scope":["black-box-input","tokenizer-validation"],"family":"tokenization-encoding-stress","test":"Compare normalization/token IDs before attributing any output change to tokenization."},
+    {"number":14,"id":"DS-BFAH","name":"Diacritic Saturation via Byte-Fallback Attention Hijack","status":"SPECULATIVE","scope":["tokenizer-test","instrumentation-preferred"],"family":"tokenization-encoding-stress","test":"Measure visible-grapheme vs token/byte expansion and compare with matched ordinary-length controls."},
+    {"number":15,"id":"SNSE","name":"Subspace Negative-Score Extrapolation","status":"HYPOTHESIS","scope":["architecture-specific","guidance-controls"],"family":"guidance-vector","test":"Compare structurally related negative conditioning against equally strong unrelated negatives."},
+    {"number":16,"id":"IQC-CTD","name":"Inductive Quine Collapse via Cyclic Type Dependency","status":"HIGHLY_SPECULATIVE","scope":["black-box-input","instrumentation-for-internal-claim"],"family":"formal-structure-pressure","test":"Break the cycle into an acyclic dependency while preserving vocabulary and semantic content."},
+    {"number":17,"id":"TPS-RFC","name":"Topological Pinning Shear via Reference-Flow Collision","status":"HYPOTHESIS","scope":["reference-conditioned","black-box-testable"],"family":"conditioning-path-conflict","test":"Demand topology change under strong reference preservation and compare with topology-preserving transformation."},
+    {"number":18,"id":"MCHS","name":"Multimodal Context Handoff Sabotage","status":"SPECULATIVE_ARCHITECTURE_SPECIFIC","scope":["multimodal-long-context"],"family":"conditioning-path-conflict","test":"Vary ordering/distance across a text-reference boundary and compare with adjacent constraints."},
+    {"number":19,"id":"CME-AF","name":"Codec-Manifold Erosion via Autoregressive Feedback","status":"HYPOTHESIS","scope":["path","iteration"],"family":"path-dependence","test":"Compare repeated lossy generative round-trips with no-codec and codec-only controls."},
+    {"number":20,"id":"BST-OCG","name":"Bistable Saddle Trapping via Orthogonal Complement Guidance","status":"SPECULATIVE","scope":["architecture-specific","black-box-reduced"],"family":"category-equilibrium","test":"Balance competing category pressures under an orthogonal structural constraint, then deliberately imbalance them."}
+  ],
+  "composite_pattern": {
+    "name":"container-crucible-itinerary",
+    "container":"structural scaffold that prevents incoherent collapse",
+    "crucible":"controlled representational tension",
+    "itinerary":"history-preserving path or iterative accretion"
+  }
+}
