@@ -11,6 +11,8 @@ ignores, associates, or treats as possible) rather than merely how it talks.
 3. `03-hostile-consolidation.md` → hostile consolidation passes 1–9: canonical inventory, coverage audit, build order, benchmark protocol
 4. `04-temporary-minds-26-prompt-library.md` → the finished, paste-ready library of 26 installation prompts
 5. `05-outside-the-box-guy-prompt.md` → standalone personal prompt (The Eccentric Kineticist)
+6. `06-system-failure-prompt.md` → standalone system-failure persona/override prompt
+7. `07-temporary-minds-prompting.md` → repaired library support architecture and completeness audit
 
 ## Source Mapping
 - `originals/copilot-intake-2026-09-13/collabor8-session-1789323831701.txt` → `01-cognitive-mutation-laboratory-session.md`
@@ -20,6 +22,8 @@ ignores, associates, or treats as possible) rather than merely how it talks.
 - `originals/copilot-intake-2026-09-13/Personality prompts ChatGPT take 2.pdf` → `03-hostile-consolidation.md`
 - `originals/copilot-intake-2026-09-13/Temporary_Minds_26_Prompt_Library.pdf` → `04-temporary-minds-26-prompt-library.md`
 - `originals/copilot-intake-2026-09-13/OUTSIDE THE BOX GUY personal prompt copy.pdf` → `05-outside-the-box-guy-prompt.md`
+- `originals/copilot-intake-2026-09-16/System failure prompt.pdf` → `06-system-failure-prompt.md`
+- `originals/copilot-intake-2026-09-16/Temporary_Minds_Prompting.docx` → `07-temporary-minds-prompting.md`
 
 ## Notes
 - The three sources of the Cognitive Mutation Laboratory session were verified to be the same session;

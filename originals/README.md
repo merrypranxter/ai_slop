@@ -20,3 +20,23 @@ processed on 2026-09-13.
 | `weird-thinkers.pdf` | `ai_readable/art/06-weird-thinkers-persona-palette.md` |
 | `weird-sciences.pdf` | `ai_readable/art/07-weird-sciences-persona-palette.md` |
 | `readme.txt` | intake instructions (archived, no content to transcribe) |
+
+## `copilot-intake-2026-09-16/`
+Untouched source documents from the 2026-09-16 intake. The reusable intake instructions remain in
+`new_to_be_processed_by_copilot_agent/readme.txt`.
+
+| Original file | Transcribed to |
+| --- | --- |
+| `Ai slop - ghost glsl more.pdf` | `ai_readable/semantic_systems/01-ghost-glsl-roundtable.md` |
+| `Ai slop weight manipulation cratak.pdf` | `ai_readable/semantic_systems/02-weight-manipulation.md` |
+| `Cratak new slop.pdf` | `ai_readable/semantic_systems/03-semantic-engineering.md` |
+| `Cratak new slop 2.pdf` | `ai_readable/semantic_systems/04-semantic-trap-engineering.md` |
+| `External state controller - ai slop thing cratak.pdf` | `ai_readable/semantic_systems/05-external-state-controller.md` |
+| `Hard logic controller-final.pdf` | `ai_readable/semantic_systems/06-hard-logic-controller.md` |
+| `Latent space game - cratak info.pdf` | `ai_readable/semantic_systems/07-latent-space-game.md` |
+| `Semantic Manifold Game — Design Specification v0.1.pdf` | `ai_readable/semantic_systems/08-semantic-manifold-game-design-specification-v0.1.md` |
+| `TOPOS-SRE_User_Manual.pdf` | `ai_readable/semantic_systems/09-topos-sre-user-manual.md` |
+| `Tops sre grok.txt` | `ai_readable/semantic_systems/10-topos-sre-grok-link.md` |
+| `Smol slop text.pdf` | `ai_readable/audio_suno/07-smol-slop-text.md` |
+| `System failure prompt.pdf` | `ai_readable/personality_prompts/06-system-failure-prompt.md` |
+| `Temporary_Minds_Prompting.docx` | `ai_readable/personality_prompts/07-temporary-minds-prompting.md` |
