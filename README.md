@@ -12,10 +12,13 @@ The project calls that territory **AI slop**: glitches, semantic collisions, uns
 - [`docs/01-principles/structured-instability.md`](docs/01-principles/structured-instability.md) — the central experimental method.
 - [`docs/01-principles/constraint-governance.md`](docs/01-principles/constraint-governance.md) — the “wrong simulator / Governance Engine” design model extracted from the early research.
 - [`docs/02-mechanisms/operator-registry.md`](docs/02-mechanisms/operator-registry.md) — deduplicated cross-media operator catalog.
+- [`docs/02-mechanisms/david-technical-hypotheses.md`](docs/02-mechanisms/david-technical-hypotheses.md) — complete DAVID Protocol 01–20 hypothesis registry, cleaned up and caveated.
 - [`docs/06-experimentation/experimental-method.md`](docs/06-experimentation/experimental-method.md) — controls, ablations, dose-response, replication, and artifact-family testing.
+- [`docs/06-experimentation/run-log-template.md`](docs/06-experimentation/run-log-template.md) — reusable lab record.
 - [`docs/08-reference/source-audit.md`](docs/08-reference/source-audit.md) — what every substantive source contributes and where it was routed.
 - [`docs/08-reference/glossary.md`](docs/08-reference/glossary.md) — canonical meanings of project language.
-- [`machine/index.json`](machine/index.json), [`machine/operators.json`](machine/operators.json), [`machine/sources.json`](machine/sources.json) — machine-readable routing indexes.
+- [`docs/08-reference/intake-workflow.md`](docs/08-reference/intake-workflow.md) — how future source dumps get absorbed without recreating the chaos.
+- [`machine/index.json`](machine/index.json), [`machine/operators.json`](machine/operators.json), [`machine/david_protocols.json`](machine/david_protocols.json), [`machine/sources.json`](machine/sources.json) — machine-readable routing indexes.
 
 ## The repo has two authority layers
 
