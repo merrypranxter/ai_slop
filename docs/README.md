@@ -12,6 +12,7 @@ This directory is the **curated knowledge layer**. It is organized by what an id
 - [`06-experimentation/experimental-method.md`](06-experimentation/experimental-method.md) — how claims graduate from juicy idea to tested mechanism.
 - [`06-experimentation/run-log-template.md`](06-experimentation/run-log-template.md) — copyable experiment record for controls, doses, paths, artifacts, and confidence.
 - [`08-reference/source-audit.md`](08-reference/source-audit.md) — source-by-source disposition: what every substantive document contributes and where it was routed.
+- [`08-reference/repository-map-files.md`](08-reference/repository-map-files.md) — audit of the small README, mapping, reading-order, and intake-contract files so none of the “boring” documents silently disappear.
 - [`08-reference/provenance-map.md`](08-reference/provenance-map.md) — idea-to-source lineage.
 - [`08-reference/glossary.md`](08-reference/glossary.md) — recurring project language at canonical technical meaning.
 - [`08-reference/lens-palette.md`](08-reference/lens-palette.md) — thinker/science palettes distilled into usable creative lenses with epistemic boundaries.
@@ -26,7 +27,7 @@ This directory is the **curated knowledge layer**. It is organized by what an id
 - `05-architectures/` — SRE/TOPOS controllers, semantic-manifold systems, GLSL, local-model tracks.
 - `06-experimentation/` — testing, controls, run logging, reproduction.
 - `07-prompts/` — practical prompt/composition patterns derived from mechanisms.
-- `08-reference/` — provenance, source audit, glossary, archive policy, lenses, intake procedure, disputed/superseded claims.
+- `08-reference/` — provenance, source audit, repository-map audit, glossary, archive policy, lenses, intake procedure, disputed/superseded claims.
 - `09-backlog/` — untested ideas, future systems, research gaps.
 
 ## Machine-readable companions
