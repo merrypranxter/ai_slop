@@ -7,6 +7,7 @@ This repository is now organized as a **readable instruction hub** for AI-assist
 - `/ai_readable/audio_suno/README.md` → Audio/Suno-specific prompting and experimental material
 - `/ai_readable/art/README.md` → AI art transformation logic, frameworks, ideas, and weird-prompt persona palettes
 - `/ai_readable/personality_prompts/README.md` → Installable cognitive-personality prompts ("temporary minds"): research, consolidation, and the 26-prompt library
+- `/ai_readable/semantic_systems/README.md` → Semantic engines, controllers, latent-space games, and TOPOS-SRE
 - `/ai_readable/video/README.md` → AI video track (structure prepared; add source docs when available)
 
 ## Source Preservation

@@ -9,6 +9,7 @@ This section contains Suno/audio slop prompting materials and generative audio e
 - `suno_slop/prompting/MORE!.pdf` → `04-more.md`
 - `suno_slop/prompting/Now more.pdf` → `05-now-more.md`
 - `suno_slop/prompting/Ok we are making formulas for weird suno audio ai ....pdf` → `06-weird-suno-audio-formulas.md`
+- `originals/copilot-intake-2026-09-16/Smol slop text.pdf` → `07-smol-slop-text.md`
 
 ## Notes
 These files are transcribed and normalized for easier AI ingestion while preserving original source files.
