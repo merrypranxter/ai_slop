@@ -1,11 +1,14 @@
 # AI SLOP — Structured Instability Lab
 
+> **`visual-atlas` branch.** Interactive lab instrument over the same knowledge graph: neon-chrome UI, searchable operators / Temporary Minds / DAVID protocols, and a specimen compiler. See [`ATLAS.md`](ATLAS.md). **`main` remains the canonical notebook.**
+
 This repository is a research-and-art notebook for **making generative systems do interesting things when ordinary representational shortcuts stop working cleanly**.
 
 The project calls that territory **AI slop**: glitches, semantic collisions, unstable identity, impossible continuity, model repair artifacts, strange phonetics, topology failures, temporal drift, accidental structures, and other emergent results produced by difficult constraints. The goal is not random garbage and not “make it weird.” The goal is **structured instability**.
 
 ## Start here
 
+- [`ATLAS.md`](ATLAS.md) — visual instrument map for this branch.
 - [`AI_CONTEXT.md`](AI_CONTEXT.md) — compact orientation for any AI or collaborator entering the repo.
 - [`docs/README.md`](docs/README.md) — canonical documentation map.
 - [`docs/00-project-map.md`](docs/00-project-map.md) — how ideas, media, systems, and archives fit together.
