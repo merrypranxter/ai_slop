@@ -11,6 +11,7 @@ This directory exists so software agents do not have to scrape prose just to dis
 - `david_protocols.json` — compact DAVID Protocol 01–20 hypothesis index with scope, family, and minimum test.
 - `sources.json` — substantive source disposition and canonical-route lookup.
 - `experiment.schema.json` — JSON Schema for structured experiment-run records.
+- `system_incubator.json` — compact status/next-step index for promising AI SLOP work that has **not** yet graduated into canonical systems or operators. Canonical explanation lives in `docs/09-backlog/system-incubator.md`.
 
 ## Intended agent flow
 
@@ -19,6 +20,7 @@ This directory exists so software agents do not have to scrape prose just to dis
 3. Use the smallest relevant machine index to locate the canonical document.
 4. Read the canonical document before making substantive claims or modifying the project.
 5. Follow provenance back into `ai_readable/` only when source-level wording, history, or unresolved detail matters.
+6. When work is intentionally deferred, parked, awaiting energy, or accumulating research before synthesis, check `system_incubator.json` and its canonical Markdown file before inventing a new plan.
 
 ## Authority
 
