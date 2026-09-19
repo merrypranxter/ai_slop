@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>DAVID LAB v0.1</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="mast">
+    <div>
+      <div class="eyebrow">AI SLOP // EXECUTABLE LAB</div>
+      <h1>DAVID LAB <span>v0.1</span></h1>
+      <p>Build a pressure test. Keep the weirdness caused.</p>
+    </div>
+    <button id="newRun">NEW RUN</button>
+  </header>
+
+  <main class="grid">
+    <section class="panel">
+      <h2>1. DEFINE THE BIND</h2>
+      <label>Medium
+        <select id="media">
+          <option>image</option><option>video</option><option>audio</option>
+          <option>text</option><option>controller</option><option>mixed</option>
+        </select>
+      </label>
+      <label>Model / tool<input id="model" placeholder="e.g. Grok, Suno, FLUX, local LLM" /></label>
+      <label>Anchor / invariant<textarea id="anchor" placeholder="What must survive?"></textarea></label>
+      <label>Assumption attacked<textarea id="assumption" placeholder="What ordinary rule are we breaking?"></textarea></label>
+      <label>Competing condition A<textarea id="condA" placeholder="Pressure / mandate A"></textarea></label>
+      <label>Competing condition B<textarea id="condB" placeholder="Pressure / mandate B"></textarea></label>
+    </section>
+
+    <section class="panel">
+      <h2>2. CHOOSE AN OPERATOR</h2>
+      <input id="operatorSearch" placeholder="search operators…" />
+      <div id="operators" class="operator-list">loading…</div>
+      <div id="operatorDetail" class="detail"></div>
+    </section>
+
+    <section class="panel">
+      <h2>3. SET THE PRESSURE</h2>
+      <label>Strength <span id="strengthValue">0.50</span>
+        <input id="strength" type="range" min="0" max="1" value="0.5" step="0.05" />
+      </label>
+      <label>Procedure<textarea id="procedure" placeholder="What are we actually doing to the system?"></textarea></label>
+      <label>Expected artifact family<textarea id="expected" placeholder="What kind of failure would count as interesting?"></textarea></label>
+      <label>Condition-dropout risk<textarea id="dropout" placeholder="How might the model escape by ignoring one side?"></textarea></label>
+      <button id="makeSweep">MAKE 5-POINT BOUNDARY SWEEP</button>
+      <div id="sweep" class="sweep"></div>
+    </section>
+
+    <section class="panel">
+      <h2>4. EXPORT THE EXPERIMENT</h2>
+      <div class="actions">
+        <button id="build">BUILD RUN JSON</button>
+        <button id="copy">COPY JSON</button>
+        <button id="save">SAVE TO LOCAL HISTORY</button>
+      </div>
+      <pre id="output">{}</pre>
+    </section>
+
+    <section class="panel wide">
+      <h2>LOCAL HISTORY / SCAR SEEDS</h2>
+      <p class="muted">Saved only in this browser for now. v0.1 does not call any model or API.</p>
+      <div id="history"></div>
+    </section>
+  </main>
+
+  <script src="./app.js"></script>
+</body>
+</html>
