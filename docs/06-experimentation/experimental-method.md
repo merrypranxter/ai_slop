@@ -86,6 +86,64 @@ CREATIVE UTILITY:
 NEXT TEST:
 ```
 
+
+## Additional measurement contracts from the 2026-09-19 full primary-source intake
+
+These are method upgrades, not new operators.
+
+### Recovery is multidimensional
+
+When a system is damaged and "recovers," record separately:
+
+- visible / outward appearance;
+- hidden or internal state;
+- function / task behavior;
+- interaction or communication graph;
+- response to the same standardized second perturbation.
+
+Do not infer full recovery from one recovered dimension.
+
+### Mutable-sequence experiments need edit traces
+
+For insertion/deletion/substitution generators, preserve actual edit events. A final answer saying "I revised X" is not evidence that the sequence scaffold performed revision.
+
+### Steering experiments need donor provenance
+
+For activation/SAE steering, record at minimum:
+
+- donor prompt/context;
+- extraction token or boundary;
+- tail inclusion;
+- layer;
+- pooling rule;
+- subtraction baseline;
+- steering norm/strength;
+- model/version.
+
+"The vector for X" is not a complete experimental recipe.
+
+### Semantic and perceptual damage are separate axes
+
+For image/video failure injection, score meaning/object/event displacement independently from visible cleanliness or perceptual quality. A clean-looking output can be semantically wrong.
+
+### Transient controllers need finite-time metrics
+
+For flare-and-return systems, record:
+
+- peak gain;
+- excursion direction;
+- time-to-peak;
+- return time;
+- saturation/clipping;
+- final attractor;
+- history dependence.
+
+Do not use "chaos" as a synonym for a large repeatable transient, and do not call slow decay "memory" without a history-dependent test.
+
+### Moving jurisdictions must be compared at matched edit dose
+
+When an edit mask or permission boundary changes over time, compare against fixed-mask and alternate-mask controls at matched edit strength. Record boundary motion separately from the resulting artifact.
+
 ## Graduation rule
 
 An idea becomes a reusable operator when it produces a recognizable mutation signature across unlike inputs without destroying task/media fidelity, and when the characteristic effect weakens or disappears under the relevant ablation.
