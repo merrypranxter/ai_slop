@@ -1,0 +1,70 @@
+{
+  "schema_version": "0.1",
+  "purpose": "Persistent queue for AI SLOP work that is not yet a canonical system or operator.",
+  "authority": "docs/09-backlog/system-incubator.md",
+  "status_values": [
+    "ACTIVE",
+    "NEXT-WORK-SESSION",
+    "RESEARCH-ACCUMULATING",
+    "DEFERRED-BY-DESIGN",
+    "PARKED",
+    "NEEDS-STATUS-REFRESH",
+    "GRADUATED"
+  ],
+  "items": [
+    {
+      "id": "research_cycles",
+      "status": "RESEARCH-ACCUMULATING",
+      "title": "Living research cycles before next systems pass",
+      "next": "Harvest each new research cycle; wait for cross-cycle convergence before major synthesis."
+    },
+    {
+      "id": "perceptual_wound_silent_scar_archive",
+      "status": "NEXT-WORK-SESSION",
+      "title": "Perceptual Wound -> Silent Scar -> Behavior Archive",
+      "next": "Build smallest Lenia occlusion prototype, then second-injury scar assay, then behavior archive."
+    },
+    {
+      "id": "semantic_fossil_instrument",
+      "status": "NEXT-WORK-SESSION",
+      "title": "Semantic Fossil Instrument",
+      "next": "Build persistent-state instrument plus route comparison, validator, archive, and minimum run-record schema."
+    },
+    {
+      "id": "grammar_injury_recovery",
+      "status": "PARKED",
+      "title": "Grammar Injury and Recovery",
+      "next": "Test primitive removal vs explicit enforcement vs partial restoration."
+    },
+    {
+      "id": "reversible_activation_axis",
+      "status": "DEFERRED-BY-DESIGN",
+      "title": "Reversible Activation-Axis Study",
+      "next": "Run only after cheaper external-controller studies; compare prompt-only, activation-only, combined, and sham."
+    },
+    {
+      "id": "david_unresolved",
+      "status": "NEEDS-STATUS-REFRESH",
+      "title": "DAVID unresolved implementation queue",
+      "next": "Inspect current DAVID repo/thread and refresh before selecting one job."
+    },
+    {
+      "id": "mrslop_rounds",
+      "status": "NEEDS-STATUS-REFRESH",
+      "title": "Mr. Slop ongoing rounds",
+      "next": "Inspect current mrslop main and resume from latest merged job."
+    },
+    {
+      "id": "topos_sre_ngl",
+      "status": "PARKED",
+      "title": "TOPOS-SRE less-vocabulary-bound local NGL experiment",
+      "next": "Reopen only after higher-priority builds."
+    },
+    {
+      "id": "temporary_minds_wave2",
+      "status": "PARKED",
+      "title": "Temporary Minds second-wave items",
+      "next": "Revisit after first-generation minds and current experiment machinery have actual results."
+    }
+  ]
+}
