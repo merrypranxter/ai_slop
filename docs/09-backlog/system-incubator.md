@@ -48,7 +48,8 @@ Do **not** silently promote an incubator item into a canonical system.
 **What exists now:**
 - 2026-09-19 scouting integration;
 - Living Ledger Cycle 1 integration;
-- candidate mechanism queue;
+- 2026-09-19 full primary-source intake (F01-F10);
+- candidate mechanism queues;
 - combination watchlist;
 - research intake index.
 
@@ -60,7 +61,9 @@ Do **not** silently promote an incubator item into a canonical system.
 - `docs/08-reference/research-intake-index.md`
 - `docs/08-reference/research-scouting-2026-09-19-notes.md`
 - `docs/08-reference/research-cycle-2026-09-20-integration.md`
+- `docs/08-reference/research-cycle-2026-09-19-full-primary-source-intake.md`
 - `docs/09-backlog/candidate-mechanisms-2026-09-20.md`
+- `docs/09-backlog/candidate-mechanisms-2026-09-19-full-intake.md`
 - `docs/09-backlog/research-combination-watchlist-2026-09-20.md`
 
 ---
@@ -69,17 +72,20 @@ Do **not** silently promote an incubator item into a canonical system.
 
 **State:** ready concept chain; not yet built as one system.
 
-**Why it matters:** this is the strongest integrated build path from the 2026-09-19 research cycle.
+**Why it matters:** this remains the strongest integrated build path from the 2026-09-19 research cycle, and the full primary-source intake strengthened it substantially with Self-Organising Digital Circuits, Cells2Pixels, and moving-neighborhood causal tests.
 
 **Last known sequence:**
 1. perception-only injury / Lenia sensory occlusion;
 2. visible recovery plus hidden-state / second-injury scar assay;
-3. behavior-sensitive archive descriptors;
-4. archive the artifact by intervention response, not appearance alone.
+3. split recovery into appearance, internal state, function, and interaction graph;
+4. add Cells2Pixels skin-vs-state controls;
+5. add movement/state-rule swap tests when NPA is available;
+6. behavior-sensitive archive descriptors;
+7. archive the artifact by intervention response, not appearance alone.
 
 **Why not now:** user explicitly chose to keep researching before another system-building round.
 
-**Next move when resumed:** build the smallest Lenia occlusion prototype first, then the Silent Scar assay, then the behavior archive.
+**Next move when resumed:** build the smallest Lenia occlusion prototype first, then a standardized functional-scar / second-injury assay. This is the current **first targeted build after research accumulation pauses**, before another broad novelty sweep. Then add the behavior archive.
 
 **Combines with:** controlled temporal leakage, delayed-injection conflict, external-state controllers, AutoQD/QD archive work.
 
@@ -198,6 +204,35 @@ These are tracked in detail elsewhere and stay here only as a reminder that they
 
 See:
 - `docs/09-backlog/candidate-mechanisms-2026-09-20.md`
+- `docs/09-backlog/research-combination-watchlist-2026-09-20.md`
+
+---
+
+
+# FULL PRIMARY-SOURCE INTAKE CLUSTER - DO NOT CANONIZE YET
+
+The 2026-09-19 full primary-source cycle retained ten operational records but promoted zero operators.
+
+Tracked candidates:
+
+- Mutable Sequence Scaffold / Edit-Debt Ledger
+- Functional Scar / Second-Injury Assay
+- Cultural Annealing Regulator
+- Developmental Connectivity
+- Skin-State Dissociation
+- Moving-Neighborhood Causal Rewiring
+- Moving Edit Jurisdiction
+- Steering Donor Provenance Contract
+- Semantic Fault Atlas
+- Non-Normal Flare-and-Return Kernel
+
+**Highest priority later work:** Functional Scar / Second-Injury Assay.
+
+**Deferred local/open-weight bundle:** Edit Flows/LLaDA runtime trace audit, activation donor-provenance study, video numerical fault atlas, and non-normal controller prototype. These require more local runtime/model access than the cheap external-state experiments.
+
+See:
+- `docs/08-reference/research-cycle-2026-09-19-full-primary-source-intake.md`
+- `docs/09-backlog/candidate-mechanisms-2026-09-19-full-intake.md`
 - `docs/09-backlog/research-combination-watchlist-2026-09-20.md`
 
 ---
