@@ -1,57 +1,503 @@
 {
   "schema_version": "0.2",
   "purpose": "Compact source disposition and routing index. Human-readable authority: docs/08-reference/source-audit.md plus docs/08-reference/repository-map-files.md for routing/readme documents.",
-  "source_authority": ["docs/08-reference/source-audit.md","docs/08-reference/repository-map-files.md"],
+  "source_authority": [
+    "docs/08-reference/source-audit.md",
+    "docs/08-reference/repository-map-files.md"
+  ],
   "sources": [
-    {"path":"ai_readable/general/README.md","group":"repository_maps","status":"ROUTING_METADATA","routes":["docs/08-reference/repository-map-files.md"]},
-    {"path":"ai_readable/art/README.md","group":"repository_maps","status":"ROUTING_METADATA","routes":["docs/08-reference/repository-map-files.md"]},
-    {"path":"ai_readable/audio_suno/README.md","group":"repository_maps","status":"ROUTING_METADATA","routes":["docs/08-reference/repository-map-files.md"]},
-    {"path":"ai_readable/personality_prompts/README.md","group":"repository_maps","status":"ROUTING_VERSION_METADATA","routes":["docs/08-reference/repository-map-files.md","docs/04-cognitive-systems/temporary-minds.md","docs/04-cognitive-systems/support-architecture.md"]},
-    {"path":"ai_readable/semantic_systems/README.md","group":"repository_maps","status":"ROUTING_METADATA","routes":["docs/08-reference/repository-map-files.md","docs/05-architectures/sre-controller.md","docs/05-architectures/semantic-manifold.md"]},
-    {"path":"originals/README.md","group":"repository_maps","status":"PRIMARY_ARCHIVE_MAP","routes":["docs/08-reference/repository-map-files.md","docs/08-reference/archive-policy.md"]},
-    {"path":"new_to_be_processed_by_copilot_agent/readme.txt","group":"repository_maps","status":"ACTIVE_INTAKE_CONTRACT","routes":["docs/08-reference/intake-workflow.md","docs/08-reference/repository-map-files.md"]},
-
-    {"path":"ai_readable/general/01-general-readme.md","group":"general","status":"REFERENCE","routes":[]},
-    {"path":"ai_readable/general/02-ai-slop-good-collabor8-session.md","group":"general","status":"ROUTED","routes":["docs/01-principles/philosophy.md","docs/01-principles/structured-instability.md","docs/01-principles/constraint-governance.md","docs/02-mechanisms/operator-registry.md","docs/03-media/image.md","docs/03-media/video.md","docs/03-media/audio-suno.md","docs/06-experimentation/experimental-method.md","docs/09-backlog/idea-garden.md"]},
-    {"path":"ai_readable/general/03-ai-slop-manifesto-raw.md","group":"general","status":"ARCHIVE_FLAVOR_WITH_SELECTED_ROUTING","routes":["docs/01-principles/philosophy.md","docs/08-reference/archive-policy.md"]},
-    {"path":"ai_readable/general/04-ai-slop-roundtable-tech-guys.md","group":"general","status":"HYPOTHESIS_MINE","routes":["docs/02-mechanisms/david-technical-hypotheses.md","machine/david_protocols.json","docs/02-mechanisms/operator-registry.md","docs/05-architectures/local-model-interventions.md","docs/06-experimentation/experimental-method.md","docs/03-media/video.md","docs/09-backlog/idea-garden.md"]},
-    {"path":"ai_readable/general/05-david-walter-session.md","group":"general","status":"ROUTED_ARCHIVE_FLAVOR","routes":["docs/01-principles/philosophy.md","docs/03-media/audio-suno.md","docs/02-mechanisms/operator-registry.md","docs/08-reference/glossary.md"]},
-
-    {"path":"ai_readable/art/01-art-readme.md","group":"art","status":"REFERENCE","routes":[]},
-    {"path":"ai_readable/art/02-perfect-math-transformation-prompt-format.md","group":"art","status":"ROUTED_EXECUTABLE_SOURCE","routes":["docs/03-media/image.md","docs/07-prompts/prompt-composition.md","docs/02-mechanisms/operator-registry.md"]},
-    {"path":"ai_readable/art/03-tips-ideas.md","group":"art","status":"ROUTED_REFERENCE","routes":["docs/03-media/image.md","docs/03-media/video.md","docs/02-mechanisms/operator-registry.md","docs/09-backlog/idea-garden.md"]},
-    {"path":"ai_readable/art/04-how-to-math-slop.md","group":"art","status":"ROUTED_EXECUTABLE_SOURCE","routes":["docs/03-media/image.md","docs/01-principles/structured-instability.md","docs/02-mechanisms/operator-registry.md","docs/07-prompts/prompt-composition.md"]},
-    {"path":"ai_readable/art/05-weird-promptness-roundtable.md","group":"art","status":"REFERENCE_ROUTED_IDEA_SOURCE","routes":["docs/03-media/image.md","docs/02-mechanisms/operator-registry.md","docs/08-reference/lens-palette.md","docs/09-backlog/idea-garden.md"]},
-    {"path":"ai_readable/art/06-weird-thinkers-persona-palette.md","group":"art","status":"REFERENCE_FLAVOR","routes":["docs/08-reference/lens-palette.md"]},
-    {"path":"ai_readable/art/07-weird-sciences-persona-palette.md","group":"art","status":"REFERENCE_FLAVOR_WITH_ROUTED_DOMAIN_MATERIAL","routes":["docs/08-reference/lens-palette.md","docs/03-media/image.md","docs/03-media/audio-suno.md"]},
-
-    {"path":"ai_readable/audio_suno/01-suno-readme.md","group":"audio_suno","status":"REFERENCE","routes":[]},
-    {"path":"ai_readable/audio_suno/02-suno-slop.md","group":"audio_suno","status":"ROUTED_EXECUTABLE_SOURCE","routes":["docs/03-media/audio-suno.md","docs/02-mechanisms/operator-registry.md","docs/07-prompts/prompt-composition.md"]},
-    {"path":"ai_readable/audio_suno/03-another-different-that-was-fun.md","group":"audio_suno","status":"ARCHIVE_FLAVOR_WITH_ROUTED_LENS","routes":["docs/03-media/audio-suno.md","docs/09-backlog/idea-garden.md"]},
-    {"path":"ai_readable/audio_suno/04-more.md","group":"audio_suno","status":"ROUTED_CASE_STUDIES","routes":["docs/03-media/audio-suno.md","docs/02-mechanisms/operator-registry.md"]},
-    {"path":"ai_readable/audio_suno/05-now-more.md","group":"audio_suno","status":"ROUTED_CASE_STUDIES","routes":["docs/03-media/audio-suno.md","docs/02-mechanisms/operator-registry.md"]},
-    {"path":"ai_readable/audio_suno/06-weird-suno-audio-formulas.md","group":"audio_suno","status":"ROUTED","routes":["docs/03-media/audio-suno.md","docs/02-mechanisms/operator-registry.md"]},
-    {"path":"ai_readable/audio_suno/07-smol-slop-text.md","group":"audio_suno","status":"REFERENCE_SPECIMEN","routes":["docs/09-backlog/idea-garden.md","docs/05-architectures/sre-controller.md"]},
-
-    {"path":"ai_readable/personality_prompts/01-cognitive-mutation-laboratory-session.md","group":"temporary_minds","status":"ROUTED_RESEARCH_ROOT","routes":["docs/04-cognitive-systems/temporary-minds.md","docs/04-cognitive-systems/support-architecture.md","docs/02-mechanisms/operator-registry.md"]},
-    {"path":"ai_readable/personality_prompts/02-meat-extraction-ledger.md","group":"temporary_minds","status":"ROUTED_CONSOLIDATION","routes":["docs/04-cognitive-systems/temporary-minds.md","docs/04-cognitive-systems/support-architecture.md","docs/02-mechanisms/operator-registry.md"]},
-    {"path":"ai_readable/personality_prompts/03-hostile-consolidation.md","group":"temporary_minds","status":"ROUTED_CANONICAL_DECISION_SOURCE","routes":["docs/04-cognitive-systems/temporary-minds.md","docs/04-cognitive-systems/support-architecture.md"]},
-    {"path":"ai_readable/personality_prompts/04-temporary-minds-26-prompt-library.md","group":"temporary_minds","status":"EXECUTABLE_SOURCE","routes":["docs/04-cognitive-systems/temporary-minds.md","docs/02-mechanisms/operator-registry.md","machine/operators.json"]},
-    {"path":"ai_readable/personality_prompts/05-outside-the-box-guy-prompt.md","group":"temporary_minds","status":"ARCHIVE_FLAVOR_AUXILIARY_PROMPT","routes":["docs/08-reference/lens-palette.md","docs/09-backlog/idea-garden.md"]},
-    {"path":"ai_readable/personality_prompts/06-system-failure-prompt.md","group":"temporary_minds","status":"ARCHIVE_FLAVOR","routes":["docs/05-architectures/sre-controller.md","docs/09-backlog/idea-garden.md"]},
-    {"path":"ai_readable/personality_prompts/07-temporary-minds-prompting.md","group":"temporary_minds","status":"EXECUTABLE_SUPPORT_SOURCE","routes":["docs/04-cognitive-systems/temporary-minds.md","docs/04-cognitive-systems/support-architecture.md","docs/06-experimentation/experimental-method.md"]},
-
-    {"path":"ai_readable/semantic_systems/01-ghost-glsl-roundtable.md","group":"semantic_systems","status":"ROUTED_HYPOTHESIS_FLAVOR_MINE","routes":["docs/05-architectures/glsl-visualizer.md","docs/02-mechanisms/operator-registry.md","docs/09-backlog/idea-garden.md"]},
-    {"path":"ai_readable/semantic_systems/02-weight-manipulation.md","group":"semantic_systems","status":"ROUTED_TECHNICAL_BRANCH","routes":["docs/05-architectures/local-model-interventions.md","docs/01-principles/epistemic-status.md"]},
-    {"path":"ai_readable/semantic_systems/03-semantic-engineering.md","group":"semantic_systems","status":"ROUTED_DEVELOPMENT_SOURCE","routes":["docs/02-mechanisms/operator-registry.md","docs/05-architectures/sre-controller.md","docs/09-backlog/idea-garden.md"]},
-    {"path":"ai_readable/semantic_systems/04-semantic-trap-engineering.md","group":"semantic_systems","status":"ROUTED_DEVELOPMENT_SOURCE","routes":["docs/05-architectures/sre-controller.md","docs/02-mechanisms/operator-registry.md","docs/09-backlog/idea-garden.md"]},
-    {"path":"ai_readable/semantic_systems/05-external-state-controller.md","group":"semantic_systems","status":"ROUTED_EXECUTABLE_SPEC","routes":["docs/05-architectures/sre-controller.md","docs/06-experimentation/experimental-method.md"]},
-    {"path":"ai_readable/semantic_systems/06-hard-logic-controller.md","group":"semantic_systems","status":"ROUTED_EXECUTABLE_SPEC","routes":["docs/05-architectures/sre-controller.md"]},
-    {"path":"ai_readable/semantic_systems/07-latent-space-game.md","group":"semantic_systems","status":"ROUTED_DESIGN_PRECURSOR","routes":["docs/05-architectures/semantic-manifold.md","docs/02-mechanisms/operator-registry.md"]},
-    {"path":"ai_readable/semantic_systems/08-semantic-manifold-game-design-specification-v0.1.md","group":"semantic_systems","status":"PRIMARY_DESIGN_SOURCE","routes":["docs/05-architectures/semantic-manifold.md","docs/00-project-map.md","docs/01-principles/structured-instability.md","docs/02-mechanisms/operator-registry.md","docs/03-media/audio-suno.md","docs/07-prompts/prompt-composition.md"]},
-    {"path":"ai_readable/semantic_systems/09-topos-sre-user-manual.md","group":"semantic_systems","status":"ROUTED_PRACTICAL_MANUAL","routes":["docs/05-architectures/sre-controller.md","docs/06-experimentation/experimental-method.md"]},
-    {"path":"ai_readable/semantic_systems/10-topos-sre-grok-link.md","group":"semantic_systems","status":"REFERENCE_EXTERNAL_LINK","routes":[]},
-
-    {"path":"ai_readable/video/README.md","group":"video","status":"EMPTY_PLACEHOLDER","routes":["docs/03-media/video.md","docs/08-reference/repository-map-files.md"]}
+    {
+      "path": "ai_readable/general/README.md",
+      "group": "repository_maps",
+      "status": "ROUTING_METADATA",
+      "routes": [
+        "docs/08-reference/repository-map-files.md"
+      ]
+    },
+    {
+      "path": "ai_readable/art/README.md",
+      "group": "repository_maps",
+      "status": "ROUTING_METADATA",
+      "routes": [
+        "docs/08-reference/repository-map-files.md"
+      ]
+    },
+    {
+      "path": "ai_readable/audio_suno/README.md",
+      "group": "repository_maps",
+      "status": "ROUTING_METADATA",
+      "routes": [
+        "docs/08-reference/repository-map-files.md"
+      ]
+    },
+    {
+      "path": "ai_readable/personality_prompts/README.md",
+      "group": "repository_maps",
+      "status": "ROUTING_VERSION_METADATA",
+      "routes": [
+        "docs/08-reference/repository-map-files.md",
+        "docs/04-cognitive-systems/temporary-minds.md",
+        "docs/04-cognitive-systems/support-architecture.md"
+      ]
+    },
+    {
+      "path": "ai_readable/semantic_systems/README.md",
+      "group": "repository_maps",
+      "status": "ROUTING_METADATA",
+      "routes": [
+        "docs/08-reference/repository-map-files.md",
+        "docs/05-architectures/sre-controller.md",
+        "docs/05-architectures/semantic-manifold.md"
+      ]
+    },
+    {
+      "path": "originals/README.md",
+      "group": "repository_maps",
+      "status": "PRIMARY_ARCHIVE_MAP",
+      "routes": [
+        "docs/08-reference/repository-map-files.md",
+        "docs/08-reference/archive-policy.md"
+      ]
+    },
+    {
+      "path": "new_to_be_processed_by_copilot_agent/readme.txt",
+      "group": "repository_maps",
+      "status": "ACTIVE_INTAKE_CONTRACT",
+      "routes": [
+        "docs/08-reference/intake-workflow.md",
+        "docs/08-reference/repository-map-files.md"
+      ]
+    },
+    {
+      "path": "ai_readable/general/01-general-readme.md",
+      "group": "general",
+      "status": "REFERENCE",
+      "routes": []
+    },
+    {
+      "path": "ai_readable/general/02-ai-slop-good-collabor8-session.md",
+      "group": "general",
+      "status": "ROUTED",
+      "routes": [
+        "docs/01-principles/philosophy.md",
+        "docs/01-principles/structured-instability.md",
+        "docs/01-principles/constraint-governance.md",
+        "docs/02-mechanisms/operator-registry.md",
+        "docs/03-media/image.md",
+        "docs/03-media/video.md",
+        "docs/03-media/audio-suno.md",
+        "docs/06-experimentation/experimental-method.md",
+        "docs/09-backlog/idea-garden.md"
+      ]
+    },
+    {
+      "path": "ai_readable/general/03-ai-slop-manifesto-raw.md",
+      "group": "general",
+      "status": "ARCHIVE_FLAVOR_WITH_SELECTED_ROUTING",
+      "routes": [
+        "docs/01-principles/philosophy.md",
+        "docs/08-reference/archive-policy.md"
+      ]
+    },
+    {
+      "path": "ai_readable/general/04-ai-slop-roundtable-tech-guys.md",
+      "group": "general",
+      "status": "HYPOTHESIS_MINE",
+      "routes": [
+        "docs/02-mechanisms/david-technical-hypotheses.md",
+        "machine/david_protocols.json",
+        "docs/02-mechanisms/operator-registry.md",
+        "docs/05-architectures/local-model-interventions.md",
+        "docs/06-experimentation/experimental-method.md",
+        "docs/03-media/video.md",
+        "docs/09-backlog/idea-garden.md"
+      ]
+    },
+    {
+      "path": "ai_readable/general/05-david-walter-session.md",
+      "group": "general",
+      "status": "ROUTED_ARCHIVE_FLAVOR",
+      "routes": [
+        "docs/01-principles/philosophy.md",
+        "docs/03-media/audio-suno.md",
+        "docs/02-mechanisms/operator-registry.md",
+        "docs/08-reference/glossary.md"
+      ]
+    },
+    {
+      "path": "ai_readable/art/01-art-readme.md",
+      "group": "art",
+      "status": "REFERENCE",
+      "routes": []
+    },
+    {
+      "path": "ai_readable/art/02-perfect-math-transformation-prompt-format.md",
+      "group": "art",
+      "status": "ROUTED_EXECUTABLE_SOURCE",
+      "routes": [
+        "docs/03-media/image.md",
+        "docs/07-prompts/prompt-composition.md",
+        "docs/02-mechanisms/operator-registry.md"
+      ]
+    },
+    {
+      "path": "ai_readable/art/03-tips-ideas.md",
+      "group": "art",
+      "status": "ROUTED_REFERENCE",
+      "routes": [
+        "docs/03-media/image.md",
+        "docs/03-media/video.md",
+        "docs/02-mechanisms/operator-registry.md",
+        "docs/09-backlog/idea-garden.md"
+      ]
+    },
+    {
+      "path": "ai_readable/art/04-how-to-math-slop.md",
+      "group": "art",
+      "status": "ROUTED_EXECUTABLE_SOURCE",
+      "routes": [
+        "docs/03-media/image.md",
+        "docs/01-principles/structured-instability.md",
+        "docs/02-mechanisms/operator-registry.md",
+        "docs/07-prompts/prompt-composition.md"
+      ]
+    },
+    {
+      "path": "ai_readable/art/05-weird-promptness-roundtable.md",
+      "group": "art",
+      "status": "REFERENCE_ROUTED_IDEA_SOURCE",
+      "routes": [
+        "docs/03-media/image.md",
+        "docs/02-mechanisms/operator-registry.md",
+        "docs/08-reference/lens-palette.md",
+        "docs/09-backlog/idea-garden.md"
+      ]
+    },
+    {
+      "path": "ai_readable/art/06-weird-thinkers-persona-palette.md",
+      "group": "art",
+      "status": "REFERENCE_FLAVOR",
+      "routes": [
+        "docs/08-reference/lens-palette.md"
+      ]
+    },
+    {
+      "path": "ai_readable/art/07-weird-sciences-persona-palette.md",
+      "group": "art",
+      "status": "REFERENCE_FLAVOR_WITH_ROUTED_DOMAIN_MATERIAL",
+      "routes": [
+        "docs/08-reference/lens-palette.md",
+        "docs/03-media/image.md",
+        "docs/03-media/audio-suno.md"
+      ]
+    },
+    {
+      "path": "ai_readable/audio_suno/01-suno-readme.md",
+      "group": "audio_suno",
+      "status": "REFERENCE",
+      "routes": []
+    },
+    {
+      "path": "ai_readable/audio_suno/02-suno-slop.md",
+      "group": "audio_suno",
+      "status": "ROUTED_EXECUTABLE_SOURCE",
+      "routes": [
+        "docs/03-media/audio-suno.md",
+        "docs/02-mechanisms/operator-registry.md",
+        "docs/07-prompts/prompt-composition.md"
+      ]
+    },
+    {
+      "path": "ai_readable/audio_suno/03-another-different-that-was-fun.md",
+      "group": "audio_suno",
+      "status": "ARCHIVE_FLAVOR_WITH_ROUTED_LENS",
+      "routes": [
+        "docs/03-media/audio-suno.md",
+        "docs/09-backlog/idea-garden.md"
+      ]
+    },
+    {
+      "path": "ai_readable/audio_suno/04-more.md",
+      "group": "audio_suno",
+      "status": "ROUTED_CASE_STUDIES",
+      "routes": [
+        "docs/03-media/audio-suno.md",
+        "docs/02-mechanisms/operator-registry.md"
+      ]
+    },
+    {
+      "path": "ai_readable/audio_suno/05-now-more.md",
+      "group": "audio_suno",
+      "status": "ROUTED_CASE_STUDIES",
+      "routes": [
+        "docs/03-media/audio-suno.md",
+        "docs/02-mechanisms/operator-registry.md"
+      ]
+    },
+    {
+      "path": "ai_readable/audio_suno/06-weird-suno-audio-formulas.md",
+      "group": "audio_suno",
+      "status": "ROUTED",
+      "routes": [
+        "docs/03-media/audio-suno.md",
+        "docs/02-mechanisms/operator-registry.md"
+      ]
+    },
+    {
+      "path": "ai_readable/audio_suno/07-smol-slop-text.md",
+      "group": "audio_suno",
+      "status": "REFERENCE_SPECIMEN",
+      "routes": [
+        "docs/09-backlog/idea-garden.md",
+        "docs/05-architectures/sre-controller.md"
+      ]
+    },
+    {
+      "path": "ai_readable/personality_prompts/01-cognitive-mutation-laboratory-session.md",
+      "group": "temporary_minds",
+      "status": "ROUTED_RESEARCH_ROOT",
+      "routes": [
+        "docs/04-cognitive-systems/temporary-minds.md",
+        "docs/04-cognitive-systems/support-architecture.md",
+        "docs/02-mechanisms/operator-registry.md"
+      ]
+    },
+    {
+      "path": "ai_readable/personality_prompts/02-meat-extraction-ledger.md",
+      "group": "temporary_minds",
+      "status": "ROUTED_CONSOLIDATION",
+      "routes": [
+        "docs/04-cognitive-systems/temporary-minds.md",
+        "docs/04-cognitive-systems/support-architecture.md",
+        "docs/02-mechanisms/operator-registry.md"
+      ]
+    },
+    {
+      "path": "ai_readable/personality_prompts/03-hostile-consolidation.md",
+      "group": "temporary_minds",
+      "status": "ROUTED_CANONICAL_DECISION_SOURCE",
+      "routes": [
+        "docs/04-cognitive-systems/temporary-minds.md",
+        "docs/04-cognitive-systems/support-architecture.md"
+      ]
+    },
+    {
+      "path": "ai_readable/personality_prompts/04-temporary-minds-26-prompt-library.md",
+      "group": "temporary_minds",
+      "status": "EXECUTABLE_SOURCE",
+      "routes": [
+        "docs/04-cognitive-systems/temporary-minds.md",
+        "docs/02-mechanisms/operator-registry.md",
+        "machine/operators.json"
+      ]
+    },
+    {
+      "path": "ai_readable/personality_prompts/05-outside-the-box-guy-prompt.md",
+      "group": "temporary_minds",
+      "status": "ARCHIVE_FLAVOR_AUXILIARY_PROMPT",
+      "routes": [
+        "docs/08-reference/lens-palette.md",
+        "docs/09-backlog/idea-garden.md"
+      ]
+    },
+    {
+      "path": "ai_readable/personality_prompts/06-system-failure-prompt.md",
+      "group": "temporary_minds",
+      "status": "ARCHIVE_FLAVOR",
+      "routes": [
+        "docs/05-architectures/sre-controller.md",
+        "docs/09-backlog/idea-garden.md"
+      ]
+    },
+    {
+      "path": "ai_readable/personality_prompts/07-temporary-minds-prompting.md",
+      "group": "temporary_minds",
+      "status": "EXECUTABLE_SUPPORT_SOURCE",
+      "routes": [
+        "docs/04-cognitive-systems/temporary-minds.md",
+        "docs/04-cognitive-systems/support-architecture.md",
+        "docs/06-experimentation/experimental-method.md"
+      ]
+    },
+    {
+      "path": "ai_readable/semantic_systems/01-ghost-glsl-roundtable.md",
+      "group": "semantic_systems",
+      "status": "ROUTED_HYPOTHESIS_FLAVOR_MINE",
+      "routes": [
+        "docs/05-architectures/glsl-visualizer.md",
+        "docs/02-mechanisms/operator-registry.md",
+        "docs/09-backlog/idea-garden.md"
+      ]
+    },
+    {
+      "path": "ai_readable/semantic_systems/02-weight-manipulation.md",
+      "group": "semantic_systems",
+      "status": "ROUTED_TECHNICAL_BRANCH",
+      "routes": [
+        "docs/05-architectures/local-model-interventions.md",
+        "docs/01-principles/epistemic-status.md"
+      ]
+    },
+    {
+      "path": "ai_readable/semantic_systems/03-semantic-engineering.md",
+      "group": "semantic_systems",
+      "status": "ROUTED_DEVELOPMENT_SOURCE",
+      "routes": [
+        "docs/02-mechanisms/operator-registry.md",
+        "docs/05-architectures/sre-controller.md",
+        "docs/09-backlog/idea-garden.md"
+      ]
+    },
+    {
+      "path": "ai_readable/semantic_systems/04-semantic-trap-engineering.md",
+      "group": "semantic_systems",
+      "status": "ROUTED_DEVELOPMENT_SOURCE",
+      "routes": [
+        "docs/05-architectures/sre-controller.md",
+        "docs/02-mechanisms/operator-registry.md",
+        "docs/09-backlog/idea-garden.md"
+      ]
+    },
+    {
+      "path": "ai_readable/semantic_systems/05-external-state-controller.md",
+      "group": "semantic_systems",
+      "status": "ROUTED_EXECUTABLE_SPEC",
+      "routes": [
+        "docs/05-architectures/sre-controller.md",
+        "docs/06-experimentation/experimental-method.md"
+      ]
+    },
+    {
+      "path": "ai_readable/semantic_systems/06-hard-logic-controller.md",
+      "group": "semantic_systems",
+      "status": "ROUTED_EXECUTABLE_SPEC",
+      "routes": [
+        "docs/05-architectures/sre-controller.md"
+      ]
+    },
+    {
+      "path": "ai_readable/semantic_systems/07-latent-space-game.md",
+      "group": "semantic_systems",
+      "status": "ROUTED_DESIGN_PRECURSOR",
+      "routes": [
+        "docs/05-architectures/semantic-manifold.md",
+        "docs/02-mechanisms/operator-registry.md"
+      ]
+    },
+    {
+      "path": "ai_readable/semantic_systems/08-semantic-manifold-game-design-specification-v0.1.md",
+      "group": "semantic_systems",
+      "status": "PRIMARY_DESIGN_SOURCE",
+      "routes": [
+        "docs/05-architectures/semantic-manifold.md",
+        "docs/00-project-map.md",
+        "docs/01-principles/structured-instability.md",
+        "docs/02-mechanisms/operator-registry.md",
+        "docs/03-media/audio-suno.md",
+        "docs/07-prompts/prompt-composition.md"
+      ]
+    },
+    {
+      "path": "ai_readable/semantic_systems/09-topos-sre-user-manual.md",
+      "group": "semantic_systems",
+      "status": "ROUTED_PRACTICAL_MANUAL",
+      "routes": [
+        "docs/05-architectures/sre-controller.md",
+        "docs/06-experimentation/experimental-method.md"
+      ]
+    },
+    {
+      "path": "ai_readable/semantic_systems/10-topos-sre-grok-link.md",
+      "group": "semantic_systems",
+      "status": "REFERENCE_EXTERNAL_LINK",
+      "routes": []
+    },
+    {
+      "path": "ai_readable/video/README.md",
+      "group": "video",
+      "status": "EMPTY_PLACEHOLDER",
+      "routes": [
+        "docs/03-media/video.md",
+        "docs/08-reference/repository-map-files.md"
+      ]
+    },
+    {
+      "path": "ai_readable/general/06-ai-slop-pliny-research.md",
+      "group": "general",
+      "status": "HYPOTHESIS_MINE_ROUTED_METHODOLOGY",
+      "routes": [
+        "docs/06-experimentation/experimental-method.md",
+        "docs/05-architectures/semantic-manifold.md",
+        "docs/05-architectures/glsl-visualizer.md",
+        "docs/09-backlog/idea-garden.md"
+      ]
+    },
+    {
+      "path": "ai_readable/general/07-ai-slop-thesis.md",
+      "group": "general",
+      "status": "REFERENCE_SYNTHESIS",
+      "routes": [
+        "docs/00-project-map.md",
+        "docs/01-principles/structured-instability.md"
+      ]
+    },
+    {
+      "path": "ai_readable/general/08-ai-slop-experiment-pack.md",
+      "group": "general",
+      "status": "ROUTED_EXECUTABLE_SOURCE",
+      "routes": [
+        "docs/06-experimentation/experimental-method.md",
+        "docs/06-experimentation/run-log-template.md",
+        "docs/07-prompts/prompt-composition.md",
+        "docs/09-backlog/idea-garden.md"
+      ]
+    },
+    {
+      "path": "ai_readable/general/09-ai-slop-experiments.py",
+      "group": "general",
+      "status": "EXECUTABLE_SOURCE",
+      "routes": [
+        "docs/06-experimentation/experimental-method.md",
+        "docs/06-experimentation/run-log-template.md"
+      ]
+    },
+    {
+      "path": "ai_readable/general/10-ai-slop-shuffled-starter-prompts.md",
+      "group": "general",
+      "status": "EXECUTABLE_SUPPORT_SOURCE",
+      "routes": [
+        "docs/07-prompts/prompt-composition.md",
+        "docs/06-experimentation/experimental-method.md"
+      ]
+    },
+    {
+      "path": "ai_readable/general/11-ai-slop-repository-expansion-map.md",
+      "group": "general",
+      "status": "BACKLOG_DESIGN_PROPOSAL",
+      "routes": [
+        "docs/09-backlog/idea-garden.md"
+      ]
+    },
+    {
+      "path": "ai_readable/general/12-ai-slop-topic-01-mechanistic-interpretability.md",
+      "group": "general",
+      "status": "HYPOTHESIS_MINE_TECHNICAL_BRANCH",
+      "routes": [
+        "docs/05-architectures/local-model-interventions.md",
+        "docs/06-experimentation/experimental-method.md",
+        "docs/09-backlog/idea-garden.md"
+      ]
+    },
+    {
+      "path": "ai_readable/general/13-ai-slop-topic-02-diffusion-inversion.md",
+      "group": "general",
+      "status": "HYPOTHESIS_MINE_MEDIA_BRANCH",
+      "routes": [
+        "docs/03-media/image.md",
+        "docs/03-media/video.md",
+        "docs/06-experimentation/experimental-method.md",
+        "docs/09-backlog/idea-garden.md"
+      ]
+    }
   ]
 }

@@ -45,6 +45,47 @@ The deepest technical brainstorming source. Contains the DAVID protocol sequence
 Early DAVID/WALTER framing, experimental Suno techniques, semantic/synesthetic transduction, gibberish/phonetic material, role displacement, contradiction, and “honest slop” rhetoric. Claims that a prompt reveals an unsanitized machine self are metaphor/history rather than technical fact.  
 **Routes to:** `01-principles/philosophy.md`, `03-media/audio-suno.md`, `02-mechanisms/operator-registry.md`, `08-reference/glossary.md`.
 
+
+### `ai_readable/general/06-ai-slop-pliny-research.md`
+**Status:** HYPOTHESIS MINE + ROUTED methodology  
+Large synthesis of FRV1T/GLOSSOPETRAE/ENTHEA framing plus practical boundaries. Strong reusable material: explicit experiment framing, lineage-preserving controller logic, and careful separation between useful mechanism ideas and jailbreak theater.  
+**Routes to:** `06-experimentation/experimental-method.md`, `05-architectures/semantic-manifold.md`, `05-architectures/glsl-visualizer.md`, `09-backlog/idea-garden.md`.
+
+### `ai_readable/general/07-ai-slop-thesis.md`
+**Status:** REFERENCE / SYNTHESIS  
+Concise restatement of existing canonical principles (caused weirdness, anchor/pressure/incompatibility, path dependence, mechanism-vs-style discipline). Useful as onboarding prose; introduces no distinct mechanism claims beyond existing canon.  
+**Routes to:** onboarding/reference usage; canonical substance already covered in `01-principles/*` and `00-project-map.md`.
+
+### `ai_readable/general/08-ai-slop-experiment-pack.md`
+**Status:** ROUTED / EXECUTABLE SOURCE  
+Provides packetized experiments with explicit controls/ablations: return-state inheritance test, deterministic language-route test, and representation-carrier decoding controls. Strong contribution is reproducible procedure design and blinding workflow for condition-separated judging.  
+**Routes to:** `06-experimentation/experimental-method.md`, `06-experimentation/run-log-template.md`, `07-prompts/prompt-composition.md`, `09-backlog/idea-garden.md`.
+
+### `ai_readable/general/09-ai-slop-experiments.py`
+**Status:** EXECUTABLE SOURCE  
+Runnable local helper for pack initialization, response collection, partial blinding, deterministic language transforms, and structural checks. This is operational code; preserve it as code and do not represent unrun creative-model claims as validated results.  
+**Routes to:** `06-experimentation/experimental-method.md`, `06-experimentation/run-log-template.md`.
+
+### `ai_readable/general/10-ai-slop-shuffled-starter-prompts.md`
+**Status:** EXECUTABLE SUPPORT SOURCE / REFERENCE  
+Prompt packet handout for smoke testing with condition labels withheld. Useful as a reproducible starter deck and blinding aid when paired with the private manifest.  
+**Routes to:** `07-prompts/prompt-composition.md`, `06-experimentation/experimental-method.md`.
+
+### `ai_readable/general/11-ai-slop-repository-expansion-map.md`
+**Status:** BACKLOG / DESIGN PROPOSAL  
+Large forward-looking architecture proposal centered on operator ecology, behavioral archive fields, lineage-aware mutation pipelines, and phased implementation roadmaps. Valuable as future-system backlog input; not current canonical architecture.  
+**Routes to:** `09-backlog/idea-garden.md`, optional future updates to `05-architectures/*` after scoped implementation/testing.
+
+### `ai_readable/general/12-ai-slop-topic-01-mechanistic-interpretability.md`
+**Status:** HYPOTHESIS MINE + ROUTED technical branch  
+Catalog of activation-steering and interpretability interventions with controls, failure surfaces, and experiment templates. Reusable where local/open-model intervention is available; speculative claims remain hypotheses until run in this project context.  
+**Routes to:** `05-architectures/local-model-interventions.md`, `06-experimentation/experimental-method.md`, `09-backlog/idea-garden.md`.
+
+### `ai_readable/general/13-ai-slop-topic-02-diffusion-inversion.md`
+**Status:** HYPOTHESIS MINE + ROUTED media/mechanism branch  
+Catalog of diffusion inversion, attention injection, latent trajectory manipulation, and splice experiments with explicit controls and dose sweeps. Strong for mechanism-level image/video experimentation; architecture-specific caveats remain mandatory.  
+**Routes to:** `03-media/image.md`, `03-media/video.md`, `06-experimentation/experimental-method.md`, `09-backlog/idea-garden.md`.
+
 ---
 
 # Image / visual sources

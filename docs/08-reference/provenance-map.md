@@ -113,3 +113,24 @@ Feeds the local/open-model intervention track: activation steering, logit bias, 
 ## Raw-source preservation
 
 `originals/` preserves intake source copies. Legacy `art/`, `general/`, and `suno_slop/` folders preserve earlier originals/current source layout. `ai_readable/` contains searchable transcriptions. Canonical docs should link back rather than delete these layers.
+
+
+## 2026-09-19 intake additions
+
+### `ai_readable/general/06-ai-slop-pliny-research.md`
+Feeds FRV1T-style inherited-operation framing, explicit boundary-setting against jailbreak-theater claims, and route/history-oriented experiment design that aligns with existing controller and path-dependence architecture.
+
+### `ai_readable/general/07-ai-slop-thesis.md`
+Contributes a compact synthesis of existing canon for onboarding and communication; no distinct mechanism lineage beyond already-routed principles/mechanisms.
+
+### `ai_readable/general/08-ai-slop-experiment-pack.md`, `09-ai-slop-experiments.py`, `10-ai-slop-shuffled-starter-prompts.md`
+Feed packetized reproducible experiment operations: condition-separated prompt packets, deterministic language-route controls, collection/blinding workflow, and explicit scoring separation between creative utility and mechanism confidence.
+
+### `ai_readable/general/11-ai-slop-repository-expansion-map.md`
+Feeds backlog-level architecture ideas for operator ecology, archive-field navigation, lineage-aware mutation, and phased lab tooling; treated as future-design ore rather than current architecture.
+
+### `ai_readable/general/12-ai-slop-topic-01-mechanistic-interpretability.md`
+Feeds local-model intervention lineage (activation steering, feature clamp, patching) with stronger control/ablation templates and explicit confidence-tier language.
+
+### `ai_readable/general/13-ai-slop-topic-02-diffusion-inversion.md`
+Feeds diffusion intervention lineage (inversion debt, attention-binding conflict, trajectory splice) and controlled image/video experiment templates with architecture-scoped caveats.
