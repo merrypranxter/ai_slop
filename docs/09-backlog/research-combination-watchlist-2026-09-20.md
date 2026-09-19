@@ -83,6 +83,79 @@ This file exists because several Cycle 1 findings look more interesting **togeth
 
 ---
 
+
+## Pairing H - Functional scars + Cells2Pixels + moving neighborhoods
+
+**Ingredients:** Self-Organising Digital Circuits + Cells2Pixels + Neural Particle Automata + existing Silent Scar methodology.
+
+**Possible future synthesis:** create matched artifacts that recover the same visible target while differing in hidden state, function, or interaction graph, then apply the same second injury and compare trajectories.
+
+**Why this matters:** it turns "the artifact remembers what happened" into a falsifiable distinction among appearance, state, computation, and communication structure.
+
+**Why wait:** SODC branch/figure reproduction gaps still need reconciliation, and NPA memory interpretations must remain causal rather than visual.
+
+---
+
+## Pairing I - Mutable sequence editing + Primitive Deletion / Semantic Recoil
+
+**Ingredients:** Edit Flows / LLaDA2.2-style insertion-deletion traces + Primitive Deletion + Recall Mutation + Semantic Recoil.
+
+**Possible future synthesis:** maintain an edit-debt ledger in which later insertions literally force deletions or reinterpretations of earlier material, with the complete edit trace retained outside the model.
+
+**Why wait:** runtime editing parity across official and independent ports is unresolved.
+
+---
+
+## Pairing J - RIDGE moving jurisdiction + delayed injection + temporal leakage
+
+**Ingredients:** discrepancy-following edit masks + late trajectory conflict + controllable cross-frame leakage.
+
+**Possible future synthesis:** let the permitted edit region chase a late-arriving structural conflict through time, then vary leakage to see whether the wound stays local, spreads, oscillates, or scars.
+
+**Why wait:** RIDGE itself is paper-specified rather than install-ready, and leakage control is backbone-dependent.
+
+---
+
+## Pairing K - Semantic fault atlas + behavior archive / error bank
+
+**Ingredients:** T2V-Resilience numerical faults + generator-specific video error banks + behavioral archive descriptors.
+
+**Possible future synthesis:** archive failures by semantic displacement and future behavior, not merely perceptual ugliness. Preserve fault type, module, dose, seed, changed object/event, and temporal persistence.
+
+**Why wait:** equal-dose comparisons and dependency/model-memory checks still need an actual run.
+
+---
+
+## Pairing L - Non-normal transient amplification + Structured Instability
+
+**Ingredients:** stable non-normal controller + Attractor Lock -> Perturb + external state logging.
+
+**Possible future synthesis:** deliberately engineer a controller that returns to the same attractor while producing tunable finite-time flares. Peak gain, direction, return time, and saturation become independent composition knobs.
+
+**Why wait:** the mathematical substrate is strong, but the artistic controller is still our proposed adapter.
+
+---
+
+## Pairing M - Aging-game + GlossoGen / cultural speciation
+
+**Ingredients:** age-dependent plasticity + population turnover + protocol evolution/transmission tests.
+
+**Possible future synthesis:** young agents mutate private protocols aggressively, older agents stabilize conventions, and replacement agents test whether the culture survives turnover.
+
+**Why wait:** hosted-model controller "age" must not be confused with literal optimizer learning-rate schedules.
+
+---
+
+## Pairing N - DGCA + NPA + MetaNCA
+
+**Ingredients:** grown computation graphs + moving communication neighborhoods + developmental weight generation.
+
+**Possible future synthesis:** compare three distinct forms of developmental change: topology growth, neighborhood rewiring through movement, and generated/repaired weights.
+
+**Why wait:** these are substrate-level mechanisms with different code/reproduction gates and should not be collapsed into one vague "self-organizing network" story.
+
+---
+
 # Cross-cycle signals to watch for
 
 A combination becomes synthesis-worthy when at least two independent cycles point toward the same deeper pattern, for example:
