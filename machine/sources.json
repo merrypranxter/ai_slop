@@ -447,7 +447,6 @@
       "status": "ROUTED_EXECUTABLE_SOURCE",
       "routes": [
         "docs/06-experimentation/experimental-method.md",
-        "docs/06-experimentation/run-log-template.md",
         "docs/07-prompts/prompt-composition.md",
         "docs/09-backlog/idea-garden.md"
       ]
@@ -457,8 +456,7 @@
       "group": "general",
       "status": "EXECUTABLE_SOURCE",
       "routes": [
-        "docs/06-experimentation/experimental-method.md",
-        "docs/06-experimentation/run-log-template.md"
+        "docs/06-experimentation/experimental-method.md"
       ]
     },
     {
@@ -497,6 +495,87 @@
         "docs/03-media/video.md",
         "docs/06-experimentation/experimental-method.md",
         "docs/09-backlog/idea-garden.md"
+      ]
+    },
+    {
+      "path": "originals/copilot-intake-2026-09-19/AI-SLOP-Pliny-Research.pdf",
+      "group": "general",
+      "status": "ARCHIVED_ORIGINAL",
+      "routes": [
+        "ai_readable/general/06-ai-slop-pliny-research.md",
+        "docs/08-reference/source-audit.md"
+      ]
+    },
+    {
+      "path": "originals/copilot-intake-2026-09-19/AI_SLOP_Thesis.pdf",
+      "group": "general",
+      "status": "ARCHIVED_ORIGINAL",
+      "routes": [
+        "ai_readable/general/07-ai-slop-thesis.md",
+        "docs/08-reference/source-audit.md"
+      ]
+    },
+    {
+      "path": "originals/copilot-intake-2026-09-19/AI-SLOP-Experiment-Pack.md",
+      "group": "general",
+      "status": "ARCHIVED_ORIGINAL",
+      "routes": [
+        "ai_readable/general/08-ai-slop-experiment-pack.md",
+        "docs/08-reference/source-audit.md"
+      ]
+    },
+    {
+      "path": "originals/copilot-intake-2026-09-19/ai_slop_experiments.py",
+      "group": "general",
+      "status": "ARCHIVED_ORIGINAL",
+      "routes": [
+        "ai_readable/general/09-ai-slop-experiments.py",
+        "docs/08-reference/source-audit.md"
+      ]
+    },
+    {
+      "path": "originals/copilot-intake-2026-09-19/Inspect the whole GitHub repository (or the ai spe.pdf",
+      "group": "general",
+      "status": "ARCHIVED_ORIGINAL",
+      "routes": [
+        "ai_readable/general/11-ai-slop-repository-expansion-map.md",
+        "docs/08-reference/source-audit.md"
+      ]
+    },
+    {
+      "path": "originals/copilot-intake-2026-09-19/CFNetworkDownload_Ogf9rb.pdf",
+      "group": "general",
+      "status": "ARCHIVED_ORIGINAL",
+      "routes": [
+        "ai_readable/general/12-ai-slop-topic-01-mechanistic-interpretability.md",
+        "docs/08-reference/source-audit.md"
+      ]
+    },
+    {
+      "path": "originals/copilot-intake-2026-09-19/CFNetworkDownload_zsowxX.pdf",
+      "group": "general",
+      "status": "ARCHIVED_ORIGINAL",
+      "routes": [
+        "ai_readable/general/13-ai-slop-topic-02-diffusion-inversion.md",
+        "docs/08-reference/source-audit.md"
+      ]
+    },
+    {
+      "path": "originals/copilot-intake-2026-09-19/readme.txt",
+      "group": "repository_maps",
+      "status": "ARCHIVED_INTAKE_NOTE",
+      "routes": [
+        "new_to_be_processed_by_copilot_agent/readme.txt",
+        "docs/08-reference/repository-map-files.md"
+      ]
+    },
+    {
+      "path": "originals/copilot-intake-2026-09-19/prompt-book-source.pdf",
+      "group": "general",
+      "status": "ARCHIVED_ORIGINAL",
+      "routes": [
+        "ai_readable/general/10-ai-slop-shuffled-starter-prompts.md",
+        "docs/08-reference/source-audit.md"
       ]
     }
   ]

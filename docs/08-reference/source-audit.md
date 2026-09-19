@@ -59,16 +59,16 @@ Concise restatement of existing canonical principles (caused weirdness, anchor/p
 ### `ai_readable/general/08-ai-slop-experiment-pack.md`
 **Status:** ROUTED / EXECUTABLE SOURCE  
 Provides packetized experiments with explicit controls/ablations: return-state inheritance test, deterministic language-route test, and representation-carrier decoding controls. Strong contribution is reproducible procedure design and blinding workflow for condition-separated judging.  
-**Routes to:** `06-experimentation/experimental-method.md`, `06-experimentation/run-log-template.md`, `07-prompts/prompt-composition.md`, `09-backlog/idea-garden.md`.
+**Routes to:** `06-experimentation/experimental-method.md`, `07-prompts/prompt-composition.md`, `09-backlog/idea-garden.md`.
 
 ### `ai_readable/general/09-ai-slop-experiments.py`
 **Status:** EXECUTABLE SOURCE  
 Runnable local helper for pack initialization, response collection, partial blinding, deterministic language transforms, and structural checks. This is operational code; preserve it as code and do not represent unrun creative-model claims as validated results.  
-**Routes to:** `06-experimentation/experimental-method.md`, `06-experimentation/run-log-template.md`.
+**Routes to:** `06-experimentation/experimental-method.md`.
 
 ### `ai_readable/general/10-ai-slop-shuffled-starter-prompts.md`
 **Status:** EXECUTABLE SUPPORT SOURCE / REFERENCE  
-Prompt packet handout for smoke testing with condition labels withheld. Useful as a reproducible starter deck and blinding aid when paired with the private manifest.  
+Prompt packet handout for smoke testing with condition labels withheld. Prompt packet source is preserved as archived PDF; executable packet text is regenerated deterministically from the companion runner for complete searchable recovery because direct PDF extraction clipped lines.  
 **Routes to:** `07-prompts/prompt-composition.md`, `06-experimentation/experimental-method.md`.
 
 ### `ai_readable/general/11-ai-slop-repository-expansion-map.md`
