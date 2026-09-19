@@ -40,3 +40,20 @@ Untouched source documents from the 2026-09-16 intake. The reusable intake instr
 | `Smol slop text.pdf` | `ai_readable/audio_suno/07-smol-slop-text.md` |
 | `System failure prompt.pdf` | `ai_readable/personality_prompts/06-system-failure-prompt.md` |
 | `Temporary_Minds_Prompting.docx` | `ai_readable/personality_prompts/07-temporary-minds-prompting.md` |
+
+
+## `copilot-intake-2026-09-19/`
+Untouched source documents from the 2026-09-19 intake. The reusable intake instructions remain in
+`new_to_be_processed_by_copilot_agent/readme.txt`.
+
+| Original file | Transcribed to |
+| --- | --- |
+| `AI-SLOP-Pliny-Research.pdf` | `ai_readable/general/06-ai-slop-pliny-research.md` |
+| `AI_SLOP_Thesis.pdf` | `ai_readable/general/07-ai-slop-thesis.md` |
+| `AI-SLOP-Experiment-Pack.md` | `ai_readable/general/08-ai-slop-experiment-pack.md` |
+| `ai_slop_experiments.py` | `ai_readable/general/09-ai-slop-experiments.py` |
+| `prompt-book-source.pdf` | `ai_readable/general/10-ai-slop-shuffled-starter-prompts.md` (rebuilt with companion runner to avoid PDF extraction clipping) |
+| `Inspect the whole GitHub repository (or the ai spe.pdf` | `ai_readable/general/11-ai-slop-repository-expansion-map.md` |
+| `CFNetworkDownload_Ogf9rb.pdf` | `ai_readable/general/12-ai-slop-topic-01-mechanistic-interpretability.md` |
+| `CFNetworkDownload_zsowxX.pdf` | `ai_readable/general/13-ai-slop-topic-02-diffusion-inversion.md` |
+| `readme.txt` | intake instructions (archived as evidence; active copy stays in intake folder) |

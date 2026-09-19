@@ -71,3 +71,13 @@ Worth isolating into independent experiments:
 ## Rule for harvesting this garden
 
 An idea leaves this file only when its operation can be stated clearly enough to test or use without needing the original theatrical paragraph around it.
+
+
+## From 2026-09-19 intake (expansion + intervention harvests)
+
+- operator-ecology runtime with explicit lineage objects (`state`, `operator`, `validator`, `artifact`, `lineage`) and archive-cell pressure as a mutation driver;
+- blinded operator-identifiability scoring: can evaluators infer installed operator from outputs without prompt disclosure;
+- activation-steering contradiction matrices (dual-vector/layer-separated conflicts) with random-direction matched-norm controls;
+- SAE clamp phase-diagram tests distinguishing concept effect from reconstruction damage via matched-reconstruction ablations;
+- diffusion debt-dose sweeps (`λ` partial correction) as structured artifact source rather than random degradation;
+- cross-attention binding-war maps and trajectory-splice schedules, kept architecture-scoped and benchmarked against self-splice/identity controls.
