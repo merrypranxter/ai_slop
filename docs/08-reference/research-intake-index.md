@@ -54,6 +54,32 @@ Major new themes:
 - composition-boundary mapping;
 - deployed-agent cultural speciation / judge-shaped fitness.
 
+---
+
+## Full primary-source intake - 2026-09-19
+
+New repository notes:
+
+- `docs/08-reference/research-cycle-2026-09-19-full-primary-source-intake.md`
+- `docs/09-backlog/candidate-mechanisms-2026-09-19-full-intake.md`
+
+Ten retained findings, zero operator promotions:
+
+- mutable sequence scaffolds / edit traces;
+- functional scars and second-injury assays;
+- age-structured plasticity / cultural annealing;
+- developmental graph growth;
+- skin-state dissociation;
+- moving-neighborhood causal rewiring;
+- dynamic edit jurisdictions;
+- donor-provenance contracts for steering;
+- semantic fault atlases;
+- stable-but-explosive transient controllers.
+
+The strongest new convergence is around **equivalent outputs with different histories**. Appearance, hidden state, function, interaction graph, and response to a second perturbation must be treated as separate recovery variables.
+
+The ledger's explicit next build recommendation is a **functional-scar experiment before another broad novelty sweep**. That recommendation is recorded in the system incubator, but the overall project remains in research-accumulation mode until Merry calls synthesis time.
+
 ## Current synthesis posture
 
-**Do not build the next large system yet.** Accumulate a few more research cycles, then compare for repeated structural motifs. The most promising future systems are likely to emerge from combinations, not isolated papers.
+**Do not build the next large system yet.** Accumulate a few more research cycles, then compare for repeated structural motifs. The most promising future systems are likely to emerge from combinations, not isolated papers. When the project does pause accumulation for a targeted build, the current first choice is the functional-scar / second-injury assay.
