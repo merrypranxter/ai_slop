@@ -577,6 +577,17 @@
         "ai_readable/general/10-ai-slop-shuffled-starter-prompts.md",
         "docs/08-reference/source-audit.md"
       ]
+    },
+    {
+      "path": "ai_readable/general/14-ai-slop-wrong-use-scout-digest.md",
+      "group": "general",
+      "status": "CURATED_DIGEST_HYPOTHESIS_MINE",
+      "routes": [
+        "docs/06-experimentation/stabilizer-inversion-wrong-use-research.md",
+        "docs/08-reference/research-cycle-2026-09-20-wrong-use-scout.md",
+        "docs/09-backlog/candidate-mechanisms-2026-09-20-wrong-use-scout.md",
+        "docs/09-backlog/system-incubator.md"
+      ]
     }
   ]
 }
