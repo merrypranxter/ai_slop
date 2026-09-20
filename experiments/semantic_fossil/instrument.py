@@ -589,7 +589,9 @@ def render_markdown(spec, results, comparisons, validations):
     return "\n".join(lines)
 
 
-def write_run(spec, out_dir):
+def write_run(spec, out_dir, overwrite=False):
+    if out_dir.exists() and any(out_dir.iterdir()) and not overwrite:
+        raise ValueError(f"output directory is not empty: {out_dir}; use --overwrite to replace run files")
     engine = Engine(spec)
     results = engine.run_all()
     comparisons = compare_routes(spec, results)
@@ -701,6 +703,32 @@ def write_run(spec, out_dir):
     (out_dir / "report.md").write_text(
         render_markdown(spec, results, comparisons, validations), encoding="utf-8"
     )
+
+    run_record = {
+        "schema_version": "0.1",
+        "instrument": "Semantic Fossil Instrument",
+        "instrument_version": "0.1",
+        "instrument_id": spec["instrument_id"],
+        "epistemic_status": spec.get("epistemic_status", "PROCEDURAL"),
+        "spec_hash": digest(spec),
+        "routes": archive_rows,
+        "comparisons": comparisons,
+        "checks": {
+            "all_declared_comparisons_passed": checks["all_declared_comparisons_passed"],
+            "all_deterministic_replays_passed": checks["all_deterministic_replays_passed"],
+            "all_anchors_preserved": checks["all_anchors_preserved"],
+        },
+        "artifacts": {
+            "audit": "audit.jsonl",
+            "fossils": "fossils.csv",
+            "archive": "archive/index.jsonl",
+            "report": "report.md",
+            "checks": "checks.json",
+        },
+    }
+    (out_dir / "run.json").write_text(
+        json.dumps(run_record, indent=2, ensure_ascii=False) + "\n", encoding="utf-8"
+    )
     return checks
 
 
@@ -710,7 +738,7 @@ def load_json(path):
 
 def cmd_run(ns):
     spec = load_json(ns.spec)
-    checks = write_run(spec, ns.out)
+    checks = write_run(spec, ns.out, overwrite=ns.overwrite)
     print(json.dumps(checks, indent=2, ensure_ascii=False))
     return 0 if (
         checks["all_declared_comparisons_passed"]
@@ -737,6 +765,7 @@ def parser():
     run = sub.add_parser("run", help="execute all routes in a spec")
     run.add_argument("--spec", type=Path, required=True)
     run.add_argument("--out", type=Path, required=True)
+    run.add_argument("--overwrite", action="store_true", help="allow writing into a non-empty run folder")
     run.set_defaults(func=cmd_run)
 
     val = sub.add_parser("validate", help="validate an existing run folder")
