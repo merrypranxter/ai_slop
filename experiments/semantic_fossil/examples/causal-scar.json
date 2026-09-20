@@ -1,0 +1,166 @@
+{
+  "instrument_id": "semantic-scar-causal-demo-v0.1",
+  "description": "Same visible pre-C state, different fossil ledger, then C reads the fossil and diverges.",
+  "epistemic_status": "PROCEDURAL",
+  "initial_state": {
+    "interpretation": "unscarred",
+    "invariants": {
+      "anchor": "mora"
+    },
+    "elements": {
+      "pressure": {
+        "value": "papa",
+        "meaning": "pressure"
+      },
+      "return": {
+        "value": "mora",
+        "meaning": "return",
+        "anchor": true
+      },
+      "scar": {
+        "value": "kapi",
+        "meaning": "scar"
+      }
+    }
+  },
+  "transforms": {
+    "A": {
+      "operations": [
+        {
+          "op": "replace",
+          "field": "value",
+          "old": "p",
+          "new": "f",
+          "skip_anchors": true,
+          "reason": "first deformation"
+        }
+      ]
+    },
+    "B": {
+      "operations": [
+        {
+          "op": "context_replace",
+          "field": "value",
+          "old": "f",
+          "new": "v",
+          "left": "vowel",
+          "right": "vowel",
+          "skip_anchors": true,
+          "reason": "temporary detour"
+        }
+      ]
+    },
+    "C": {
+      "operations": [
+        {
+          "op": "append",
+          "field": "value",
+          "value": "x",
+          "skip_anchors": true,
+          "when": {
+            "fossil_operator_seen": "B"
+          },
+          "reason": "later operation responds to preserved B fossil"
+        },
+        {
+          "op": "set_interpretation",
+          "value": "B-left-a-causal-scar",
+          "when": {
+            "fossil_operator_seen": "B"
+          },
+          "reason": "history-sensitive interpretation"
+        }
+      ]
+    }
+  },
+  "routes": [
+    {
+      "id": "DIRECT",
+      "steps": [
+        "A",
+        {
+          "checkpoint": "pre_C"
+        },
+        "C"
+      ]
+    },
+    {
+      "id": "VIA_B_STATE_RESTORE",
+      "steps": [
+        "A",
+        {
+          "checkpoint": "after_A"
+        },
+        "B",
+        {
+          "restore": "after_A",
+          "mode": "state_only"
+        },
+        {
+          "checkpoint": "pre_C"
+        },
+        "C"
+      ]
+    },
+    {
+      "id": "VIA_B_FULL_RESET",
+      "steps": [
+        "A",
+        {
+          "checkpoint": "after_A"
+        },
+        "B",
+        {
+          "restore": "after_A",
+          "mode": "full"
+        },
+        {
+          "checkpoint": "pre_C"
+        },
+        "C"
+      ]
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "same-visible-state-before-C",
+      "left": "DIRECT:pre_C",
+      "right": "VIA_B_STATE_RESTORE:pre_C",
+      "expect": {
+        "active_equal": true,
+        "fossil_equal": false,
+        "causal_equal": false
+      }
+    },
+    {
+      "id": "history-changes-C",
+      "left": "DIRECT",
+      "right": "VIA_B_STATE_RESTORE",
+      "expect": {
+        "active_equal": false,
+        "fossil_equal": false,
+        "causal_equal": false
+      }
+    },
+    {
+      "id": "full-reset-ablates-scar-before-C",
+      "left": "DIRECT:pre_C",
+      "right": "VIA_B_FULL_RESET:pre_C",
+      "expect": {
+        "active_equal": true,
+        "fossil_equal": true,
+        "causal_equal": true
+      }
+    },
+    {
+      "id": "full-reset-ablates-downstream-effect",
+      "left": "DIRECT",
+      "right": "VIA_B_FULL_RESET",
+      "expect": {
+        "active_equal": true,
+        "fossil_equal": true,
+        "causal_equal": true
+      }
+    }
+  ]
+}
