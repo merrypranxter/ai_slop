@@ -16,6 +16,8 @@ This directory exists so software agents do not have to scrape prose just to dis
 - `semantic_fossil_transform_request.schema.json` — provider-neutral request packet for local or external generation adapters.
 - `system_incubator.json` — compact status/next-step index for promising AI SLOP work that has **not** yet graduated into canonical systems or operators. Canonical explanation lives in `docs/09-backlog/system-incubator.md`.
 
+`index.json` now also routes the live research-intake index, the wrong-use scout, its candidate queue, and the canonical **Stabilizer Inversion** research method. Candidate IDs stay in backlog/incubator until they graduate; do not stuff untested findings into `operators.json` just because a source paper is strong.
+
 ## Intended agent flow
 
 1. Read `../AI_CONTEXT.md`.
