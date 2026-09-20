@@ -99,7 +99,7 @@ Do **not** silently promote an incubator item into a canonical system.
 
 ## GRADUATED — Semantic Fossil Instrument
 
-**State:** v0.1 implemented, documented, tested, and routed into the canonical architecture layer on 2026-09-20.
+**State:** v0.2 implemented, documented, tested, and routed into the canonical architecture layer on 2026-09-20.
 
 **What exists:**
 - persistent active state plus a separate causal fossil ledger;
@@ -115,7 +115,12 @@ Do **not** silently promote an incubator item into a canonical system.
 - minimum machine-readable run record and schema;
 - Semantic Fossil Choir reproduction;
 - causal-scar demonstration where identical pre-C active state diverges only when preserved B history is allowed to affect C;
-- GitHub smoke/unit tests.
+- GitHub smoke/unit tests;
+- provider-neutral transform adapter layer;
+- Suno + visual renderer/compiler plugins;
+- provider-neutral transform request packets;
+- artifact ingestion with hashes/descriptors;
+- artifact-aware fossil overlays that later compilers can inherit.
 
 **Canonical home:** `docs/05-architectures/semantic-fossil-instrument.md`
 
@@ -123,7 +128,7 @@ Do **not** silently promote an incubator item into a canonical system.
 
 **Why graduated:** the incubator graduation rule allows a built system to leave once implementation and canonical documentation exist. This does **not** promote every fossil/history causal interpretation to a native-model mechanism; the implementation is explicitly external and PROCEDURAL.
 
-**Possible extensions:** model-backed transform adapters, image/audio/shader renderer plugins, behavior-sensitive intervention descriptors, fossil decay/inheritance policies, and integration with Silent Scar / Semantic Manifold routes.
+**Possible extensions:** direct provider-specific adapter packages, shader renderer plugin, behavior-sensitive intervention descriptors, fossil decay/inheritance policies, route-family dose sweeps, and integration with Silent Scar / Semantic Manifold routes.
 
 ---
 
