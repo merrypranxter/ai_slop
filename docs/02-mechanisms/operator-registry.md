@@ -269,6 +269,21 @@ Used by SRE/TOPOS and the broader experimental method.
 
 ---
 
+
+# Research pattern — Stabilizer Inversion
+
+**Status:** CANONICAL RESEARCH METHOD; individual inversions remain HYPOTHESIS until tested.  
+Reliability and stabilization papers often expose a failure surface more precisely than creative research does: the paper names the unwanted behavior, publishes a baseline, identifies the stabilizing component, and includes ablations showing what returns when the fix is removed.
+
+AI SLOP reads that apparatus backwards:
+
+`failure -> stabilizer -> measurement -> ablation -> controlled inversion -> dose sweep -> artifact family`
+
+The important inheritance is the **instrument**, not the paper's aesthetic vocabulary. A candidate discovered this way does **not** enter this operator registry merely because the source is strong; it stays in the backlog until the creative inversion itself survives controls and deduplication.
+
+Canonical method: [`../06-experimentation/stabilizer-inversion-wrong-use-research.md`](../06-experimentation/stabilizer-inversion-wrong-use-research.md).  
+First intake: [`../08-reference/research-cycle-2026-09-20-wrong-use-scout.md`](../08-reference/research-cycle-2026-09-20-wrong-use-scout.md).
+
 # Graduation rule
 
 A phrase belongs in this registry when its operation can be stated **without the aesthetic costume** and it changes what transitions, outputs, or selections become legal/likely.
