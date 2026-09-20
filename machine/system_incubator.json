@@ -90,6 +90,15 @@
       "canonical_reference": "docs/08-reference/research-cycle-2026-09-19-full-primary-source-intake.md",
       "backlog": "docs/09-backlog/candidate-mechanisms-2026-09-19-full-intake.md",
       "last_updated": "2026-09-20"
+    },
+    {
+      "id": "closed_loop_instability_cluster",
+      "status": "RESEARCH-ACCUMULATING",
+      "title": "Closed-loop intervention, trajectory instability, and evolvable jurisdictions",
+      "next": "Preserve C20-C25 and the new measurement contracts; later prototype Anti-SkipInv, CARL-style costed control, executable jurisdiction modules, and relationship-level fitness after synthesis time.",
+      "canonical_reference": "docs/08-reference/research-cycle-2026-09-20-closed-loop-instability-intake.md",
+      "backlog": "docs/09-backlog/candidate-mechanisms-2026-09-20-closed-loop-instability.md",
+      "last_updated": "2026-09-20"
     }
   ]
 }
