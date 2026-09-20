@@ -9,6 +9,7 @@ This directory is the **curated knowledge layer**. It is organized by what an id
 - [`01-principles/constraint-governance.md`](01-principles/constraint-governance.md) — generator-as-governance design model from the early research.
 - [`02-mechanisms/operator-registry.md`](02-mechanisms/operator-registry.md) — deduplicated cross-media machinery.
 - [`02-mechanisms/david-technical-hypotheses.md`](02-mechanisms/david-technical-hypotheses.md) — complete DAVID 01–20 hypothesis registry with controls and caveats.
+- [`05-architectures/semantic-fossil-instrument.md`](05-architectures/semantic-fossil-instrument.md) — runnable external path-dependence controller with causal fossils, reset ablations, route comparisons, renderers, and archive.
 - [`06-experimentation/experimental-method.md`](06-experimentation/experimental-method.md) — how claims graduate from juicy idea to tested mechanism.
 - [`06-experimentation/run-log-template.md`](06-experimentation/run-log-template.md) — copyable experiment record for controls, doses, paths, artifacts, and confidence.
 - [`08-reference/source-audit.md`](08-reference/source-audit.md) — source-by-source disposition: what every substantive document contributes and where it was routed.
@@ -37,6 +38,7 @@ This directory is the **curated knowledge layer**. It is organized by what an id
 - [`../machine/david_protocols.json`](../machine/david_protocols.json) — compact DAVID Protocol 01–20 registry with scope and test summaries.
 - [`../machine/sources.json`](../machine/sources.json) — compact source disposition and canonical-route lookup.
 - [`../machine/experiment.schema.json`](../machine/experiment.schema.json) — JSON Schema for structured experiment records.
+- [`../machine/semantic_fossil_run.schema.json`](../machine/semantic_fossil_run.schema.json) — minimum run-record schema for the Semantic Fossil Instrument.
 
 ## Canonicalization rule
 
