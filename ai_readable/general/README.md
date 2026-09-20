@@ -17,5 +17,7 @@ This section contains cross-domain strategy, philosophy, and technical theory fo
 - `originals/copilot-intake-2026-09-19/CFNetworkDownload_Ogf9rb.pdf` → `12-ai-slop-topic-01-mechanistic-interpretability.md`
 - `originals/copilot-intake-2026-09-19/CFNetworkDownload_zsowxX.pdf` → `13-ai-slop-topic-02-diffusion-inversion.md`
 
+- uploaded `Ai slop research Scout report view error_1789942099.904938.docx` → `14-ai-slop-wrong-use-scout-digest.md` (curated digest; original DOCX not binary-archived in this commit)
+
 ## Notes
-These files are transcribed and normalized for easier AI ingestion while preserving original source files.
+These files are transcribed and normalized for easier AI ingestion while preserving original source files when the original is available in-repo. File 14 is explicitly marked as a curated digest because the uploaded DOCX was available to the research session but could not be binary-archived through the current connector.
