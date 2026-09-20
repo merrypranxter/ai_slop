@@ -134,3 +134,15 @@ Feeds local-model intervention lineage (activation steering, feature clamp, patc
 
 ### `ai_readable/general/13-ai-slop-topic-02-diffusion-inversion.md`
 Feeds diffusion intervention lineage (inversion debt, attention-binding conflict, trajectory splice) and controlled image/video experiment templates with architecture-scoped caveats.
+
+
+## 2026-09-20 wrong-use scout addition
+
+### `ai_readable/general/14-ai-slop-wrong-use-scout-digest.md`
+Feeds the **Stabilizer Inversion** research lineage and the current wrong-use candidate queue. The source's distinctive contribution is methodological: reliability/stabilization papers are mined for measured failure surfaces, ablation tables, thresholds, and dose controls, then the fix is inverted only as a hypothesis. It also seeds the current candidate families for cyclic-denoising attractor cartography, attention-sink intervention, spectral guidance jurisdictions, video error accumulation, codec vocabulary mutation/dead-code injection, induction-head lesion, positional arbitration shifts, semantic-entropy breeding, steering-vector frontier work, and loss-barrier merging.
+
+Canonical routes:
+- `docs/06-experimentation/stabilizer-inversion-wrong-use-research.md`
+- `docs/08-reference/research-cycle-2026-09-20-wrong-use-scout.md`
+- `docs/09-backlog/candidate-mechanisms-2026-09-20-wrong-use-scout.md`
+- `docs/09-backlog/system-incubator.md`
