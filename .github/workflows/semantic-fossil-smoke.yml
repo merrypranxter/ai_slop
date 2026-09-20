@@ -38,7 +38,11 @@ jobs:
             experiments/semantic_fossil/compilers/*.py
 
       - name: Unit tests
-        run: python -m unittest discover -s experiments/semantic_fossil -p "test_*.py" -v
+        run: |
+          python -m unittest \
+            experiments.semantic_fossil.test_instrument \
+            experiments.semantic_fossil.test_creative_bridge \
+            -v
 
       - name: Run choir example
         run: |
