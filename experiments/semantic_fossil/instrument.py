@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Semantic Fossil Instrument v0.1.
+"""Semantic Fossil Instrument v0.2.
 
 External, inspectable path-dependence controller for AI SLOP.
 
@@ -713,7 +713,7 @@ def write_run(spec, out_dir, overwrite=False):
     run_record = {
         "schema_version": "0.1",
         "instrument": "Semantic Fossil Instrument",
-        "instrument_version": "0.1",
+        "instrument_version": "0.2",
         "instrument_id": spec["instrument_id"],
         "epistemic_status": spec.get("epistemic_status", "PROCEDURAL"),
         "spec_hash": digest(spec),
@@ -765,7 +765,7 @@ def cmd_validate(ns):
 
 
 def parser():
-    p = argparse.ArgumentParser(description="Semantic Fossil Instrument v0.1")
+    p = argparse.ArgumentParser(description="Semantic Fossil Instrument v0.2")
     sub = p.add_subparsers(dest="command", required=True)
 
     run = sub.add_parser("run", help="execute all routes in a spec")
