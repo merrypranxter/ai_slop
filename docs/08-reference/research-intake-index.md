@@ -102,3 +102,26 @@ Major retained additions:
 - Localized Law Carriage as a Flow-Lenia implementation pattern rather than a new canonical operator.
 
 Strongest new convergence: **intervention should become conditional on the evolving state, not merely scheduled globally.** This cycle repeatedly points toward selective, local, state-aware action rather than always-on pressure.
+
+
+## Wrong-use / Stabilizer Inversion scout — 2026-09-20
+
+New repository notes:
+
+- `docs/08-reference/research-cycle-2026-09-20-wrong-use-scout.md`
+- `docs/09-backlog/candidate-mechanisms-2026-09-20-wrong-use-scout.md`
+- `docs/06-experimentation/stabilizer-inversion-wrong-use-research.md`
+
+Major retained additions:
+
+- cyclic denoising attractor cartography with γ as a measurable forgetting/bifurcation dial;
+- attention sink amputation and sink-position occupation as inference-time text instability instruments;
+- frequency-band / guidance-component jurisdictions inside diffusion sampling;
+- video error accumulation with anchor placement, resampling dose, and chunk-boundary controls;
+- VQ/RVQ dead-code injection and scheduled vocabulary mutation for the audio line;
+- induction-head lesion and long-context positional arbitration shifts;
+- semantic entropy as a breeding/selection signal;
+- steering-vector composition as a measured coherence/expressibility frontier;
+- loss-barrier-verified model merging.
+
+Strongest meta-result: **Stabilizer Inversion**. Reliability and consistency papers often publish the ablations and dose curves needed to cultivate the very failure they are designed to suppress. This is now a standing scouting method, while the individual mechanisms remain in the backlog until tested.
