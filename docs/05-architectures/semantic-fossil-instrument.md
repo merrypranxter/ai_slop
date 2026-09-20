@@ -2,16 +2,22 @@
 
 ## Status
 
-**PROCEDURAL implementation, v0.1.**
+**PROCEDURAL implementation, v0.2.**
 
 The Semantic Fossil Instrument is an external path-dependence controller. It makes route history explicit and testable without pretending that a hosted model exposes hidden neural state.
 
 Implementation:
 
 - `experiments/semantic_fossil/instrument.py`
+- `experiments/semantic_fossil/creative.py`
+- `experiments/semantic_fossil/artifacts.py`
+- `experiments/semantic_fossil/adapters/`
+- `experiments/semantic_fossil/renderers/`
+- `experiments/semantic_fossil/compilers/`
 - `experiments/semantic_fossil/examples/choir.json`
 - `experiments/semantic_fossil/examples/causal-scar.json`
 - `experiments/semantic_fossil/test_instrument.py`
+- `experiments/semantic_fossil/test_creative_bridge.py`
 
 Machine run schema:
 
@@ -336,3 +342,218 @@ Useful next work:
 - scar-sensitive compilation into Semantic Manifold / Suno / visual instructions.
 
 Do not add these merely as decorative vocabulary. Each extension should preserve the same requirement: route history must alter legal or likely future transitions in a way that can be ablated.
+
+
+---
+
+# v0.2 Creative Bridge
+
+v0.2 makes the instrument useful as an actual creative-routing substrate instead of stopping at deterministic state transitions.
+
+The bridge adds four things that were explicitly deferred from v0.1:
+
+1. a provider-neutral transform-adapter contract;
+2. renderer plugins;
+3. artifact-aware fossils;
+4. Suno and visual compilers.
+
+## Adapter layer
+
+`experiments/semantic_fossil/adapters/` defines a small boundary between the controller and whatever actually generates media.
+
+The core contract is:
+
+```text
+TransformRequest -> TransformAdapter -> TransformResult
+```
+
+A request carries:
+
+- route ID;
+- medium;
+- compiled prompt;
+- active hash;
+- causal hash;
+- fossil hash;
+- renderer/compiler metadata.
+
+Current adapters:
+
+- **CallbackAdapter** — lets local/open model code or an application callback execute a request in-process;
+- **PacketAdapter** — writes a provider-neutral JSON request packet for external execution;
+- **RecordedResponseAdapter** — records an artifact that was already produced elsewhere.
+
+The instrument still does not pretend that a remote model shares the controller's memory. State lives in the controller. The adapter gets an explicit packet.
+
+## Renderer plugins
+
+`experiments/semantic_fossil/renderers/` provides a plugin boundary for medium-facing projections.
+
+Current renderers:
+
+- **SunoRenderer**
+- **VisualRenderer**
+
+A renderer receives route state and returns a `RenderedPrompt`. It may then write a medium-specific package to disk.
+
+This keeps the route logic independent from the target generator.
+
+## Suno compiler
+
+`experiments/semantic_fossil/compilers/suno.py` converts a route into:
+
+- a bounded STYLE field;
+- a bounded LYRICS / CONTROL field;
+- history metadata.
+
+The compiler does not merely paste the fossil ledger into prose. It translates explicit route history into musical obligations:
+
+- anchors remain recognizable;
+- musical jurisdictions stay separate;
+- earlier route operators become audible consequences;
+- artifact descriptors can be assigned to arrangement, phonetics, timing, texture, or form.
+
+Default limits are:
+
+- style: 1000 characters;
+- lyrics/control: 5000 characters.
+
+The limits are hard-clamped and unit-tested.
+
+## Visual compiler
+
+`experiments/semantic_fossil/compilers/visual.py` converts route state into a visual-generation instruction.
+
+It preserves explicit anchors while allowing scarred dimensions to mutate. Fossils are framed as structural obligations such as:
+
+- deformation;
+- repair tissue;
+- topology change;
+- material memory;
+- asymmetry;
+- inherited capture damage;
+- changed ownership of visible structure.
+
+This is deliberately different from asking for a "glitchy" or "scarred" aesthetic.
+
+## Artifact-aware fossils
+
+The creative bridge can ingest an actual rendered file and turn its **recorded properties** into route history.
+
+An artifact record stores:
+
+- route ID;
+- medium;
+- artifact kind;
+- stored path;
+- SHA-256;
+- byte size;
+- MIME type when known;
+- explicit descriptors;
+- source operator;
+- reason/provenance.
+
+The generated file is copied into the run folder under:
+
+`routes/<route>/artifacts/files/`
+
+and a structured artifact record is stored beside it.
+
+A causal artifact fossil then records:
+
+- `artifact_ref`;
+- `artifact_kind`;
+- `descriptor_ref`;
+- `artifact_summary`.
+
+Artifact-aware fields are included in normalized fossil hashes, so two routes with different recorded artifact descriptors are causally distinct.
+
+## Why the artifact overlay is separate
+
+The original deterministic run remains frozen.
+
+Artifact fossils are appended to:
+
+`routes/<route>/artifact-fossils.jsonl`
+
+The creative compiler loads the base `final-state.json` and overlays these explicit post-run fossils.
+
+This prevents a later render from silently rewriting the original experiment record while still allowing the rendered artifact to become inherited material for the next creative pass.
+
+## Creative bridge CLI
+
+Compile every route into Suno and visual packages:
+
+```bash
+python -m experiments.semantic_fossil.creative compile \
+  --run results/semantic-fossil/causal-scar-001 \
+  --renderer all
+```
+
+Compile one route:
+
+```bash
+python -m experiments.semantic_fossil.creative compile \
+  --run results/semantic-fossil/causal-scar-001 \
+  --route VIA_B_STATE_RESTORE \
+  --renderer visual
+```
+
+Create a provider-neutral request packet:
+
+```bash
+python -m experiments.semantic_fossil.creative packet \
+  --run results/semantic-fossil/causal-scar-001 \
+  --route VIA_B_STATE_RESTORE \
+  --renderer visual \
+  --out results/semantic-fossil/requests
+```
+
+After a generator produces an artifact, ingest it:
+
+```bash
+python -m experiments.semantic_fossil.creative ingest \
+  --run results/semantic-fossil/causal-scar-001 \
+  --route VIA_B_STATE_RESTORE \
+  --medium image \
+  --file rendered.png \
+  --operator visual_renderer \
+  --descriptor identity_anchor_preserved=true \
+  --descriptor topological_damage=0.72 \
+  --descriptor glitch_density=0.88
+```
+
+Compile the route again and those descriptors become explicit inherited route material.
+
+## Important causal boundary
+
+The bridge can honestly say:
+
+> This route produced artifact X. We stored descriptors Y and Z. A later compiler changed its instructions because Y and Z were present in the explicit fossil record.
+
+It cannot honestly say:
+
+> The image model internally remembered its previous output.
+
+The former is a testable software mechanism. The latter would require evidence from the model itself.
+
+## v0.2 validation
+
+The GitHub workflow now tests:
+
+- the original Semantic Fossil controller;
+- route-history versus full-reset prompt behavior;
+- hard Suno/visual prompt limits;
+- renderer output packages;
+- transform request packets;
+- callback adapters;
+- artifact ingestion;
+- artifact descriptor inheritance;
+- recompilation after an artifact fossil enters the route;
+- the original v0.1 route and reset invariants.
+
+The creative bridge therefore has an executable end-to-end loop:
+
+`route state -> compile -> request/render -> ingest artifact -> fossilize descriptors -> compile next pass`
+
+That is the first working bridge between the Semantic Fossil controller and actual creative media workflows.
