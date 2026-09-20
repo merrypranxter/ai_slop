@@ -11,6 +11,7 @@ This directory is the **curated knowledge layer**. It is organized by what an id
 - [`02-mechanisms/david-technical-hypotheses.md`](02-mechanisms/david-technical-hypotheses.md) — complete DAVID 01–20 hypothesis registry with controls and caveats.
 - [`05-architectures/semantic-fossil-instrument.md`](05-architectures/semantic-fossil-instrument.md) — runnable external path-dependence controller with causal fossils, reset ablations, route comparisons, renderers, and archive.
 - [`06-experimentation/experimental-method.md`](06-experimentation/experimental-method.md) — how claims graduate from juicy idea to tested mechanism.
+- [`06-experimentation/stabilizer-inversion-wrong-use-research.md`](06-experimentation/stabilizer-inversion-wrong-use-research.md) — wrong-use scouting method: read stabilization papers backwards and inherit their measurements/ablations.
 - [`06-experimentation/run-log-template.md`](06-experimentation/run-log-template.md) — copyable experiment record for controls, doses, paths, artifacts, and confidence.
 - [`08-reference/source-audit.md`](08-reference/source-audit.md) — source-by-source disposition: what every substantive document contributes and where it was routed.
 - [`08-reference/repository-map-files.md`](08-reference/repository-map-files.md) — audit of the small README, mapping, reading-order, and intake-contract files so none of the “boring” documents silently disappear.
@@ -18,6 +19,8 @@ This directory is the **curated knowledge layer**. It is organized by what an id
 - [`08-reference/glossary.md`](08-reference/glossary.md) — recurring project language at canonical technical meaning.
 - [`08-reference/lens-palette.md`](08-reference/lens-palette.md) — thinker/science palettes distilled into usable creative lenses with epistemic boundaries.
 - [`08-reference/intake-workflow.md`](08-reference/intake-workflow.md) — exact procedure for processing future source dumps without recreating document soup.
+- [`08-reference/research-intake-index.md`](08-reference/research-intake-index.md) — current research cycles and synthesis posture.
+- [`09-backlog/system-incubator.md`](09-backlog/system-incubator.md) — persistent queue of strong ideas/builds that are not yet canonical systems.
 
 ## Directory map
 
