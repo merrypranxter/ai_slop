@@ -193,6 +193,22 @@ When local/global/decision modules coexist, record what each module is allowed t
 
 Compare high score against morphology/behavior descriptors and inspect for metric-exploit solutions.
 
+
+## Research discovery companion — Stabilizer Inversion
+
+The project now has a dedicated scouting method for mining reliability/stabilization literature for controlled failure instruments:
+
+- start from a documented failure;
+- preserve the paper's measurement and baseline;
+- identify the stabilizer and its ablation/dose curve;
+- invert, misplace, delay, over-amplify, or selectively apply **one** stabilizing component;
+- test whether the suppressed behavior becomes structured material rather than generic collapse;
+- keep the paper's falsifier and the repo's normal controls.
+
+Canonical method: [`stabilizer-inversion-wrong-use-research.md`](stabilizer-inversion-wrong-use-research.md).
+
+This is a **research-discovery procedure**, not a license to promote every failure-prevention paper into a new operator. Candidates remain backlog hypotheses until they pass the same baseline / repeat / dose / ablation discipline used everywhere else.
+
 ## Graduation rule
 
 An idea becomes a reusable operator when it produces a recognizable mutation signature across unlike inputs without destroying task/media fidelity, and when the characteristic effect weakens or disappears under the relevant ablation.
