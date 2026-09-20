@@ -156,6 +156,69 @@ This file exists because several Cycle 1 findings look more interesting **togeth
 
 ---
 
+
+## Pairing O - CARL + Flow Lenia
+
+**Ingredients:** sparse costed closed-loop intervention + organisms carrying localized rule parameters.
+
+**Possible future synthesis:** let the controller change mass, local rule fields, or both, then stop control and measure whether the resulting organism remains viable without continued correction.
+
+**Critical ablation:** mass-only vs rule-only vs mass+rule vs open-loop matched-dose vs random matched-dose.
+
+**Why wait:** verify CARL implementation/API and practical Flow-Lenia compatibility first.
+
+---
+
+## Pairing P - Instability-Gated Intervention + Semantic Fossil Instrument
+
+**Ingredients:** timestep-local instability detection + route/fossil persistence.
+
+**Possible future synthesis:** unstable intervals become first-class route coordinates. Preserve a failed inverse latent or residual spike and reuse it later as a causal fossil.
+
+**Why wait:** SkipInv implementation/logging availability still needs verification.
+
+---
+
+## Pairing Q - Instability-Gated Intervention + Controlled Temporal Leakage
+
+**Ingredients:** local failure detector + cross-frame leakage control.
+
+**Possible future synthesis:** intervene only when the route becomes unstable, then control whether the resulting semantic wound stays local, spreads through time, oscillates, or scars.
+
+**Why wait:** both mechanisms are architecture-sensitive.
+
+---
+
+## Pairing R - Programmable CA + operator genetics
+
+**Ingredients:** executable local/global/decision modules + breeding/lineage machinery.
+
+**Possible future synthesis:** breed jurisdiction modules as separately inherited genes and keep source-level ancestry for every visual behavior.
+
+**Required safeguard:** prevent global modules from becoming answer-leaking shortcuts.
+
+---
+
+## Pairing S - Symbiotic Fitness + Mr. Slop breeding
+
+**Ingredients:** two-parent ancestry + relationship-level fitness.
+
+**Possible future synthesis:** preserve not only children but productive pairings. A pair can survive selection when neither member is useful alone but their interaction produces a stable new capability or mutation route.
+
+**Why wait:** define pair-specificity, shuffled-partner failure, and persistence tests before calling ordinary compatibility "symbiosis."
+
+---
+
+## Pairing T - Selective Intervention Gate + steering donor provenance
+
+**Ingredients:** donor-source provenance + repair/corruption response surface + independent benefit detector.
+
+**Possible future synthesis:** a steering direction is only applied in states predicted to benefit, while repair and collateral corruption remain separately measured.
+
+**Why wait:** exact code-correctness study implementation and broader replication are unresolved.
+
+---
+
 # Cross-cycle signals to watch for
 
 A combination becomes synthesis-worthy when at least two independent cycles point toward the same deeper pattern, for example:
