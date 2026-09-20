@@ -59,6 +59,27 @@ def active_payload(state: Mapping[str, Any]) -> Dict[str, Any]:
     }
 
 
+def normalized_fossils(fossils):
+    """Causal scar content without route-local provenance fields."""
+    out = []
+    for fossil in fossils:
+        out.append({
+            "operator": fossil.get("operator"),
+            "element_id": fossil.get("element_id"),
+            "field": fossil.get("field"),
+            "before": deep_copy(fossil.get("before")),
+            "after": deep_copy(fossil.get("after")),
+            "reason": fossil.get("reason"),
+        })
+    return out
+
+
+def causal_payload(state):
+    payload = active_payload(state)
+    payload["fossils"] = normalized_fossils(state.get("fossils", []))
+    return payload
+
+
 def ensure_spec(spec: Mapping[str, Any]) -> None:
     required = ["instrument_id", "initial_state", "transforms", "routes"]
     missing = [k for k in required if k not in spec]
@@ -156,11 +177,11 @@ class RouteResult:
 
     @property
     def causal_hash(self) -> str:
-        return digest(state_payload(self.final_state))
+        return digest(causal_payload(self.final_state))
 
     @property
     def fossil_hash(self) -> str:
-        return digest(self.final_state.get("fossils", []))
+        return digest(normalized_fossils(self.final_state.get("fossils", [])))
 
 
 class Engine:
@@ -317,7 +338,7 @@ class Engine:
             raise ValueError(f"unknown transform {name!r}")
         transform = self.transforms[name]
         before_active_hash = digest(active_payload(state))
-        before_causal_hash = digest(state_payload(state))
+        before_causal_hash = digest(causal_payload(state))
         fossil_count_before = len(state["fossils"])
 
         operation_results = []
@@ -336,7 +357,7 @@ class Engine:
             "before_active_hash": before_active_hash,
             "after_active_hash": digest(active_payload(state)),
             "before_causal_hash": before_causal_hash,
-            "after_causal_hash": digest(state_payload(state)),
+            "after_causal_hash": digest(causal_payload(state)),
             "fossils_added": len(state["fossils"]) - fossil_count_before,
             "operations": operation_results,
         }
@@ -353,8 +374,8 @@ class Engine:
                 "label": label,
                 "step_index": step_index,
                 "active_hash": digest(active_payload(state)),
-                "causal_hash": digest(state_payload(state)),
-                "fossil_hash": digest(state.get("fossils", [])),
+                "causal_hash": digest(causal_payload(state)),
+                "fossil_hash": digest(normalized_fossils(state.get("fossils", []))),
                 "fossil_count": len(state.get("fossils", [])),
             })
 
@@ -384,7 +405,7 @@ class Engine:
                     "name": name,
                     "step_index": i,
                     "active_hash": digest(active_payload(state)),
-                    "causal_hash": digest(state_payload(state)),
+                    "causal_hash": digest(causal_payload(state)),
                 })
                 snapshot(f"checkpoint:{name}", i)
                 continue
@@ -396,7 +417,7 @@ class Engine:
                     raise ValueError(f"route {route_id}: unknown checkpoint {name!r}")
                 cp = checkpoints[name]
                 before_active = digest(active_payload(state))
-                before_fossils = digest(state.get("fossils", []))
+                before_fossils = digest(normalized_fossils(state.get("fossils", [])))
 
                 if mode == "state_only":
                     restored = cp["state"]
@@ -418,7 +439,7 @@ class Engine:
                     "before_active_hash": before_active,
                     "after_active_hash": digest(active_payload(state)),
                     "before_fossil_hash": before_fossils,
-                    "after_fossil_hash": digest(state.get("fossils", [])),
+                    "after_fossil_hash": digest(normalized_fossils(state.get("fossils", []))),
                     "restored_active_exactly": digest(active_payload(state)) == digest(cp["active"]),
                     "restored_causal_exactly": digest(state_payload(state)) == digest(cp["state"]),
                 })
@@ -452,8 +473,8 @@ def resolve_ref(results, ref):
         "causal": deep_copy(cp["state"]),
         "fossils": deep_copy(cp["state"].get("fossils", [])),
         "active_hash": digest(cp["active"]),
-        "causal_hash": digest(cp["state"]),
-        "fossil_hash": digest(cp["state"].get("fossils", [])),
+        "causal_hash": digest(causal_payload(cp["state"])),
+        "fossil_hash": digest(normalized_fossils(cp["state"].get("fossils", []))),
     }
 
 
