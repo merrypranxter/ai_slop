@@ -32,17 +32,41 @@ jobs:
           python -m pip install numpy scipy matplotlib imageio tqdm
           python -m pip install torch --index-url https://download.pytorch.org/whl/cpu
 
-      - name: Compile harness
-        run: python -m py_compile experiments/perceptual_wound/run_lenia_occlusion.py
+      - name: Compile harnesses
+        run: |
+          python -m py_compile experiments/perceptual_wound/run_lenia_occlusion.py
+          python -m py_compile experiments/perceptual_wound/run_silent_scar.py
 
       - name: Run tiny CPU smoke test
         run: |
           python experiments/perceptual_wound/run_lenia_occlusion.py             --umwelt /tmp/lenia-umwelt             --animal O2u             --grid 64             --burn-in 20             --heading-probe 8             --neighborhood-steps 20             --steps 20             --sample-every 2             --mask-radius 5             --mask-ahead 10             --out /tmp/perceptual-wound-smoke
 
+      - name: Run tiny Silent Scar smoke test
+        run: |
+          python experiments/perceptual_wound/run_silent_scar.py \
+            --umwelt /tmp/lenia-umwelt \
+            --animal O2u \
+            --grid 64 \
+            --burn-in 20 \
+            --heading-probe 8 \
+            --neighborhood-steps 20 \
+            --first-wound-steps 4 \
+            --max-recovery-steps 8 \
+            --recovery-window 2 \
+            --second-response-steps 10 \
+            --sample-every 2 \
+            --first-mask-radius 5 \
+            --first-mask-ahead 10 \
+            --second-mask-radius 4 \
+            --second-mask-ahead 6 \
+            --out /tmp/silent-scar-smoke
+
       - name: Check outputs
         run: |
           test -s /tmp/perceptual-wound-smoke/summary.json
           test -s /tmp/perceptual-wound-smoke/timeseries.csv
+          test -s /tmp/silent-scar-smoke/summary.json
+          test -s /tmp/silent-scar-smoke/second_response_timeseries.csv
           python - <<'PY'
           import json
           from pathlib import Path
@@ -57,4 +81,13 @@ jobs:
           got = set(data["conditions"])
           assert got == expected, (got, expected)
           print("conditions:", sorted(got))
+
+          scar = json.loads(Path("/tmp/silent-scar-smoke/summary.json").read_text())
+          assert scar["experiment"] == "silent_scar_second_injury_v0.1"
+          assert set(scar["second_response"]) >= {
+              "scarred_route",
+              "matched_control_route",
+              "scarred_minus_control",
+          }
+          print("silent scar smoke: ok")
           PY
