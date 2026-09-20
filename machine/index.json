@@ -36,7 +36,13 @@
     "experiment_schema": "machine/experiment.schema.json",
     "semantic_fossil_run_schema": "machine/semantic_fossil_run.schema.json",
     "semantic_fossil_artifact_schema": "machine/semantic_fossil_artifact.schema.json",
-    "semantic_fossil_transform_request_schema": "machine/semantic_fossil_transform_request.schema.json"
+    "semantic_fossil_transform_request_schema": "machine/semantic_fossil_transform_request.schema.json",
+    "stabilizer_inversion_method": "docs/06-experimentation/stabilizer-inversion-wrong-use-research.md",
+    "research_intake_index": "docs/08-reference/research-intake-index.md",
+    "system_incubator": "docs/09-backlog/system-incubator.md",
+    "system_incubator_machine": "machine/system_incubator.json",
+    "latest_wrong_use_scout": "docs/08-reference/research-cycle-2026-09-20-wrong-use-scout.md",
+    "latest_wrong_use_candidates": "docs/09-backlog/candidate-mechanisms-2026-09-20-wrong-use-scout.md"
   },
   "canonical_sections": [
     {
