@@ -13,6 +13,7 @@ The project calls that territory **AI slop**: glitches, semantic collisions, uns
 - [`docs/01-principles/constraint-governance.md`](docs/01-principles/constraint-governance.md) — the “wrong simulator / Governance Engine” design model extracted from the early research.
 - [`docs/02-mechanisms/operator-registry.md`](docs/02-mechanisms/operator-registry.md) — deduplicated cross-media operator catalog.
 - [`docs/02-mechanisms/david-technical-hypotheses.md`](docs/02-mechanisms/david-technical-hypotheses.md) — complete DAVID Protocol 01–20 hypothesis registry, cleaned up and caveated.
+- [`docs/05-architectures/semantic-fossil-instrument.md`](docs/05-architectures/semantic-fossil-instrument.md) — runnable path-dependence controller with causal fossils, route ancestry, and reset ablations.
 - [`docs/06-experimentation/experimental-method.md`](docs/06-experimentation/experimental-method.md) — controls, ablations, dose-response, replication, and artifact-family testing.
 - [`docs/06-experimentation/run-log-template.md`](docs/06-experimentation/run-log-template.md) — reusable lab record.
 - [`docs/08-reference/source-audit.md`](docs/08-reference/source-audit.md) — what every substantive source contributes and where it was routed.
@@ -54,7 +55,7 @@ Likewise, old source documents sometimes contain jailbreak rhetoric, claims abou
 - **Video:** temporal identity, correspondence failure, topology through time, path-dependent transformation, motion/causal contradictions.
 - **Audio / Suno:** separated musical jurisdictions, structural contradiction, phonetic engines, tuning/meter/timbre conflicts, route-based composition.
 - **Temporary Minds:** 26 installable procedural cognition systems plus regulators, validators, and benchmark machinery.
-- **Semantic systems:** external controllers, path ledgers, semantic-manifold navigation, TOPOS-SRE, and GLSL state visualization.
+- **Semantic systems:** external controllers, path ledgers, Semantic Fossil Instrument, semantic-manifold navigation, TOPOS-SRE, and GLSL state visualization.
 - **DAVID / model-mechanism research:** a complete 20-protocol hypothesis registry covering conditioning conflict, iteration, binding, tokenization, codec drift, guidance, topology/reference pressure, and instrumented-model experiments.
 - **Lens research:** thinker/science palettes used as relation generators, with philosophy, established science, contested hypotheses, and invented personas kept epistemically distinct.
 
