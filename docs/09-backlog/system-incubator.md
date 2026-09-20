@@ -297,6 +297,42 @@ See:
 
 ---
 
+
+# WRONG-USE / STABILIZER INVERSION CLUSTER — DO NOT CANONIZE YET
+
+The 2026-09-20 Kimi scout mined stabilization, reliability, interpretability, codec, video, steering, and model-merging research by reading the fixes backwards.
+
+**Canonical method:** `docs/06-experimentation/stabilizer-inversion-wrong-use-research.md`
+
+**Tracked candidate families:**
+
+- Cyclic Denoising Attractor Atlas
+- Attention Sink Amputation / Parking-Lot Occupation
+- Guidance-Frequency Jurisdictions
+- Error Accumulation as Video Medium
+- Scheduled Vocabulary Mutation / Dead-Code Injection
+- Induction-Head Lesion / Positional Arbitration Phase Shift
+- Semantic-Entropy Breeding
+- Steering-Vector Stack Frontier
+- Loss-Barrier Merging
+
+**Build priority from the scout:**
+1. cyclic denoising atlas;
+2. sink amputation / occupation;
+3. dead-code injection + codec-level split-brain;
+4. guidance-frequency jurisdictions;
+5. semantic-entropy breeding;
+6. video anchor inversion after the cheaper work is producing.
+
+**Why not canonical yet:** strong source support exists for the underlying failures/fixes, but most AI SLOP inversions are still hypotheses. Run the normal baseline/repeat/dose/ablation protocol first.
+
+**Files:**
+- `docs/08-reference/research-cycle-2026-09-20-wrong-use-scout.md`
+- `docs/09-backlog/candidate-mechanisms-2026-09-20-wrong-use-scout.md`
+- `docs/06-experimentation/stabilizer-inversion-wrong-use-research.md`
+
+---
+
 # HOW ITEMS LEAVE THIS FILE
 
 An item graduates only when one of these happens:
