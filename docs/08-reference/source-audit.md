@@ -264,6 +264,12 @@ The current corpus contains no standalone video-specific source document. Canoni
 
 ---
 
+
+### `ai_readable/general/14-ai-slop-wrong-use-scout-digest.md`
+**Status:** CURATED DIGEST / HYPOTHESIS MINE / ROUTED RESEARCH METHOD  
+Kimi wrong-use scout from 2026-09-20. The source systematically reads stabilization, reliability, codec, interpretability, video, steering, and model-merging literature backwards: preserve the published measurement and ablation, then test whether the suppressed failure can become controlled creative material. It contributes nine mechanism cards, explicit demotions, a ranked build queue, and the durable **Stabilizer Inversion** scouting method. The uploaded DOCX itself was not binary-archived by the current connector, so the AI-readable file is explicitly a source-faithful digest rather than a verbatim transcription.  
+**Routes to:** `06-experimentation/stabilizer-inversion-wrong-use-research.md`, `08-reference/research-cycle-2026-09-20-wrong-use-scout.md`, `09-backlog/candidate-mechanisms-2026-09-20-wrong-use-scout.md`, `09-backlog/system-incubator.md`.
+
 # Original and legacy source layers
 
 `originals/README.md` is the exact intake-to-transcription map for the September 13 and September 16 batches. Legacy folders (`art/`, `general/`, `suno_slop/`) preserve earlier source organization and duplicate some material now archived under `originals/`.
