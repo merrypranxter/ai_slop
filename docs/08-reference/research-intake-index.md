@@ -83,3 +83,22 @@ The ledger's explicit next build recommendation is a **functional-scar experimen
 ## Current synthesis posture
 
 **Do not build the next large system yet.** Accumulate a few more research cycles, then compare for repeated structural motifs. The most promising future systems are likely to emerge from combinations, not isolated papers. When the project does pause accumulation for a targeted build, the current first choice is the functional-scar / second-injury assay.
+
+
+## Closed-loop intervention / instability intake — 2026-09-20
+
+New repository notes:
+
+- `docs/08-reference/research-cycle-2026-09-20-closed-loop-instability-intake.md`
+- `docs/09-backlog/candidate-mechanisms-2026-09-20-closed-loop-instability.md`
+
+Major retained additions:
+
+- Sparse Autotelic Perturbation / Intervention Debt from CARL;
+- Instability-Gated Intervention and Trajectory Fossils from timestep-local inversion failure;
+- Evolvable Jurisdiction Stack from Programmable Cellular Automata;
+- Repair–Corruption Frontier for intervention evaluation;
+- Symbiotic Fitness as a relationship-level selection hypothesis;
+- Localized Law Carriage as a Flow-Lenia implementation pattern rather than a new canonical operator.
+
+Strongest new convergence: **intervention should become conditional on the evolving state, not merely scheduled globally.** This cycle repeatedly points toward selective, local, state-aware action rather than always-on pressure.
