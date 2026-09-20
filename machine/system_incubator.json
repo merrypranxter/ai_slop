@@ -32,9 +32,12 @@
     },
     {
       "id": "semantic_fossil_instrument",
-      "status": "NEXT-WORK-SESSION",
+      "status": "GRADUATED",
       "title": "Semantic Fossil Instrument",
-      "next": "Build persistent-state instrument plus route comparison, validator, archive, and minimum run-record schema."
+      "next": "Canonical v0.1 lives at docs/05-architectures/semantic-fossil-instrument.md; future work is optional adapter/renderer/archive extension.",
+      "implementation": "experiments/semantic_fossil",
+      "canonical": "docs/05-architectures/semantic-fossil-instrument.md",
+      "last_updated": "2026-09-20"
     },
     {
       "id": "grammar_injury_recovery",
