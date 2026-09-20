@@ -97,17 +97,33 @@ Do **not** silently promote an incubator item into a canonical system.
 
 ---
 
-## NEXT-WORK-SESSION — Semantic Fossil Instrument
+## GRADUATED — Semantic Fossil Instrument
 
-**State:** recommended integrated build; not yet inserted as a finished system.
+**State:** v0.1 implemented, documented, tested, and routed into the canonical architecture layer on 2026-09-20.
 
-**Last known concept:** persistent state + multiple renderers + route comparison + validator + archive, with transformation order leaving reproducible scars.
+**What exists:**
+- persistent active state plus a separate causal fossil ledger;
+- immutable route/audit ancestry;
+- checkpoints;
+- state-only restore that preserves scars;
+- full restore/reset ablation that removes causal scars;
+- history-sensitive transform predicates;
+- route/checkpoint comparison;
+- deterministic replay and anchor validation;
+- text/JSON/Markdown/CSV renderers;
+- route archive;
+- minimum machine-readable run record and schema;
+- Semantic Fossil Choir reproduction;
+- causal-scar demonstration where identical pre-C active state diverges only when preserved B history is allowed to affect C;
+- GitHub smoke/unit tests.
 
-**Why not now:** intentionally held behind current research accumulation.
+**Canonical home:** `docs/05-architectures/semantic-fossil-instrument.md`
 
-**Next move:** build the instrument and minimum run-record schema; preserve route ancestry and reset/ablation behavior.
+**Implementation:** `experiments/semantic_fossil/`
 
-**Combines with:** Silent Scar, hysteretic transformation, artifact fossilization, language-history experiments.
+**Why graduated:** the incubator graduation rule allows a built system to leave once implementation and canonical documentation exist. This does **not** promote every fossil/history causal interpretation to a native-model mechanism; the implementation is explicitly external and PROCEDURAL.
+
+**Possible extensions:** model-backed transform adapters, image/audio/shader renderer plugins, behavior-sensitive intervention descriptors, fossil decay/inheritance policies, and integration with Silent Scar / Semantic Manifold routes.
 
 ---
 
