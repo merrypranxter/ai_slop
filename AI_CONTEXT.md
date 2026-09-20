@@ -20,10 +20,11 @@ If you need orientation, read in this order:
 4. `docs/02-mechanisms/operator-registry.md` — reusable cross-media operations.
 5. the relevant file under `docs/03-media/`, `04-cognitive-systems/`, or `05-architectures/`.
 6. `docs/06-experimentation/experimental-method.md` before making technical causal claims.
-7. `docs/08-reference/source-audit.md` when you need to know what a source contributes.
-8. `docs/08-reference/provenance-map.md` when you need lineage.
-9. `docs/08-reference/glossary.md` when project vocabulary is ambiguous.
-10. `docs/08-reference/lens-palette.md` when you want thinker/science lenses without turning them into fake evidence.
+7. `docs/06-experimentation/stabilizer-inversion-wrong-use-research.md` when scouting reliability/stabilization literature for failure surfaces.
+8. `docs/08-reference/source-audit.md` when you need to know what a source contributes.
+9. `docs/08-reference/provenance-map.md` when you need lineage.
+10. `docs/08-reference/glossary.md` when project vocabulary is ambiguous.
+11. `docs/08-reference/lens-palette.md` when you want thinker/science lenses without turning them into fake evidence.
 
 Machine-readable routing lives in `machine/index.json`, `machine/operators.json`, and `machine/sources.json`.
 
@@ -91,6 +92,9 @@ Interesting errors are not automatically defects to clean up. Record what preced
 ### 7. Separate creative utility from mechanism confidence
 A technically wrong theory can still inspire excellent art. Keep the art; fix the explanation.
 
+### 8. Read stabilizers backwards
+Failure-prevention literature is a map of failure surfaces. When a paper suppresses drift, collapse, oversaturation, dead codes, error accumulation, or interference, preserve its measurements and ablations, then test the smallest controlled inversion. The method is **Stabilizer Inversion**. It discovers hypotheses; it does not automatically canonize them.
+
 ## Major systems
 
 ### Temporary Minds
@@ -101,6 +105,12 @@ A route-based creative instrument. “Latent space” is explicitly treated as a
 
 ### TOPOS-SRE / SRE controllers
 External software/state-machine experiments that maintain persistent state, measure similarity/attractors, apply operators, increase decay, preserve symbol mappings, and feed the next legal instruction to a generative layer. These are controller dynamics, not secret model internals.
+
+### Semantic Fossil Instrument
+A graduated external-state architecture for path dependence: active state, immutable route ancestry, causal fossil ledgers, checkpoints, reset ablations, deterministic replay, and media compilers. It is a real runnable controller, not a claim that a model literally stores the same scars internally.
+
+### Perceptual Wound / Silent Scar experiments
+Active experimental work on transient intervention, apparent recovery, and whether history changes response to a standardized second injury. Current work emphasizes multidimensional recovery and matched repeated/dose testing before any memory claim.
 
 ### DAVID operator research
 The technical roundtable contains a formal 20-protocol hypothesis catalog plus earlier mechanisms. Canonical `docs/02-mechanisms/david-technical-hypotheses.md` keeps the names and testable recipes while demoting unsupported architecture stories. Its strongest contribution is experimental discipline: controls, ablations, dose-response sweeps, architecture scoping, and failure criteria.
@@ -142,5 +152,7 @@ For each source:
 ## Current overhaul status
 
 The repository has been converted from a document pile into a **knowledge graph in prose form**: principles → mechanisms → media → cognitive systems → architectures → experiments → references/backlog, with complete source preservation and explicit source routing.
+
+Current research accumulation also includes closed-loop/state-aware intervention work and the 2026-09-20 **wrong-use / Stabilizer Inversion** scout. Candidate mechanisms from those cycles stay in backlog/incubator until controls justify promotion.
 
 Future work should extend this structure rather than restarting document-by-document silos.
