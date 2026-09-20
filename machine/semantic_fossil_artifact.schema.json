@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/merrypranxter/ai_slop/machine/semantic_fossil_artifact.schema.json",
+  "title": "Semantic Fossil Artifact Record",
+  "type": "object",
+  "required": [
+    "artifact_id",
+    "route_id",
+    "medium",
+    "artifact_kind",
+    "stored_path",
+    "sha256",
+    "byte_size",
+    "descriptors",
+    "source_operator"
+  ],
+  "properties": {
+    "artifact_id": {
+      "type": "string"
+    },
+    "route_id": {
+      "type": "string"
+    },
+    "medium": {
+      "type": "string"
+    },
+    "artifact_kind": {
+      "type": "string"
+    },
+    "stored_path": {
+      "type": "string"
+    },
+    "sha256": {
+      "type": "string"
+    },
+    "byte_size": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "mime_type": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "descriptors": {
+      "type": "object"
+    },
+    "source_operator": {
+      "type": "string"
+    },
+    "reason": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "additionalProperties": true
+}
