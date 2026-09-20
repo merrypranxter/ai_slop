@@ -1,6 +1,10 @@
 name: perceptual-wound-smoke
 
 on:
+  push:
+    paths:
+      - "experiments/perceptual_wound/**"
+      - ".github/workflows/perceptual-wound-smoke.yml"
   pull_request:
     paths:
       - "experiments/perceptual_wound/**"
