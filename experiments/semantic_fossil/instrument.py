@@ -63,14 +63,20 @@ def normalized_fossils(fossils):
     """Causal scar content without route-local provenance fields."""
     out = []
     for fossil in fossils:
-        out.append({
+        normalized = {
             "operator": fossil.get("operator"),
             "element_id": fossil.get("element_id"),
             "field": fossil.get("field"),
             "before": deep_copy(fossil.get("before")),
             "after": deep_copy(fossil.get("after")),
             "reason": fossil.get("reason"),
-        })
+        }
+        # Artifact-aware fossils remain causally visible through explicit stored metadata.
+        # Route-local provenance IDs are still excluded so equivalent scars can compare equal.
+        for key in ("artifact_ref", "artifact_kind", "descriptor_ref", "artifact_summary"):
+            if key in fossil:
+                normalized[key] = deep_copy(fossil.get(key))
+        out.append(normalized)
     return out
 
 
