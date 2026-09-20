@@ -68,24 +68,29 @@ Do **not** silently promote an incubator item into a canonical system.
 
 ---
 
-## NEXT-WORK-SESSION — Perceptual Wound -> Silent Scar -> Behavior Archive
+## ACTIVE — Perceptual Wound -> Silent Scar -> Behavior Archive
 
-**State:** ready concept chain; not yet built as one system.
+**State:** first implementation slice now exists; not yet a finished system.
+
+**What was built on 2026-09-20:**
+- `experiments/perceptual_wound/run_lenia_occlusion.py` — four matched conditions on the public `jessescool/lenia-umwelt` substrate: no mask, physical state erasure, unnormalized sensory occlusion, and normalized sensory occlusion;
+- `experiments/perceptual_wound/README.md` — protocol, measurements, provenance, and run instructions;
+- `.github/workflows/perceptual-wound-smoke.yml` — CPU smoke test that clones the source substrate rather than vendoring it.
 
 **Why it matters:** this remains the strongest integrated build path from the 2026-09-19 research cycle, and the full primary-source intake strengthened it substantially with Self-Organising Digital Circuits, Cells2Pixels, and moving-neighborhood causal tests.
 
-**Last known sequence:**
-1. perception-only injury / Lenia sensory occlusion;
-2. visible recovery plus hidden-state / second-injury scar assay;
+**Sequence:**
+1. **IMPLEMENTED v0.1:** perception-only injury / Lenia sensory occlusion harness;
+2. **NEXT:** visible recovery plus hidden-state / second-injury scar assay;
 3. split recovery into appearance, internal state, function, and interaction graph;
 4. add Cells2Pixels skin-vs-state controls;
 5. add movement/state-rule swap tests when NPA is available;
 6. behavior-sensitive archive descriptors;
 7. archive the artifact by intervention response, not appearance alone.
 
-**Why not now:** user explicitly chose to keep researching before another system-building round.
+**Current epistemic status:** PROCEDURAL / HYPOTHESIS. The harness makes the comparison runnable; source-paper reproduction and AI SLOP claims still require matched runs and recorded failures.
 
-**Next move when resumed:** build the smallest Lenia occlusion prototype first, then a standardized functional-scar / second-injury assay. This is the current **first targeted build after research accumulation pauses**, before another broad novelty sweep. Then add the behavior archive.
+**Next move:** run and stabilize the v0.1 four-condition assay, then build the standardized Functional Scar / Second-Injury Assay on visibly recovered states.
 
 **Combines with:** controlled temporal leakage, delayed-injection conflict, external-state controllers, AutoQD/QD archive work.
 

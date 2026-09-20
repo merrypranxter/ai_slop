@@ -1,0 +1,60 @@
+name: perceptual-wound-smoke
+
+on:
+  push:
+    paths:
+      - "experiments/perceptual_wound/**"
+      - ".github/workflows/perceptual-wound-smoke.yml"
+  pull_request:
+    paths:
+      - "experiments/perceptual_wound/**"
+      - ".github/workflows/perceptual-wound-smoke.yml"
+  workflow_dispatch:
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Clone source Lenia substrate
+        run: git clone --depth 1 https://github.com/jessescool/lenia-umwelt.git /tmp/lenia-umwelt
+
+      - name: Install runtime dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install numpy scipy
+          python -m pip install torch --index-url https://download.pytorch.org/whl/cpu
+
+      - name: Compile harness
+        run: python -m py_compile experiments/perceptual_wound/run_lenia_occlusion.py
+
+      - name: Run tiny CPU smoke test
+        run: |
+          python experiments/perceptual_wound/run_lenia_occlusion.py             --umwelt /tmp/lenia-umwelt             --animal O2u             --grid 64             --burn-in 20             --heading-probe 8             --neighborhood-steps 20             --steps 20             --sample-every 2             --mask-radius 5             --mask-ahead 10             --out /tmp/perceptual-wound-smoke
+
+      - name: Check outputs
+        run: |
+          test -s /tmp/perceptual-wound-smoke/summary.json
+          test -s /tmp/perceptual-wound-smoke/timeseries.csv
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          p = Path("/tmp/perceptual-wound-smoke/summary.json")
+          data = json.loads(p.read_text())
+          expected = {
+              "no_mask",
+              "state_erasure",
+              "unnormalized_occlusion",
+              "normalized_occlusion",
+          }
+          got = set(data["conditions"])
+          assert got == expected, (got, expected)
+          print("conditions:", sorted(got))
+          PY
