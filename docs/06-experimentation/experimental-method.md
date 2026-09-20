@@ -144,6 +144,55 @@ Do not use "chaos" as a synonym for a large repeatable transient, and do not cal
 
 When an edit mask or permission boundary changes over time, compare against fixed-mask and alternate-mask controls at matched edit strength. Record boundary motion separately from the resulting artifact.
 
+
+### Steering and corrective interventions need a repair–corruption frontier
+
+For any intervention intended to "improve" a state, do not report one average score. Record separately:
+
+- bad -> good conversions;
+- bad -> bad;
+- good -> good;
+- good -> bad corruption;
+- degenerate / collapsed outputs;
+- dose;
+- matched-norm random or sham intervention;
+- whether an independent detector/gate was used.
+
+An intervention that repairs some failures while damaging more already-good cases is not cleanly beneficial.
+
+### Trajectory-local experiments need full route identity
+
+When a result depends on local instability, inversion, or scheduled intervention, preserve:
+
+- model + version;
+- prompt / conditioning;
+- initial latent or seed;
+- complete schedule;
+- local stability / residual trace when available;
+- exact intervention intervals;
+- intervention history.
+
+For these experiments, prompt or seed alone is not a complete specimen identity.
+
+### Closed-loop controllers need intervention-cost accounting
+
+For controllers that repeatedly act on an evolving system, record:
+
+- action count;
+- action magnitude;
+- intervention cost/tax;
+- time to target;
+- post-control viability period;
+- amount of continued correction required after apparent success.
+
+Treat the last quantity as **intervention debt**. A system that only survives under constant correction is a different result from one made self-sustaining by a few surgical changes.
+
+### Jurisdiction experiments must log information access
+
+When local/global/decision modules coexist, record what each module is allowed to observe. Global information can become a shortcut that inflates fitness while flattening morphology or bypassing the intended local process.
+
+Compare high score against morphology/behavior descriptors and inspect for metric-exploit solutions.
+
 ## Graduation rule
 
 An idea becomes a reusable operator when it produces a recognizable mutation signature across unlike inputs without destroying task/media fidelity, and when the characteristic effect weakens or disappears under the relevant ablation.
