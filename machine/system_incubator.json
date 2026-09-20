@@ -99,6 +99,16 @@
       "canonical_reference": "docs/08-reference/research-cycle-2026-09-20-closed-loop-instability-intake.md",
       "backlog": "docs/09-backlog/candidate-mechanisms-2026-09-20-closed-loop-instability.md",
       "last_updated": "2026-09-20"
+    },
+    {
+      "id": "wrong_use_stabilizer_inversion_cluster",
+      "status": "RESEARCH-ACCUMULATING",
+      "title": "Wrong-use / Stabilizer Inversion mechanism cluster",
+      "next": "Build in order: cyclic denoising atlas; attention sink amputation/occupation; dead-code injection; spectral jurisdictions; semantic-entropy breeding. Run controls and dose sweeps before canonical promotion.",
+      "canonical_reference": "docs/08-reference/research-cycle-2026-09-20-wrong-use-scout.md",
+      "backlog": "docs/09-backlog/candidate-mechanisms-2026-09-20-wrong-use-scout.md",
+      "method": "docs/06-experimentation/stabilizer-inversion-wrong-use-research.md",
+      "last_updated": "2026-09-20"
     }
   ]
 }
