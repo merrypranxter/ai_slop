@@ -2,6 +2,7 @@ import importlib.util
 import json
 import tempfile
 import unittest
+import sys
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
@@ -9,6 +10,7 @@ MODULE_PATH = HERE / "instrument.py"
 SPEC = importlib.util.spec_from_file_location("semantic_fossil_instrument", MODULE_PATH)
 mod = importlib.util.module_from_spec(SPEC)
 assert SPEC.loader is not None
+sys.modules[SPEC.name] = mod
 SPEC.loader.exec_module(mod)
 
 
