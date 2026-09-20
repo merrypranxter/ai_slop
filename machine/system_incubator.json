@@ -81,6 +81,15 @@
       "status": "PARKED",
       "title": "Temporary Minds second-wave items",
       "next": "Revisit after first-generation minds and current experiment machinery have actual results."
+    },
+    {
+      "id": "full_primary_source_intake_cluster",
+      "status": "RESEARCH-ACCUMULATING",
+      "title": "Full primary-source intake: mutable bodies, functional scars, controlled failure",
+      "next": "Keep F01-F10 as adapters/validators/substrates; prioritize functional-scar and multidimensional recovery work when synthesis resumes; do not promote new canonical operators yet.",
+      "canonical_reference": "docs/08-reference/research-cycle-2026-09-19-full-primary-source-intake.md",
+      "backlog": "docs/09-backlog/candidate-mechanisms-2026-09-19-full-intake.md",
+      "last_updated": "2026-09-20"
     }
   ]
 }
