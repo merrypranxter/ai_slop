@@ -16,12 +16,16 @@ try:
     from .artifacts import ingest_artifact, load_route_state
     from .instrument import digest, active_payload, causal_payload, normalized_fossils
     from .renderers import renderer_registry
-except ImportError:  # direct script execution
-    from adapters.base import TransformRequest
-    from adapters.packet import PacketAdapter
-    from artifacts import ingest_artifact, load_route_state
-    from instrument import digest, active_payload, causal_payload, normalized_fossils
-    from renderers import renderer_registry
+except ImportError:  # direct script execution from the repository checkout
+    import sys
+    ROOT = Path(__file__).resolve().parents[2]
+    if str(ROOT) not in sys.path:
+        sys.path.insert(0, str(ROOT))
+    from experiments.semantic_fossil.adapters.base import TransformRequest
+    from experiments.semantic_fossil.adapters.packet import PacketAdapter
+    from experiments.semantic_fossil.artifacts import ingest_artifact, load_route_state
+    from experiments.semantic_fossil.instrument import digest, active_payload, causal_payload, normalized_fossils
+    from experiments.semantic_fossil.renderers import renderer_registry
 
 
 def route_ids(run_dir: Path):
