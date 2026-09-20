@@ -34,10 +34,17 @@
       "id": "semantic_fossil_instrument",
       "status": "GRADUATED",
       "title": "Semantic Fossil Instrument",
-      "next": "Canonical v0.1 lives at docs/05-architectures/semantic-fossil-instrument.md; future work is optional adapter/renderer/archive extension.",
+      "next": "Canonical v0.2 is built. Optional later work: provider-specific adapters, shader renderer, behavior-sensitive descriptors, fossil decay/inheritance, route sweeps, and Silent Scar integration.",
       "implementation": "experiments/semantic_fossil",
       "canonical": "docs/05-architectures/semantic-fossil-instrument.md",
-      "last_updated": "2026-09-20"
+      "last_updated": "2026-09-20",
+      "completed_slices": [
+        "semantic_fossil_v0.1",
+        "creative_bridge_v0.2",
+        "suno_compiler_v0.2",
+        "visual_compiler_v0.2",
+        "artifact_fossils_v0.2"
+      ]
     },
     {
       "id": "grammar_injury_recovery",
