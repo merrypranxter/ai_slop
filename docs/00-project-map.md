@@ -51,6 +51,9 @@ A mathematical rule becomes tactile through concrete material behavior; recordin
 ### Iterative artifact fossilization
 A weird accident from one pass becomes the conditioning material for the next, turning repair noise, compression artifacts, or mutations into stable features.
 
+### Stabilizer inversion / wrong-use scouting
+Read failure-prevention literature backwards. Preserve the paper's baseline, measurement, dose curve, and ablation, then test whether removing, reversing, delaying, misplacing, or over-amplifying one stabilizing component turns the suppressed failure into controlled material. This is a research-discovery method, not an automatic operator-promotion rule.
+
 ## 4. Core artifacts
 
 The project increasingly treats these as more important than a single final prompt:
@@ -88,12 +91,23 @@ The systems are not competitors; they operate at different levels.
 
 `Controller/HLC` can persist the route and enforce state transitions.
 
+`Semantic Fossil Instrument` can preserve route ancestry and causal fossils, compare checkpoints/routes, and test reset ablations.
+
 `Media compiler` turns the resulting state into image/video/audio instructions.
 
 `DAVID experiment framework` tests whether a claimed technical mechanism reproduces across conditions.
 
 `GLSL visualizer` can render controller state as an external visualization without pretending it is a literal scan of hidden neural state.
 
-## 7. What is archived rather than canonical
+## 7. Current live work — 2026-09-20
+
+- **Semantic Fossil Instrument v0.2:** graduated runnable external-state/path-dependence system with route ancestry, fossils, reset ablations, renderers, and creative compilers.
+- **Perceptual Wound -> Silent Scar:** active experiment on transient injury, apparent recovery, standardized second injury, and multidimensional recovery reporting.
+- **Research accumulation:** full primary-source intake, closed-loop/state-aware intervention work, and the new wrong-use/Stabilizer Inversion scout are being preserved without forcing premature synthesis.
+- **Next wrong-use build queue:** cyclic denoising atlas -> attention sink amputation/occupation -> dead-code injection -> spectral jurisdictions -> semantic-entropy breeding.
+
+See `08-reference/research-intake-index.md` and `09-backlog/system-incubator.md` for the live board.
+
+## 8. What is archived rather than canonical
 
 Archived documents contain several recurring overclaims: “the glitch is the machine’s true self,” direct prompt access to hidden tensors, literal RLHF bypass through jargon or Unicode, proprietary architecture claims stated as certainty, and manifesto sections advocating epistemic saturation. These remain useful as history, imagery, or hypotheses, but are not canonical technical guidance.
