@@ -22,9 +22,13 @@
       "id": "perceptual_wound_silent_scar_archive",
       "status": "ACTIVE",
       "title": "Perceptual Wound -> Silent Scar -> Behavior Archive",
-      "next": "Run and stabilize the four-condition Lenia occlusion harness, then build the standardized Functional Scar / Second-Injury Assay before the behavior archive.",
+      "next": "Run a repeated/dose matrix for the Silent Scar second-injury assay, add multidimensional recovery reporting, then build behavior-sensitive archive descriptors.",
       "implementation": "experiments/perceptual_wound",
-      "last_updated": "2026-09-20"
+      "last_updated": "2026-09-20",
+      "completed_slices": [
+        "perceptual_wound_v0.1",
+        "silent_scar_second_injury_v0.1"
+      ]
     },
     {
       "id": "semantic_fossil_instrument",
