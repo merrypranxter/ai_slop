@@ -264,6 +264,39 @@ See:
 
 ---
 
+
+# CLOSED-LOOP / INSTABILITY INTAKE CLUSTER — DO NOT CANONIZE YET
+
+The 2026-09-20 Perplexity cycle added several genuinely new backlog mechanisms and method upgrades.
+
+Tracked candidates:
+
+- Sparse Autotelic Perturbation
+- Intervention Debt
+- Instability-Gated Intervention
+- Trajectory Fossil
+- Evolvable Jurisdiction Stack
+- Repair–Corruption Frontier
+- Symbiotic Fitness
+- Localized Law Carriage (implementation/substrate only; merge with existing operators)
+
+**Strongest structural signal:** interventions should increasingly become **conditional on the evolving state** rather than always-on or globally scheduled.
+
+**High-value later prototypes:**
+1. Anti-SkipInv / instability-gated inversion harness;
+2. CARL-style costed controller on Lenia/Flow-Lenia;
+3. executable local/global/decision jurisdiction prototype;
+4. relationship-level breeding test for Symbiotic Fitness.
+
+**Why not now:** the project is still intentionally accumulating research cycles before another synthesis/build phase. Preserve the mechanisms and method changes; do not promote canonical operators yet.
+
+See:
+- `docs/08-reference/research-cycle-2026-09-20-closed-loop-instability-intake.md`
+- `docs/09-backlog/candidate-mechanisms-2026-09-20-closed-loop-instability.md`
+- `docs/09-backlog/research-combination-watchlist-2026-09-20.md`
+
+---
+
 # HOW ITEMS LEAVE THIS FILE
 
 An item graduates only when one of these happens:
