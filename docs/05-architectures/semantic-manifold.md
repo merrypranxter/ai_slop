@@ -109,3 +109,12 @@ The application should infer a structured operation from casual language while a
 Persistent state belongs to software, not to vague conversational memory. The route, ledger, current state, metrics, and saved trajectories should be first-class application data. Models are transformation/interpretation components inside the instrument.
 
 Primary source: `ai_readable/semantic_systems/08-semantic-manifold-game-design-specification-v0.1.md`.
+
+
+## Concrete path-dependence instrument
+
+The repository now has a runnable external implementation of the route-history requirement:
+
+- [Semantic Fossil Instrument](semantic-fossil-instrument.md)
+
+It separates current active state, causal fossils, and immutable audit ancestry. A state-only restore can return the visible/current state to an earlier checkpoint while preserving a scar; a full restore removes that scar as an ablation. Later transforms may explicitly read the fossil ledger, so path dependence is operational rather than merely described.
