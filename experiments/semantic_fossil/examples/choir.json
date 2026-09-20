@@ -1,0 +1,129 @@
+{
+  "instrument_id": "semantic-fossil-choir-v0.1",
+  "description": "Deterministic reproduction of Experiment L ordered language transformations.",
+  "epistemic_status": "PROCEDURAL",
+  "initial_state": {
+    "interpretation": "proto-language",
+    "invariants": {
+      "anchor": "mora"
+    },
+    "elements": {
+      "pressure": {
+        "value": "papa",
+        "meaning": "pressure"
+      },
+      "knot": {
+        "value": "papi",
+        "meaning": "knot"
+      },
+      "breath": {
+        "value": "apa",
+        "meaning": "breath"
+      },
+      "turn": {
+        "value": "pota",
+        "meaning": "turn"
+      },
+      "echo": {
+        "value": "tafa",
+        "meaning": "echo"
+      },
+      "return": {
+        "value": "mora",
+        "meaning": "return",
+        "anchor": true
+      },
+      "scar": {
+        "value": "kapi",
+        "meaning": "scar"
+      },
+      "thread": {
+        "value": "sapa",
+        "meaning": "thread"
+      }
+    }
+  },
+  "transforms": {
+    "A": {
+      "operations": [
+        {
+          "op": "replace",
+          "field": "value",
+          "old": "p",
+          "new": "f",
+          "reason": "A: p becomes f"
+        }
+      ]
+    },
+    "B": {
+      "operations": [
+        {
+          "op": "context_replace",
+          "field": "value",
+          "old": "f",
+          "new": "v",
+          "left": "vowel",
+          "right": "vowel",
+          "reason": "B: intervocalic f becomes v"
+        }
+      ]
+    }
+  },
+  "routes": [
+    {
+      "id": "AB",
+      "steps": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "id": "BA",
+      "steps": [
+        "B",
+        "A"
+      ]
+    },
+    {
+      "id": "B_ONLY",
+      "steps": [
+        "B"
+      ]
+    },
+    {
+      "id": "A_RESET_B",
+      "steps": [
+        {
+          "checkpoint": "origin"
+        },
+        "A",
+        {
+          "restore": "origin",
+          "mode": "full"
+        },
+        "B"
+      ]
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "order-matters",
+      "left": "AB",
+      "right": "BA",
+      "expect": {
+        "active_equal": false,
+        "causal_equal": false
+      }
+    },
+    {
+      "id": "reset-ablation",
+      "left": "A_RESET_B",
+      "right": "B_ONLY",
+      "expect": {
+        "active_equal": true,
+        "causal_equal": true,
+        "fossil_equal": true
+      }
+    }
+  ]
+}
