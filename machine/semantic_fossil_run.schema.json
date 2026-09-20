@@ -1,0 +1,118 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/merrypranxter/ai_slop/machine/semantic_fossil_run.schema.json",
+  "title": "Semantic Fossil Instrument Run",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "instrument",
+    "instrument_version",
+    "instrument_id",
+    "epistemic_status",
+    "spec_hash",
+    "routes",
+    "comparisons",
+    "checks",
+    "artifacts"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string"
+    },
+    "instrument": {
+      "const": "Semantic Fossil Instrument"
+    },
+    "instrument_version": {
+      "type": "string"
+    },
+    "instrument_id": {
+      "type": "string"
+    },
+    "epistemic_status": {
+      "type": "string"
+    },
+    "spec_hash": {
+      "type": "string"
+    },
+    "routes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "instrument_id",
+          "route_id",
+          "active_hash",
+          "causal_hash",
+          "fossil_hash",
+          "fossil_count",
+          "operators",
+          "anchor_preservation"
+        ],
+        "properties": {
+          "instrument_id": {
+            "type": "string"
+          },
+          "route_id": {
+            "type": "string"
+          },
+          "active_hash": {
+            "type": "string"
+          },
+          "causal_hash": {
+            "type": "string"
+          },
+          "fossil_hash": {
+            "type": "string"
+          },
+          "fossil_count": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "operators": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "anchor_preservation": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": true
+      }
+    },
+    "comparisons": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "checks": {
+      "type": "object",
+      "required": [
+        "all_declared_comparisons_passed",
+        "all_deterministic_replays_passed",
+        "all_anchors_preserved"
+      ],
+      "properties": {
+        "all_declared_comparisons_passed": {
+          "type": "boolean"
+        },
+        "all_deterministic_replays_passed": {
+          "type": "boolean"
+        },
+        "all_anchors_preserved": {
+          "type": "boolean"
+        }
+      },
+      "additionalProperties": true
+    },
+    "artifacts": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string"
+      }
+    }
+  },
+  "additionalProperties": true
+}

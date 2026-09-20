@@ -1,0 +1,52 @@
+name: semantic-fossil-smoke
+
+on:
+  push:
+    paths:
+      - "experiments/semantic_fossil/**"
+      - ".github/workflows/semantic-fossil-smoke.yml"
+  pull_request:
+    paths:
+      - "experiments/semantic_fossil/**"
+      - "machine/semantic_fossil_run.schema.json"
+      - "docs/05-architectures/semantic-fossil-instrument.md"
+      - ".github/workflows/semantic-fossil-smoke.yml"
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Compile
+        run: python -m py_compile experiments/semantic_fossil/instrument.py experiments/semantic_fossil/test_instrument.py
+
+      - name: Unit tests
+        run: python -m unittest experiments/semantic_fossil/test_instrument.py -v
+
+      - name: Run choir example
+        run: |
+          python experiments/semantic_fossil/instrument.py run \
+            --spec experiments/semantic_fossil/examples/choir.json \
+            --out /tmp/semantic-fossil-choir
+
+      - name: Run causal scar example
+        run: |
+          python experiments/semantic_fossil/instrument.py run \
+            --spec experiments/semantic_fossil/examples/causal-scar.json \
+            --out /tmp/semantic-fossil-scar
+
+      - name: Validate outputs
+        run: |
+          python experiments/semantic_fossil/instrument.py validate --run /tmp/semantic-fossil-choir
+          python experiments/semantic_fossil/instrument.py validate --run /tmp/semantic-fossil-scar
+          test -s /tmp/semantic-fossil-scar/run.json
+          test -s /tmp/semantic-fossil-scar/fossils.csv
+          test -s /tmp/semantic-fossil-scar/archive/index.jsonl

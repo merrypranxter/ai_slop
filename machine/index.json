@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.4",
+  "schema_version": "0.5",
   "project": "AI SLOP — Structured Instability Lab",
   "canonical_root": "docs/",
   "ai_entrypoint": "AI_CONTEXT.md",
@@ -11,7 +11,11 @@
     "machine_routing": "machine/",
     "searchable_transcripts": "ai_readable/",
     "original_archive": "originals/",
-    "legacy_sources": ["art/", "general/", "suno_slop/"],
+    "legacy_sources": [
+      "art/",
+      "general/",
+      "suno_slop/"
+    ],
     "intake": "new_to_be_processed_by_copilot_agent/"
   },
   "routing": {
@@ -29,18 +33,55 @@
     "david_protocol_registry": "docs/02-mechanisms/david-technical-hypotheses.md",
     "experimental_method": "docs/06-experimentation/experimental-method.md",
     "run_log_template": "docs/06-experimentation/run-log-template.md",
-    "experiment_schema": "machine/experiment.schema.json"
+    "experiment_schema": "machine/experiment.schema.json",
+    "semantic_fossil_run_schema": "machine/semantic_fossil_run.schema.json"
   },
   "canonical_sections": [
-    {"id":"principles","path":"docs/01-principles/","status":"active"},
-    {"id":"mechanisms","path":"docs/02-mechanisms/","status":"active"},
-    {"id":"media","path":"docs/03-media/","status":"active"},
-    {"id":"cognitive_systems","path":"docs/04-cognitive-systems/","status":"active"},
-    {"id":"architectures","path":"docs/05-architectures/","status":"active"},
-    {"id":"experimentation","path":"docs/06-experimentation/","status":"active"},
-    {"id":"prompts","path":"docs/07-prompts/","status":"active"},
-    {"id":"reference","path":"docs/08-reference/","status":"active"},
-    {"id":"backlog","path":"docs/09-backlog/","status":"active"}
+    {
+      "id": "principles",
+      "path": "docs/01-principles/",
+      "status": "active"
+    },
+    {
+      "id": "mechanisms",
+      "path": "docs/02-mechanisms/",
+      "status": "active"
+    },
+    {
+      "id": "media",
+      "path": "docs/03-media/",
+      "status": "active"
+    },
+    {
+      "id": "cognitive_systems",
+      "path": "docs/04-cognitive-systems/",
+      "status": "active"
+    },
+    {
+      "id": "architectures",
+      "path": "docs/05-architectures/",
+      "status": "active"
+    },
+    {
+      "id": "experimentation",
+      "path": "docs/06-experimentation/",
+      "status": "active"
+    },
+    {
+      "id": "prompts",
+      "path": "docs/07-prompts/",
+      "status": "active"
+    },
+    {
+      "id": "reference",
+      "path": "docs/08-reference/",
+      "status": "active"
+    },
+    {
+      "id": "backlog",
+      "path": "docs/09-backlog/",
+      "status": "active"
+    }
   ],
   "major_systems": {
     "temporary_minds": "docs/04-cognitive-systems/temporary-minds.md",
@@ -48,14 +89,24 @@
     "sre_topos": "docs/05-architectures/sre-controller.md",
     "glsl_visualizer": "docs/05-architectures/glsl-visualizer.md",
     "local_model_interventions": "docs/05-architectures/local-model-interventions.md",
-    "david_hypotheses": "docs/02-mechanisms/david-technical-hypotheses.md"
+    "david_hypotheses": "docs/02-mechanisms/david-technical-hypotheses.md",
+    "semantic_fossil_instrument": "docs/05-architectures/semantic-fossil-instrument.md"
   },
   "media": {
     "image": "docs/03-media/image.md",
     "video": "docs/03-media/video.md",
     "audio_suno": "docs/03-media/audio-suno.md"
   },
-  "epistemic_statuses": ["OBSERVED","SUPPORTED","HYPOTHESIS","PROCEDURAL","METAPHOR","SPECULATIVE","ARCHIVED","SUPERSEDED"],
+  "epistemic_statuses": [
+    "OBSERVED",
+    "SUPPORTED",
+    "HYPOTHESIS",
+    "PROCEDURAL",
+    "METAPHOR",
+    "SPECULATIVE",
+    "ARCHIVED",
+    "SUPERSEDED"
+  ],
   "rules": [
     "Prefer mechanisms over adjectives.",
     "Keep competing constraints active rather than letting one condition drop out.",
