@@ -70,27 +70,28 @@ Do **not** silently promote an incubator item into a canonical system.
 
 ## ACTIVE — Perceptual Wound -> Silent Scar -> Behavior Archive
 
-**State:** first implementation slice now exists; not yet a finished system.
+**State:** first two implementation slices now exist; not yet a finished system.
 
 **What was built on 2026-09-20:**
 - `experiments/perceptual_wound/run_lenia_occlusion.py` — four matched conditions on the public `jessescool/lenia-umwelt` substrate: no mask, physical state erasure, unnormalized sensory occlusion, and normalized sensory occlusion;
-- `experiments/perceptual_wound/README.md` — protocol, measurements, provenance, and run instructions;
-- `.github/workflows/perceptual-wound-smoke.yml` — CPU smoke test that clones the source substrate rather than vendoring it.
+- `experiments/perceptual_wound/run_silent_scar.py` — matched history-dependence assay: transient sensory wound -> visible recovery -> standardized second injury, compared against an unwounded route at the same elapsed time;
+- `experiments/perceptual_wound/README.md` — protocol, measurements, provenance, and run instructions for both stages;
+- `.github/workflows/perceptual-wound-smoke.yml` — CPU smoke test that clones the source substrate rather than vendoring it and executes both harnesses.
 
 **Why it matters:** this remains the strongest integrated build path from the 2026-09-19 research cycle, and the full primary-source intake strengthened it substantially with Self-Organising Digital Circuits, Cells2Pixels, and moving-neighborhood causal tests.
 
 **Sequence:**
 1. **IMPLEMENTED v0.1:** perception-only injury / Lenia sensory occlusion harness;
-2. **NEXT:** visible recovery plus hidden-state / second-injury scar assay;
-3. split recovery into appearance, internal state, function, and interaction graph;
+2. **IMPLEMENTED v0.1:** visible recovery + standardized Functional Scar / Second-Injury assay;
+3. **NEXT:** split recovery reporting into appearance, state, function, and interaction/trajectory behavior where the substrate exposes those dimensions;
 4. add Cells2Pixels skin-vs-state controls;
 5. add movement/state-rule swap tests when NPA is available;
 6. behavior-sensitive archive descriptors;
 7. archive the artifact by intervention response, not appearance alone.
 
-**Current epistemic status:** PROCEDURAL / HYPOTHESIS. The harness makes the comparison runnable; source-paper reproduction and AI SLOP claims still require matched runs and recorded failures.
+**Current epistemic status:** PROCEDURAL / HYPOTHESIS. Both harnesses are runnable and their GitHub smoke test passes; a functional-scar claim still requires repeated matched runs, dose sweeps, and recorded failures. One divergent trajectory is not promoted to "memory."
 
-**Next move:** run and stabilize the v0.1 four-condition assay, then build the standardized Functional Scar / Second-Injury Assay on visibly recovered states.
+**Next move:** run a proper repeated/dose matrix for the second-injury assay and add the multidimensional recovery report. Only after that should this feed the behavior archive.
 
 **Combines with:** controlled temporal leakage, delayed-injection conflict, external-state controllers, AutoQD/QD archive work.
 
