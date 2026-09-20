@@ -20,9 +20,11 @@
     },
     {
       "id": "perceptual_wound_silent_scar_archive",
-      "status": "NEXT-WORK-SESSION",
+      "status": "ACTIVE",
       "title": "Perceptual Wound -> Silent Scar -> Behavior Archive",
-      "next": "Build smallest Lenia occlusion prototype, then second-injury scar assay, then behavior archive."
+      "next": "Run and stabilize the four-condition Lenia occlusion harness, then build the standardized Functional Scar / Second-Injury Assay before the behavior archive.",
+      "implementation": "experiments/perceptual_wound",
+      "last_updated": "2026-09-20"
     },
     {
       "id": "semantic_fossil_instrument",
