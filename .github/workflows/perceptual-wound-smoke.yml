@@ -29,7 +29,7 @@ jobs:
       - name: Install runtime dependencies
         run: |
           python -m pip install --upgrade pip
-          python -m pip install numpy scipy
+          python -m pip install numpy scipy matplotlib imageio tqdm
           python -m pip install torch --index-url https://download.pytorch.org/whl/cpu
 
       - name: Compile harness
