@@ -1,4 +1,4 @@
-# Semantic Fossil Instrument v0.1
+# Semantic Fossil Instrument v0.2
 
 An external, inspectable path-dependence controller for AI SLOP.
 
@@ -87,3 +87,54 @@ The runner refuses to reuse a non-empty output folder unless `--overwrite` is su
 This is application state. It is not a hidden-activation viewer, latent-space probe, or claim that prompts rewrite model memory.
 
 That limitation is a feature: because the state is explicit, we can actually ablate the fucking thing.
+
+
+---
+
+## Creative bridge
+
+v0.2 can now compile route state into **Suno** and **visual** instructions, write provider-neutral request packets, and ingest the resulting media back into route history as explicit artifact fossils.
+
+Compile every route:
+
+```bash
+python -m experiments.semantic_fossil.creative compile \
+  --run /tmp/fossil-scar \
+  --renderer all
+```
+
+Write a transform packet for a local or external generator:
+
+```bash
+python -m experiments.semantic_fossil.creative packet \
+  --run /tmp/fossil-scar \
+  --route VIA_B_STATE_RESTORE \
+  --renderer visual \
+  --out /tmp/fossil-requests
+```
+
+After generation, ingest an artifact:
+
+```bash
+python -m experiments.semantic_fossil.creative ingest \
+  --run /tmp/fossil-scar \
+  --route VIA_B_STATE_RESTORE \
+  --medium image \
+  --file rendered.png \
+  --operator visual_renderer \
+  --descriptor identity_anchor_preserved=true \
+  --descriptor topological_damage=0.72
+```
+
+The generated file is copied into the run folder. Its hash, path, media type, and explicit descriptors become a new fossil overlay. Compile the route again and later instructions can respond to that recorded artifact.
+
+### Current plugin surfaces
+
+- `adapters/` — provider-neutral model/generator boundary;
+- `renderers/` — medium-facing output plugins;
+- `compilers/suno.py` — route history -> Suno style + lyrics/control;
+- `compilers/visual.py` — route history -> visual generation prompt;
+- `artifacts.py` — artifact storage, hashing, descriptors, and fossilization;
+- `creative.py` — command-line bridge.
+
+The base experiment record stays frozen. Post-render artifact fossils live in `artifact-fossils.jsonl` and are overlaid only when compiling later creative passes.
