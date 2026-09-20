@@ -11,6 +11,7 @@ This directory exists so software agents do not have to scrape prose just to dis
 - `david_protocols.json` — compact DAVID Protocol 01–20 hypothesis index with scope, family, and minimum test.
 - `sources.json` — substantive source disposition and canonical-route lookup.
 - `experiment.schema.json` — JSON Schema for structured experiment-run records.
+- `semantic_fossil_run.schema.json` — minimum machine-readable run record for Semantic Fossil Instrument executions.
 - `system_incubator.json` — compact status/next-step index for promising AI SLOP work that has **not** yet graduated into canonical systems or operators. Canonical explanation lives in `docs/09-backlog/system-incubator.md`.
 
 ## Intended agent flow
