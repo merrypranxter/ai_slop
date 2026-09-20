@@ -97,7 +97,7 @@ class SemanticFossilTests(unittest.TestCase):
                 self.assertTrue((out / rel).is_file(), rel)
 
             run_record = json.loads((out / "run.json").read_text(encoding="utf-8"))
-            self.assertEqual(run_record["instrument_version"], "0.1")
+            self.assertEqual(run_record["instrument_version"], "0.2")
             self.assertEqual(run_record["instrument_id"], "semantic-scar-causal-demo-v0.1")
 
 

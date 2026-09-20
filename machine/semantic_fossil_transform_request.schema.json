@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/merrypranxter/ai_slop/machine/semantic_fossil_transform_request.schema.json",
+  "title": "Semantic Fossil Transform Request",
+  "type": "object",
+  "required": [
+    "request_id",
+    "route_id",
+    "medium",
+    "prompt",
+    "metadata"
+  ],
+  "properties": {
+    "request_id": {
+      "type": "string"
+    },
+    "route_id": {
+      "type": "string"
+    },
+    "medium": {
+      "type": "string"
+    },
+    "prompt": {
+      "type": "string"
+    },
+    "active_hash": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "causal_hash": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "fossil_hash": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "metadata": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": true
+}

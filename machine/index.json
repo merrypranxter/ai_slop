@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.5",
+  "schema_version": "0.6",
   "project": "AI SLOP — Structured Instability Lab",
   "canonical_root": "docs/",
   "ai_entrypoint": "AI_CONTEXT.md",
@@ -34,7 +34,9 @@
     "experimental_method": "docs/06-experimentation/experimental-method.md",
     "run_log_template": "docs/06-experimentation/run-log-template.md",
     "experiment_schema": "machine/experiment.schema.json",
-    "semantic_fossil_run_schema": "machine/semantic_fossil_run.schema.json"
+    "semantic_fossil_run_schema": "machine/semantic_fossil_run.schema.json",
+    "semantic_fossil_artifact_schema": "machine/semantic_fossil_artifact.schema.json",
+    "semantic_fossil_transform_request_schema": "machine/semantic_fossil_transform_request.schema.json"
   },
   "canonical_sections": [
     {
@@ -90,7 +92,8 @@
     "glsl_visualizer": "docs/05-architectures/glsl-visualizer.md",
     "local_model_interventions": "docs/05-architectures/local-model-interventions.md",
     "david_hypotheses": "docs/02-mechanisms/david-technical-hypotheses.md",
-    "semantic_fossil_instrument": "docs/05-architectures/semantic-fossil-instrument.md"
+    "semantic_fossil_instrument": "docs/05-architectures/semantic-fossil-instrument.md",
+    "semantic_fossil_creative_bridge": "experiments/semantic_fossil/creative.py"
   },
   "media": {
     "image": "docs/03-media/image.md",

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Semantic Fossil Instrument v0.1.
+"""Semantic Fossil Instrument v0.2.
 
 External, inspectable path-dependence controller for AI SLOP.
 
@@ -63,14 +63,20 @@ def normalized_fossils(fossils):
     """Causal scar content without route-local provenance fields."""
     out = []
     for fossil in fossils:
-        out.append({
+        normalized = {
             "operator": fossil.get("operator"),
             "element_id": fossil.get("element_id"),
             "field": fossil.get("field"),
             "before": deep_copy(fossil.get("before")),
             "after": deep_copy(fossil.get("after")),
             "reason": fossil.get("reason"),
-        })
+        }
+        # Artifact-aware fossils remain causally visible through explicit stored metadata.
+        # Route-local provenance IDs are still excluded so equivalent scars can compare equal.
+        for key in ("artifact_ref", "artifact_kind", "descriptor_ref", "artifact_summary"):
+            if key in fossil:
+                normalized[key] = deep_copy(fossil.get(key))
+        out.append(normalized)
     return out
 
 
@@ -707,7 +713,7 @@ def write_run(spec, out_dir, overwrite=False):
     run_record = {
         "schema_version": "0.1",
         "instrument": "Semantic Fossil Instrument",
-        "instrument_version": "0.1",
+        "instrument_version": "0.2",
         "instrument_id": spec["instrument_id"],
         "epistemic_status": spec.get("epistemic_status", "PROCEDURAL"),
         "spec_hash": digest(spec),
@@ -759,7 +765,7 @@ def cmd_validate(ns):
 
 
 def parser():
-    p = argparse.ArgumentParser(description="Semantic Fossil Instrument v0.1")
+    p = argparse.ArgumentParser(description="Semantic Fossil Instrument v0.2")
     sub = p.add_subparsers(dest="command", required=True)
 
     run = sub.add_parser("run", help="execute all routes in a spec")

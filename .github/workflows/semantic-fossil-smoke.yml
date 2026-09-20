@@ -26,10 +26,23 @@ jobs:
           python-version: "3.11"
 
       - name: Compile
-        run: python -m py_compile experiments/semantic_fossil/instrument.py experiments/semantic_fossil/test_instrument.py
+        run: |
+          python -m py_compile \
+            experiments/semantic_fossil/instrument.py \
+            experiments/semantic_fossil/creative.py \
+            experiments/semantic_fossil/artifacts.py \
+            experiments/semantic_fossil/test_instrument.py \
+            experiments/semantic_fossil/test_creative_bridge.py \
+            experiments/semantic_fossil/adapters/*.py \
+            experiments/semantic_fossil/renderers/*.py \
+            experiments/semantic_fossil/compilers/*.py
 
       - name: Unit tests
-        run: python -m unittest experiments/semantic_fossil/test_instrument.py -v
+        run: |
+          python -m unittest \
+            experiments.semantic_fossil.test_instrument \
+            experiments.semantic_fossil.test_creative_bridge \
+            -v
 
       - name: Run choir example
         run: |
@@ -42,6 +55,40 @@ jobs:
           python experiments/semantic_fossil/instrument.py run \
             --spec experiments/semantic_fossil/examples/causal-scar.json \
             --out /tmp/semantic-fossil-scar
+
+      - name: Compile creative bridge outputs
+        run: |
+          python -m experiments.semantic_fossil.creative compile \
+            --run /tmp/semantic-fossil-scar \
+            --renderer all
+          python -m experiments.semantic_fossil.creative packet \
+            --run /tmp/semantic-fossil-scar \
+            --route VIA_B_STATE_RESTORE \
+            --renderer visual \
+            --out /tmp/semantic-fossil-packets
+          test -s /tmp/semantic-fossil-scar/compiled/suno/VIA_B_STATE_RESTORE.suno.json
+          test -s /tmp/semantic-fossil-scar/compiled/visual/VIA_B_STATE_RESTORE.visual.txt
+          test -s /tmp/semantic-fossil-packets/VIA_B_STATE_RESTORE-visual.request.json
+
+      - name: Ingest artifact fossil and recompile
+        run: |
+          printf 'synthetic-artifact-smoke' > /tmp/render-smoke.png
+          python -m experiments.semantic_fossil.creative ingest \
+            --run /tmp/semantic-fossil-scar \
+            --route DIRECT \
+            --medium image \
+            --file /tmp/render-smoke.png \
+            --operator visual_renderer \
+            --descriptor identity_anchor_preserved=true \
+            --descriptor topological_damage=0.72 \
+            --descriptor glitch_density=0.88
+          python -m experiments.semantic_fossil.creative compile \
+            --run /tmp/semantic-fossil-scar \
+            --route DIRECT \
+            --renderer all \
+            --out /tmp/semantic-fossil-after-artifact
+          grep -q "topological_damage" /tmp/semantic-fossil-after-artifact/visual/DIRECT.visual.txt
+          grep -q "glitch_density" /tmp/semantic-fossil-after-artifact/suno/DIRECT.suno.json
 
       - name: Validate outputs
         run: |

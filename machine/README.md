@@ -12,6 +12,8 @@ This directory exists so software agents do not have to scrape prose just to dis
 - `sources.json` — substantive source disposition and canonical-route lookup.
 - `experiment.schema.json` — JSON Schema for structured experiment-run records.
 - `semantic_fossil_run.schema.json` — minimum machine-readable run record for Semantic Fossil Instrument executions.
+- `semantic_fossil_artifact.schema.json` — stored rendered-artifact record used by artifact-aware fossils.
+- `semantic_fossil_transform_request.schema.json` — provider-neutral request packet for local or external generation adapters.
 - `system_incubator.json` — compact status/next-step index for promising AI SLOP work that has **not** yet graduated into canonical systems or operators. Canonical explanation lives in `docs/09-backlog/system-incubator.md`.
 
 ## Intended agent flow
