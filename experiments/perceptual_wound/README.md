@@ -118,3 +118,58 @@ The scar law is:
 If the second injury produces no reproducible difference after controlling for visible state, the
 wound did not leave a functional scar and we do not get to call it memory just because the
 picture looked haunted.
+
+
+---
+
+# Silent Scar v0.1 — second-injury assay
+
+Stage 2 is now executable too.
+
+This assay asks the more interesting question: **after the visible form has recovered, does the
+system respond differently because it has a different history?**
+
+It constructs two routes from the same settled creature:
+
+```text
+CONTROL: seed -> ordinary evolution -> second injury -> response
+SCARRED: seed -> transient sensory wound -> visible recovery -> second injury -> response
+```
+
+The first wound is the normalized perception-only occlusion from Perceptual Wound v0.1. After
+that mask is removed, the wounded route evolves until its sorted activation profile has returned
+to the ordinary morphology neighborhood for a sustained window. The control route advances
+for exactly the same elapsed time without the first wound.
+
+Then both routes receive the same **class and dose** of second injury: a one-shot circular
+physical erasure placed relative to each creature's current centroid and heading. This avoids
+pretending two moving organisms should still occupy identical absolute coordinates.
+
+The script records the post-injury response family rather than judging one frame:
+
+- profile-distance excursion;
+- recovery time;
+- mass loss and recovery;
+- connected-component changes;
+- centroid displacement;
+- complete response time series;
+- pre-second-injury state snapshots for both routes.
+
+Run it:
+
+```bash
+python experiments/perceptual_wound/run_silent_scar.py \
+  --umwelt /path/to/lenia-umwelt \
+  --animal O2u \
+  --out results/perceptual-wound/O2u-silent-scar-001
+```
+
+The key validity field in `summary.json` is
+`pre_second_injury.both_visibly_in_natural_neighborhood`. If that is false, the comparison is
+not yet a clean Silent Scar test; the first route had not returned to the matched visible
+neighborhood before the second injury.
+
+A single divergence is **not** a memory claim. The next experimental pass is a dose/repeat
+matrix across mask position, radius, and first-wound duration. The effect earns the name
+functional scar only if the history-dependent second-injury response recurs while ordinary
+visible morphology has recovered.
