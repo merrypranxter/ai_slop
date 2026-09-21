@@ -334,21 +334,26 @@ The 2026-09-20 Kimi scout mined stabilization, reliability, interpretability, co
 ---
 
 
-## ACTIVE — Fidelity–Stability Inversion / Codec Recirculation Replication
+## ACTIVE — Codec Recirculation Instrument Signatures / Third-Family Replication
 
-**State:** first bench run completed on EnCodec; general mechanism not yet promoted.
+**State:** Bench 01 completed on EnCodec; Bench 02 completed on DAC; the original family-wide claim was falsified.
 
-**Measured:**
-- RVQ ladder behaves differently by signal class;
-- 3 kbps recirculation reaches fixed points for harmonic/noise probes;
-- 24 kbps does not settle in 100 iterations and accumulates low-frequency energy;
-- higher per-pass fidelity was paired with lower iterative stability in this run.
+**What the gate decided:**
+- broad Fidelity–Stability Inversion: **REFUTED as a codec-family law**;
+- EnCodec high-rung wander: **BENCH-MEASURED instrument signature**;
+- texture dose-insensitivity: **replicated across two families**;
+- low-ladder contractivity: **replicated across two families**;
+- higher-rung convergence slowdown: **replicated trend across two families**.
 
-**Next move:** DAC replication is the falsification gate. Then run 300–1000 iteration high-bandwidth loops, per-rung dropout ablations, speech/music program material, and denser transient sweeps.
+**Next move:** test a third codec family or another EnCodec checkpoint. Then compare convergence speed, attractor separation, and reconstruction fidelity to evaluate the speculative "better codec = duller room" tradeoff.
 
-**Canonical note:** `docs/08-reference/bench-2026-09-19-quantizer-dial-codec-recirculation.md`
+**Secondary work:** finish DAC high-rung harmonic convergence, use speech/music program material, and characterize EnCodec's high-rung wander over longer horizons.
 
-**Promotion rule:** keep **Fidelity–Stability Inversion** as HYPOTHESIS until the effect survives a competing codec geometry.
+**Canonical notes:**
+- `docs/08-reference/bench-2026-09-19-quantizer-dial-codec-recirculation.md`
+- `docs/08-reference/bench-2026-09-21-dac-falsification-gate.md`
+
+**Promotion rule:** do not resurrect the broad inversion. Any new general claim must be built from the cross-family laws that actually survived.
 
 ---
 
