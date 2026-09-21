@@ -118,3 +118,28 @@ More importantly, repeated recirculation split into two regimes:
 This produces a new candidate mechanism, **Fidelity–Stability Inversion**: better single-pass fidelity can coincide with worse iterative stability. The phenomenon is BENCH-MEASURED for one EnCodec checkpoint; the general explanation remains HYPOTHESIS until DAC replication.
 
 Canonical bench note: [`../08-reference/bench-2026-09-19-quantizer-dial-codec-recirculation.md`](../08-reference/bench-2026-09-19-quantizer-dial-codec-recirculation.md).
+
+
+## Bench 02 — DAC falsification gate
+
+DAC replication killed the broad version of **Fidelity–Stability Inversion**.
+
+Using the same general recirculation protocol on a second codec family:
+- DAC contracts at every tested ladder position;
+- low-rung harmonic/noise fixed points appear in only a few iterations;
+- high-rung noise still reaches a fixed point at iteration 4;
+- high-rung harmonic converges slowly rather than wandering;
+- DAC shows no EnCodec-style energy inflation.
+
+What now survives across two families:
+1. **texture dose-insensitivity** for stochastic noise;
+2. **low-ladder contractivity**;
+3. **slower convergence as ladder position rises**.
+
+What does **not** survive:
+- EnCodec's high-bandwidth louder/darker wander as a family-wide rule;
+- the impulse-train mid-ladder wrinkle.
+
+The EnCodec failure remains artistically valuable as an **instrument signature**: a repeatable dynamical behavior unique to the measured setup. This is preferable to pretending a failed generalization never happened.
+
+Canonical note: [`../08-reference/bench-2026-09-21-dac-falsification-gate.md`](../08-reference/bench-2026-09-21-dac-falsification-gate.md).
