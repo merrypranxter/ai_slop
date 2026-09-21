@@ -42,7 +42,8 @@
     "system_incubator": "docs/09-backlog/system-incubator.md",
     "system_incubator_machine": "machine/system_incubator.json",
     "latest_wrong_use_scout": "docs/08-reference/research-cycle-2026-09-20-wrong-use-scout.md",
-    "latest_wrong_use_candidates": "docs/09-backlog/candidate-mechanisms-2026-09-20-wrong-use-scout.md"
+    "latest_wrong_use_candidates": "docs/09-backlog/candidate-mechanisms-2026-09-20-wrong-use-scout.md",
+    "latest_bench_audio_codec": "docs/08-reference/bench-2026-09-19-quantizer-dial-codec-recirculation.md"
   },
   "canonical_sections": [
     {
