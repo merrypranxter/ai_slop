@@ -165,3 +165,28 @@ What is demoted:
 Method note: the first DAC sweep exposed and corrected an LSD implementation bug. The bench therefore also provides a concrete example of the capstone thesis that **the metric is part of the instrument**.
 
 This is the first clean falsification event in the project's bench program: a strong result because the broad claim was allowed to die.
+
+
+## Cycle 2 - native material / temporal grammar / dynamic topology - 2026-09-20
+
+New repository notes:
+
+- `docs/08-reference/research-cycle-2026-09-20-cycle2-native-material-temporal-grammar.md`
+- `docs/09-backlog/candidate-mechanisms-2026-09-20-cycle2-native-material.md`
+
+Major new additions:
+
+- Endogenous Activation Grafting and Detector-Actuator Separation;
+- Donor Jurisdiction / native activation provenance;
+- Semantic Epoch Partitioning and Alternating Temporal Bridges;
+- Morphological Ship of Theseus identity assays for particle systems;
+- Semantic Bottleneck Mixer as an executable TADA audio adapter;
+- Exceptional-Point Harvesting as a speculative mathematical transplant.
+
+Major updates rather than new operators:
+
+- Neural Particle Automata were already present; Cycle 2 sharpens identity/lineage measurement and implementation readiness.
+- TADA was already present; Cycle 2 upgrades it from research lead to practical audio steering testbed.
+- temporal consistency is now explicitly separated from event grammar / semantic epoch preservation.
+
+Strongest convergence: **detect, localize, or classify with one representation; intervene using a different actuator whose material/provenance is explicitly controlled.**
