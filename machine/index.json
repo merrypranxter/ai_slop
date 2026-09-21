@@ -45,7 +45,10 @@
     "latest_wrong_use_candidates": "docs/09-backlog/candidate-mechanisms-2026-09-20-wrong-use-scout.md",
     "latest_bench_audio_codec": "docs/08-reference/bench-2026-09-21-dac-falsification-gate.md",
     "bench01_audio_codec": "docs/08-reference/bench-2026-09-19-quantizer-dial-codec-recirculation.md",
-    "bench02_dac_gate": "docs/08-reference/bench-2026-09-21-dac-falsification-gate.md"
+    "bench02_dac_gate": "docs/08-reference/bench-2026-09-21-dac-falsification-gate.md",
+    "research_ecology": "docs/05-architectures/ai-slop-research-ecology.md",
+    "research_ecology_machine": "machine/research_ecology.json",
+    "research_ecology_prompt": "docs/07-prompts/research-ecology-orchestrator/PROMPT.md"
   },
   "canonical_sections": [
     {
@@ -102,7 +105,8 @@
     "local_model_interventions": "docs/05-architectures/local-model-interventions.md",
     "david_hypotheses": "docs/02-mechanisms/david-technical-hypotheses.md",
     "semantic_fossil_instrument": "docs/05-architectures/semantic-fossil-instrument.md",
-    "semantic_fossil_creative_bridge": "experiments/semantic_fossil/creative.py"
+    "semantic_fossil_creative_bridge": "experiments/semantic_fossil/creative.py",
+    "research_ecology": "docs/05-architectures/ai-slop-research-ecology.md"
   },
   "media": {
     "image": "docs/03-media/image.md",
