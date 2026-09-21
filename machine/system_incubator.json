@@ -109,6 +109,17 @@
       "backlog": "docs/09-backlog/candidate-mechanisms-2026-09-20-wrong-use-scout.md",
       "method": "docs/06-experimentation/stabilizer-inversion-wrong-use-research.md",
       "last_updated": "2026-09-20"
+    },
+    {
+      "id": "research_ecology_orchestrator",
+      "status": "ACTIVE",
+      "title": "AI SLOP Research Ecology / Dumpster Orchestra",
+      "next": "Run manual daily-watch and weekly-lab cycles using shared specimen cards and explicit handoffs. Observe several cycles before adding paid automation.",
+      "canonical": "docs/05-architectures/ai-slop-research-ecology.md",
+      "machine": "machine/research_ecology.json",
+      "orchestrator_prompt": "docs/07-prompts/research-ecology-orchestrator/PROMPT.md",
+      "github_agent": ".github/agents/research-ecology-orchestrator.agent.md",
+      "last_updated": "2026-09-20"
     }
   ]
 }
