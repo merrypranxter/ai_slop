@@ -333,6 +333,25 @@ The 2026-09-20 Kimi scout mined stabilization, reliability, interpretability, co
 
 ---
 
+
+## ACTIVE — Fidelity–Stability Inversion / Codec Recirculation Replication
+
+**State:** first bench run completed on EnCodec; general mechanism not yet promoted.
+
+**Measured:**
+- RVQ ladder behaves differently by signal class;
+- 3 kbps recirculation reaches fixed points for harmonic/noise probes;
+- 24 kbps does not settle in 100 iterations and accumulates low-frequency energy;
+- higher per-pass fidelity was paired with lower iterative stability in this run.
+
+**Next move:** DAC replication is the falsification gate. Then run 300–1000 iteration high-bandwidth loops, per-rung dropout ablations, speech/music program material, and denser transient sweeps.
+
+**Canonical note:** `docs/08-reference/bench-2026-09-19-quantizer-dial-codec-recirculation.md`
+
+**Promotion rule:** keep **Fidelity–Stability Inversion** as HYPOTHESIS until the effect survives a competing codec geometry.
+
+---
+
 # HOW ITEMS LEAVE THIS FILE
 
 An item graduates only when one of these happens:
