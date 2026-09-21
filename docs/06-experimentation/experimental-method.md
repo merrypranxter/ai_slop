@@ -209,6 +209,74 @@ Canonical method: [`stabilizer-inversion-wrong-use-research.md`](stabilizer-inve
 
 This is a **research-discovery procedure**, not a license to promote every failure-prevention paper into a new operator. Candidates remain backlog hypotheses until they pass the same baseline / repeat / dose / ablation discipline used everywhere else.
 
+
+### Interpretability roles must be evaluated separately
+
+For SAE/probe/feature-based systems, score four roles independently:
+
+- **detection** — does the representation identify the target?;
+- **localization** — does it identify where/when the target appears?;
+- **reconstruction** — does decode/reconstruction preserve native activation statistics?;
+- **intervention** — does modifying the representation cause the intended result without collateral damage?
+
+Success in one role is not evidence for another.
+
+### Internal interventions need donor and manifold provenance
+
+When replacing or transplanting internal activations, record:
+
+- detector used;
+- target jurisdiction;
+- donor jurisdiction;
+- donor specimen/sample;
+- layer;
+- timestep;
+- donor-selection rule;
+- spatial extent;
+- whether donor material came from the same forward pass;
+- activation-distribution shift or another native-statistics check where practical.
+
+A clean concept label does not make a synthetic direction an in-distribution actuator.
+
+### Regeneration identity is multidimensional
+
+For particle/cellular systems, separate:
+
+- particle/material survival;
+- hidden-state survival;
+- rule survival;
+- morphology recovery;
+- function/behavior recovery;
+- lineage continuity.
+
+A visually regenerated organism may be a Morphological Ship of Theseus.
+
+### Temporal video validation must include event grammar
+
+In addition to adjacent-frame smoothness and identity consistency, record when practical:
+
+- semantic epoch boundaries;
+- event order;
+- event duration;
+- cross-epoch continuity;
+- rare-event preservation;
+- anchor dominance / suppression of minority frames.
+
+A smooth video can still be temporally wrong.
+
+### Steering needs layer geography
+
+For activation steering, record not only direction and magnitude but also:
+
+- exact layer or layer set;
+- whether the layer set was causally localized;
+- timestep window;
+- spatial jurisdiction;
+- schedule;
+- outside-bottleneck controls.
+
+Broad intervention and localized intervention should be compared at matched dose.
+
 ## Graduation rule
 
 An idea becomes a reusable operator when it produces a recognizable mutation signature across unlike inputs without destroying task/media fidelity, and when the characteristic effect weakens or disappears under the relevant ablation.
