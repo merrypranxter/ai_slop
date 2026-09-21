@@ -143,3 +143,25 @@ Measured updates:
 - **Fidelity–Stability Inversion** is now a candidate mechanism, pending replication on DAC.
 
 The capstone's dial library must therefore be treated as provisional: bench data has already corrected one of its supposedly clean dials.
+
+
+## Bench 02 — DAC Falsification Gate — measured 2026-09-19/21
+
+Canonical bench note:
+
+- `docs/08-reference/bench-2026-09-21-dac-falsification-gate.md`
+
+The pre-registered gate from Bench 01 fired exactly as specified: DAC converged at all tested ladder positions. The broad **Fidelity–Stability Inversion** is therefore refuted as a codec-family law.
+
+What survives across EnCodec + DAC:
+- texture dose-insensitivity;
+- low-ladder contractivity;
+- slower convergence higher on the quantizer ladder.
+
+What is demoted:
+- EnCodec high-bandwidth wandering is a codec/checkpoint-specific instrument signature, not a general law;
+- the impulse mid-ladder wrinkle did not replicate.
+
+Method note: the first DAC sweep exposed and corrected an LSD implementation bug. The bench therefore also provides a concrete example of the capstone thesis that **the metric is part of the instrument**.
+
+This is the first clean falsification event in the project's bench program: a strong result because the broad claim was allowed to die.
