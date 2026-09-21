@@ -120,6 +120,15 @@
       "orchestrator_prompt": "docs/07-prompts/research-ecology-orchestrator/PROMPT.md",
       "github_agent": ".github/agents/research-ecology-orchestrator.agent.md",
       "last_updated": "2026-09-20"
+    },
+    {
+      "id": "cycle2_native_material_temporal_grammar",
+      "status": "RESEARCH-ACCUMULATING",
+      "title": "Cycle 2: endogenous activation grafting, temporal grammar, and dynamic topology",
+      "next": "Preserve C26-C33; later prototype native activation transplantation, particle identity exchange, semantic-epoch counter-structure, TADA bottleneck collisions, and an exceptional-point falsification model after synthesis time.",
+      "canonical_reference": "docs/08-reference/research-cycle-2026-09-20-cycle2-native-material-temporal-grammar.md",
+      "backlog": "docs/09-backlog/candidate-mechanisms-2026-09-20-cycle2-native-material.md",
+      "last_updated": "2026-09-20"
     }
   ]
 }
