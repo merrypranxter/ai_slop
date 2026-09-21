@@ -9,7 +9,7 @@ This directory is the **curated knowledge layer**. It is organized by what an id
 - [`01-principles/constraint-governance.md`](01-principles/constraint-governance.md) — generator-as-governance design model from the early research.
 - [`02-mechanisms/operator-registry.md`](02-mechanisms/operator-registry.md) — deduplicated cross-media machinery.
 - [`02-mechanisms/david-technical-hypotheses.md`](02-mechanisms/david-technical-hypotheses.md) — complete DAVID 01–20 hypothesis registry with controls and caveats.
-- [`05-architectures/semantic-fossil-instrument.md`](05-architectures/semantic-fossil-instrument.md) — runnable external path-dependence controller with causal fossils, reset ablations, route comparisons, renderers, and archive.
+- [`05-architectures/semantic-fossil-instrument.md`](05-architectures/semantic-fossil-instrument.md) — runnable external path-dependence controller with causal fossils, reset ablations, route comparisons, renderers, and archive.\n- [`05-architectures/ai-slop-research-ecology.md`](05-architectures/ai-slop-research-ecology.md) — recurring research-orchestration ecology: 15 specialist roles, shared specimen states, handoff graph, cadence, and promotion gates.
 - [`06-experimentation/experimental-method.md`](06-experimentation/experimental-method.md) — how claims graduate from juicy idea to tested mechanism.
 - [`06-experimentation/stabilizer-inversion-wrong-use-research.md`](06-experimentation/stabilizer-inversion-wrong-use-research.md) — wrong-use scouting method: read stabilization papers backwards and inherit their measurements/ablations.
 - [`06-experimentation/run-log-template.md`](06-experimentation/run-log-template.md) — copyable experiment record for controls, doses, paths, artifacts, and confidence.
