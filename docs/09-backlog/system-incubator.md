@@ -357,6 +357,43 @@ The 2026-09-20 Kimi scout mined stabilization, reliability, interpretability, co
 
 ---
 
+
+# CYCLE 2 NATIVE-MATERIAL / TEMPORAL-GRAMMAR CLUSTER - DO NOT CANONIZE YET
+
+Cycle 2 adds a genuinely different research family from the earlier control-heavy cycles.
+
+**Tracked candidates:**
+- Endogenous Activation Grafting
+- Detector-Actuator Separation
+- Donor Jurisdiction
+- Semantic Epoch Partitioning
+- Alternating Temporal Bridge
+- Semantic Bottleneck Mixer
+- Morphological Ship of Theseus identity assay
+- Exceptional-Point Harvesting
+
+**Updates, not duplicates:**
+- NPA remains under Moving-Neighborhood Causal Rewiring, now with stronger particle/lineage identity metrics.
+- TADA remains under audio functional-layer steering, now treated as an executable bottleneck-localized testbed.
+
+**Strongest structural signal:** separate **where we detect a phenomenon** from **what actuator we use to change it**. Prefer explicitly sourced native material when the goal is to remain near the model's own activation ecology.
+
+**High-value later prototypes:**
+1. PER-style endogenous activation transplantation atlas;
+2. particle-exchange / Morphological Ship of Theseus assay;
+3. semantic-epoch counter-structure video experiment;
+4. TADA bottleneck collision experiment;
+5. minimal exceptional-point oscillator falsification prototype.
+
+**Why not now:** continue research accumulation and finish current active benches before starting another large implementation cluster.
+
+See:
+- `docs/08-reference/research-cycle-2026-09-20-cycle2-native-material-temporal-grammar.md`
+- `docs/09-backlog/candidate-mechanisms-2026-09-20-cycle2-native-material.md`
+- `docs/09-backlog/research-combination-watchlist-2026-09-20.md`
+
+---
+
 # HOW ITEMS LEAVE THIS FILE
 
 An item graduates only when one of these happens:
