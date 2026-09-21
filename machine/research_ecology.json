@@ -1,0 +1,270 @@
+{
+  "schema_version": "0.1",
+  "id": "research_ecology_orchestrator",
+  "canonical_doc": "docs/05-architectures/ai-slop-research-ecology.md",
+  "nickname": "The Dumpster Orchestra",
+  "purpose": "Coordinate recurring AI SLOP research specialists through explicit handoffs, shared specimen states, anti-duplication rules, evidence gates, and promotion into the existing intake workflow.",
+  "upstream_of": [
+    "AI SLOP Intake Curator"
+  ],
+  "principles": [
+    "handoffs_over_parallel_spam",
+    "mechanisms_over_adjectives",
+    "creative_utility_separate_from_mechanism_confidence",
+    "artifact_can_survive_dead_explanation",
+    "negative_results_are_state",
+    "cheap_next_information_gain",
+    "deduplicate_before_search",
+    "promote_only_after_evidence_gate"
+  ],
+  "specimen_states": [
+    "SEEN",
+    "CANDIDATE",
+    "MUTATING",
+    "EXPERIMENT-READY",
+    "TESTING",
+    "SUPPORTED",
+    "ARTIFACT-ONLY",
+    "FOSSIL",
+    "FERTILE",
+    "DUPLICATE",
+    "DEMOTED",
+    "FALSIFIED",
+    "RETIRED",
+    "PROMOTION-READY"
+  ],
+  "cadence": {
+    "daily_watch": [
+      "model_drift_sentinel",
+      "failure_archaeologist",
+      "wrong_use_research_scout"
+    ],
+    "weekly_lab": [
+      "wrong_fix_engineer",
+      "cross_domain_smuggler",
+      "dead_tech_necromancer",
+      "operator_breeder",
+      "anti_cliche_cartographer",
+      "benchmark_inverter",
+      "semantic_fossil_hunter",
+      "heresy_prosecutor",
+      "future_descendant_judge"
+    ],
+    "monthly_deep_dive": [
+      "unknown_unknown_scout",
+      "anti_cliche_cartographer",
+      "future_descendant_judge"
+    ],
+    "event_driven": [
+      "edge_regime_cartographer",
+      "medium_transducer",
+      "accident_breeder"
+    ]
+  },
+  "roles": [
+    {
+      "id": "failure_archaeologist",
+      "number": 1,
+      "layer": "surveillance",
+      "handoff_to": [
+        "wrong_fix_engineer",
+        "edge_regime_cartographer",
+        "heresy_prosecutor"
+      ]
+    },
+    {
+      "id": "wrong_fix_engineer",
+      "number": 2,
+      "layer": "mutation",
+      "handoff_to": [
+        "edge_regime_cartographer",
+        "semantic_fossil_hunter",
+        "benchmark_inverter"
+      ]
+    },
+    {
+      "id": "cross_domain_smuggler",
+      "number": 3,
+      "layer": "discovery",
+      "handoff_to": [
+        "operator_breeder",
+        "medium_transducer",
+        "wrong_use_research_scout"
+      ]
+    },
+    {
+      "id": "dead_tech_necromancer",
+      "number": 4,
+      "layer": "discovery",
+      "handoff_to": [
+        "medium_transducer",
+        "accident_breeder",
+        "wrong_fix_engineer"
+      ]
+    },
+    {
+      "id": "model_drift_sentinel",
+      "number": 5,
+      "layer": "surveillance",
+      "handoff_to": [
+        "failure_archaeologist",
+        "wrong_use_research_scout",
+        "edge_regime_cartographer"
+      ]
+    },
+    {
+      "id": "operator_breeder",
+      "number": 6,
+      "layer": "evolution",
+      "handoff_to": [
+        "future_descendant_judge",
+        "edge_regime_cartographer",
+        "heresy_prosecutor"
+      ]
+    },
+    {
+      "id": "anti_cliche_cartographer",
+      "number": 7,
+      "layer": "regulation",
+      "handoff_to": [
+        "cross_domain_smuggler",
+        "operator_breeder",
+        "unknown_unknown_scout"
+      ]
+    },
+    {
+      "id": "benchmark_inverter",
+      "number": 8,
+      "layer": "mutation",
+      "handoff_to": [
+        "future_descendant_judge",
+        "edge_regime_cartographer",
+        "heresy_prosecutor"
+      ]
+    },
+    {
+      "id": "edge_regime_cartographer",
+      "number": 9,
+      "layer": "validation",
+      "trigger": "tunable_intervention",
+      "handoff_to": [
+        "heresy_prosecutor",
+        "medium_transducer",
+        "intake_queue"
+      ]
+    },
+    {
+      "id": "semantic_fossil_hunter",
+      "number": 10,
+      "layer": "validation",
+      "handoff_to": [
+        "future_descendant_judge",
+        "accident_breeder",
+        "intake_queue"
+      ]
+    },
+    {
+      "id": "heresy_prosecutor",
+      "number": 11,
+      "layer": "validation",
+      "handoff_to": [
+        "correction_queue",
+        "experiment_revision",
+        "retirement_queue"
+      ]
+    },
+    {
+      "id": "unknown_unknown_scout",
+      "number": 12,
+      "layer": "discovery",
+      "handoff_to": [
+        "anti_cliche_cartographer",
+        "cross_domain_smuggler",
+        "operator_breeder"
+      ]
+    },
+    {
+      "id": "medium_transducer",
+      "number": 13,
+      "layer": "translation",
+      "trigger": "supported_portable_mechanism",
+      "handoff_to": [
+        "edge_regime_cartographer",
+        "accident_breeder",
+        "media_backlog"
+      ]
+    },
+    {
+      "id": "accident_breeder",
+      "number": 14,
+      "layer": "evolution",
+      "trigger": "interesting_artifact",
+      "handoff_to": [
+        "operator_breeder",
+        "semantic_fossil_hunter",
+        "future_descendant_judge"
+      ]
+    },
+    {
+      "id": "future_descendant_judge",
+      "number": 15,
+      "layer": "selection",
+      "handoff_to": [
+        "operator_breeder",
+        "intake_queue",
+        "retirement_queue"
+      ]
+    },
+    {
+      "id": "wrong_use_research_scout",
+      "layer": "bridge",
+      "handoff_to": [
+        "any"
+      ]
+    }
+  ],
+  "specimen_fields": [
+    "specimen_id",
+    "date",
+    "source",
+    "source_type",
+    "source_claim",
+    "evidence_type",
+    "literal_mechanism",
+    "weak_joint",
+    "wrong_use_turn",
+    "anchor",
+    "pressure",
+    "incompatibility",
+    "expected_consequence",
+    "observed_behavior",
+    "media",
+    "relation_to_existing",
+    "epistemic_status",
+    "mechanism_confidence",
+    "creative_utility",
+    "assigned_next_role",
+    "experiment_status",
+    "lineage",
+    "duplicate_of",
+    "notes"
+  ],
+  "promotion_gate": [
+    "distinct_operation_or_meaningful_extension",
+    "evidence_status_explicit",
+    "experiment_or_execution_contract",
+    "duplication_checked",
+    "useful_ablation_or_falsification_where_applicable",
+    "heresy_review_for_strong_causal_claims",
+    "creative_value_separate_from_mechanism_confidence"
+  ],
+  "repository_routes": {
+    "research_index": "docs/08-reference/research-intake-index.md",
+    "canonical_mechanisms": "docs/02-mechanisms/",
+    "experiments": "docs/06-experimentation/",
+    "architecture": "docs/05-architectures/",
+    "backlog": "docs/09-backlog/",
+    "machine_operators": "machine/operators.json",
+    "incubator": "machine/system_incubator.json"
+  }
+}
