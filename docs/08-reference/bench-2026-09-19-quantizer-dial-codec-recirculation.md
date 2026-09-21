@@ -1,5 +1,7 @@
 # Bench 01 — Quantizer Dial & Codec Recirculation
 
+> **Update after Bench 02:** the DAC falsification gate fired. The broad codec-family version of Fidelity–Stability Inversion is **REFUTED**. EnCodec's high-bandwidth wander remains BENCH-MEASURED as an EnCodec-specific instrument signature. Cross-family results that survived: texture dose-insensitivity, low-ladder contractivity, and slower convergence higher on the ladder. See [Bench 02](bench-2026-09-21-dac-falsification-gate.md).
+
 ## Status
 
 **BENCH-MEASURED — single codec family / single checkpoint / synthetic signals.**
@@ -113,6 +115,6 @@ This run strengthens the project claim that important failure behavior can be ge
 - **Quantizer dial:** BENCH-MEASURED, with signal-class qualifier.
 - **Codec fixed points at low bandwidth:** BENCH-MEASURED for this setup.
 - **High-bandwidth wandering / energy inflation:** BENCH-MEASURED for this setup.
-- **Fidelity–Stability Inversion as a general codec-family mechanism:** HYPOTHESIS pending DAC replication.
+- **Fidelity–Stability Inversion as a general codec-family mechanism:** REFUTED by DAC replication; retained only as an EnCodec-specific measured phenomenon.
 
 This is exactly the epistemic progression the repo is designed for: citation -> prediction -> run -> correction -> new candidate mechanism -> falsification gate.
