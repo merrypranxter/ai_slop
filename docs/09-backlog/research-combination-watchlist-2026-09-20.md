@@ -219,6 +219,95 @@ This file exists because several Cycle 1 findings look more interesting **togeth
 
 ---
 
+
+## Pairing U - Endogenous Activation Grafting + Instability-Gated Intervention
+
+**Ingredients:** timestep-local failure detection + native donor activation transplantation.
+
+**Possible future synthesis:** when a trajectory becomes locally unstable, do not push a synthetic steering vector; transplant material from an allowed native donor jurisdiction.
+
+**Why this is interesting:** it combines Cycle 1's "where/when to intervene" with Cycle 2's "what material to intervene with."
+
+**Why wait:** requires an open diffusion harness with both instability logging and internal activation access.
+
+---
+
+## Pairing V - Endogenous Activation Grafting + Semantic Fossil Instrument
+
+**Ingredients:** native donor provenance + route/fossil persistence.
+
+**Possible future synthesis:** preserve donor patches, donor coordinates, and activation ecology as reusable route fossils. Later generations can inherit old native material instead of abstract labels.
+
+**Why wait:** needs a compact activation descriptor/storage format so the fossil layer does not become an opaque tensor dump.
+
+---
+
+## Pairing W - Detector-Actuator Separation + SAE feature surgery
+
+**Ingredients:** sparse/learned feature detection + multiple independent actuators.
+
+**Possible future synthesis:** hold the detector fixed while comparing native transplantation, direct feature steering, masking, prompt control, and sham intervention.
+
+**Why this matters:** separates "we found the concept" from "we found a safe control knob."
+
+---
+
+## Pairing X - NPA + Functional Scar / Silent Scar
+
+**Ingredients:** mobile particles + second-injury response + lineage metrics.
+
+**Possible future synthesis:** damage and regenerate a particle organism, then compare second-injury behavior under matched morphology while varying particle survival, hidden-state survival, and rule continuity.
+
+**Primary question:** does the scar follow matter, state, rule, geometry, or history?
+
+---
+
+## Pairing Y - NPA + Localized Law Carriage
+
+**Ingredients:** moving particle identity + local rules that travel with organisms.
+
+**Possible future synthesis:** store rule parameters inside mobile particles so movement changes both neighborhood membership and the local laws being carried through the field.
+
+**Why wait:** start with small controlled rule channels before adding reproduction or ecology.
+
+---
+
+## Pairing Z - Semantic Epoch Partitioning + Controlled Temporal Leakage
+
+**Ingredients:** semantic phase boundaries + within/between-epoch leakage control.
+
+**Possible future synthesis:** allow strong coupling inside epochs while separately sweeping leakage across epoch boundaries. Then invert it: protect boundaries internally but leak aggressively across them.
+
+**Why wait:** needs a video backbone with controllable temporal coupling and an independent epoch detector.
+
+---
+
+## Pairing AA - Semantic Epoch Partitioning + Trajectory Fossils
+
+**Ingredients:** epoch anchors + fossilized route states.
+
+**Possible future synthesis:** preserve failed, rare, or anti-representative epoch anchors and reinsert them into later video routes as damaged-memory callbacks.
+
+---
+
+## Pairing AB - TADA Semantic Bottleneck Mixer + cross-modal transducers
+
+**Ingredients:** localized audio steering layers + external control signals.
+
+**Possible future synthesis:** drive tempo, mood, timbre, or vocal-property steering with particle density, visual motion, or other non-audio dynamics.
+
+**Why wait:** establish bottleneck-specific dose curves and collateral-damage maps first.
+
+---
+
+## Pairing AC - Exceptional-Point Harvesting + Non-Normal Flare-and-Return
+
+**Ingredients:** mode-coalescence threshold dynamics + stable transient amplification.
+
+**Possible future synthesis:** directly compare two instability families: one dominated by finite-time gain and one by a structural change in coupled modes.
+
+**Promotion gate:** the exceptional-point prototype must produce a reproducible signature that cannot be reduced to a hand-coded threshold switch.
+
 # Cross-cycle signals to watch for
 
 A combination becomes synthesis-worthy when at least two independent cycles point toward the same deeper pattern, for example:
