@@ -102,3 +102,19 @@ The Semantic Manifold system generalizes Suno prompting beyond one-shot prompts.
 ## Testing
 
 When possible, keep style/instrument inventory fixed and change one operator. Compare multiple generations. The meaningful question is not whether one track is bizarre; it is whether the operator produces a recognizable family of structural consequences.
+
+
+## Bench-measured codec behavior — Bench 01
+
+The audio branch now has actual measured codec-loop data, not only source-derived hypotheses.
+
+On EnCodec 24 kHz (`d7cc33bc`, deterministic CPU run), RVQ depth behaved as a **signal-class-relative dose dial**: harmonic and chirp probes improved monotonically with more quantizers, bandpassed noise was nearly flat across the ladder, and the impulse probe showed a small mid-ladder regression.
+
+More importantly, repeated recirculation split into two regimes:
+
+- **3 kbps:** contractive; harmonic and noise probes reached float-precision fixed points within tens of iterations;
+- **24 kbps:** no fixed point in 100 iterations; outputs wandered while becoming louder and darker, with strong low-frequency accumulation.
+
+This produces a new candidate mechanism, **Fidelity–Stability Inversion**: better single-pass fidelity can coincide with worse iterative stability. The phenomenon is BENCH-MEASURED for one EnCodec checkpoint; the general explanation remains HYPOTHESIS until DAC replication.
+
+Canonical bench note: [`../08-reference/bench-2026-09-19-quantizer-dial-codec-recirculation.md`](../08-reference/bench-2026-09-19-quantizer-dial-codec-recirculation.md).
