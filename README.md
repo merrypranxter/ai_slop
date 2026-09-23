@@ -195,6 +195,12 @@ The rule is: **a source is evidence, not a folder destiny.** One PDF can feed te
 
 ## Start here
 
+### Don’t know where to start?
+
+Plug this repo into your favorite LLM and tell it to read through the material. Ask it to help you turn the mechanisms into prompts, experiments, image ideas, music fuckery, video mutations, or whatever else you’re working on. Then poke at it until something weird falls out.
+
+You do **not** need to understand the entire repo before playing with it. Let the model help you explore the operator library, Temporary Minds, experiments, media methods, and research notes — then follow whichever thread gets interesting.
+
 **If you are a human:**  
 Read [the project map](docs/00-project-map.md), then the [operator registry](docs/02-mechanisms/operator-registry.md), then whichever media/system branch interests you.
 
