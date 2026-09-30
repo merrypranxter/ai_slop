@@ -101,6 +101,7 @@ The systems are not competitors; they operate at different levels.
 
 ## 7. Current live work — 2026-09-20
 
+- **Behavioral Sonification Lab:** active mechanism-mining system that transduces concepts, emotions, social dynamics, body states, systems, and reaction GIFs into causal musical control structures; current work is expanding a deduplicated mechanism atlas and reaction-behavior corpus.
 - **Semantic Fossil Instrument v0.2:** graduated runnable external-state/path-dependence system with route ancestry, fossils, reset ablations, renderers, and creative compilers.
 - **Perceptual Wound -> Silent Scar:** active experiment on transient injury, apparent recovery, standardized second injury, and multidimensional recovery reporting.
 - **Research accumulation:** full primary-source intake, closed-loop/state-aware intervention work, and the new wrong-use/Stabilizer Inversion scout are being preserved without forcing premature synthesis.
