@@ -48,7 +48,9 @@
     "bench02_dac_gate": "docs/08-reference/bench-2026-09-21-dac-falsification-gate.md",
     "research_ecology": "docs/05-architectures/ai-slop-research-ecology.md",
     "research_ecology_machine": "machine/research_ecology.json",
-    "research_ecology_prompt": "docs/07-prompts/research-ecology-orchestrator/PROMPT.md"
+    "research_ecology_prompt": "docs/07-prompts/research-ecology-orchestrator/PROMPT.md",
+    "behavioral_sonification_lab": "docs/05-architectures/behavioral-sonification-lab/README.md",
+    "behavioral_sonification_prompts": "docs/07-prompts/behavioral-sonification-lab/PROMPT_PROTOCOLS.md"
   },
   "canonical_sections": [
     {
@@ -106,7 +108,8 @@
     "david_hypotheses": "docs/02-mechanisms/david-technical-hypotheses.md",
     "semantic_fossil_instrument": "docs/05-architectures/semantic-fossil-instrument.md",
     "semantic_fossil_creative_bridge": "experiments/semantic_fossil/creative.py",
-    "research_ecology": "docs/05-architectures/ai-slop-research-ecology.md"
+    "research_ecology": "docs/05-architectures/ai-slop-research-ecology.md",
+    "behavioral_sonification_lab": "docs/05-architectures/behavioral-sonification-lab/README.md"
   },
   "media": {
     "image": "docs/03-media/image.md",
