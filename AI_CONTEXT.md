@@ -25,6 +25,7 @@ If you need orientation, read in this order:
 9. `docs/08-reference/provenance-map.md` when you need lineage.
 10. `docs/08-reference/glossary.md` when project vocabulary is ambiguous.
 11. `docs/08-reference/lens-palette.md` when you want thinker/science lenses without turning them into fake evidence.
+12. `docs/05-architectures/behavioral-sonification-lab/README.md` when converting concepts, states, social dynamics, or reaction GIFs into causal musical mechanisms rather than soundtrack stereotypes.
 
 Machine-readable routing lives in `machine/index.json`, `machine/operators.json`, and `machine/sources.json`.
 
@@ -120,6 +121,9 @@ Strong recurring recipe: preserve identity anchors while a specific mathematical
 
 ### Suno/audio practice
 Strong recurring recipe: assign musical dimensions separate jurisdictions (harmony, melody, rhythm, timbre, performance, invariant), then apply operators that make those systems negotiate without collapsing into random genre soup. Lyrics/brackets can function as control and phonetic material, not merely semantic content.
+
+### Behavioral Sonification Lab
+A new mechanism-mining architecture for asking what a concept, emotion, cognitive state, bodily state, social interaction, system failure, or reaction GIF would sound like if its actual causal structure were transduced into music. It separates lenses, sonic mechanisms, and control dimensions; requires multiple causal models and explicit property -> sonic-variable mappings; preserves invariants; analyzes reaction-GIF timing and loop seams; and harvests reusable operators into a deduplicated mechanism atlas. Canonical home: `docs/05-architectures/behavioral-sonification-lab/README.md`. Prompt protocols: `docs/07-prompts/behavioral-sonification-lab/PROMPT_PROTOCOLS.md`.
 
 ## How to add information correctly
 
