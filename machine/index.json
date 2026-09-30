@@ -50,7 +50,8 @@
     "research_ecology_machine": "machine/research_ecology.json",
     "research_ecology_prompt": "docs/07-prompts/research-ecology-orchestrator/PROMPT.md",
     "behavioral_sonification_lab": "docs/05-architectures/behavioral-sonification-lab/README.md",
-    "behavioral_sonification_prompts": "docs/07-prompts/behavioral-sonification-lab/PROMPT_PROTOCOLS.md"
+    "behavioral_sonification_prompts": "docs/07-prompts/behavioral-sonification-lab/PROMPT_PROTOCOLS.md",
+    "behavioral_sonification_kimi_expansion": "docs/07-prompts/behavioral-sonification-lab/KIMI_OVERNIGHT_EXPANSION.md"
   },
   "canonical_sections": [
     {
