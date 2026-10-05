@@ -1,0 +1,327 @@
+{
+  "name": "SLOP-SEQ",
+  "version": "v0.1",
+  "status": "PROCEDURAL",
+  "codons": {
+    "AAA": {
+      "instruction": "HARMONY_ESTABLISH",
+      "family": "Pitch/Harmony",
+      "description": "Establish or restate the harmonic system from the specimen environment."
+    },
+    "AAC": {
+      "instruction": "HARMONY_TENSION_UP",
+      "family": "Pitch/Harmony",
+      "description": "Increase harmonic tension without changing the harmonic jurisdiction itself."
+    },
+    "AAG": {
+      "instruction": "HARMONY_ROTATE_VOICING",
+      "family": "Pitch/Harmony",
+      "description": "Rotate voicing or upper-structure organization while preserving harmonic identity."
+    },
+    "AAT": {
+      "instruction": "HARMONY_VACUUM",
+      "family": "Pitch/Harmony",
+      "description": "Temporarily remove explicit harmony; other jurisdictions continue without inheriting its exact job."
+    },
+    "ACA": {
+      "instruction": "MELODY_ESTABLISH",
+      "family": "Pitch/Melody",
+      "description": "Establish or restate melodic contour logic."
+    },
+    "ACC": {
+      "instruction": "MELODY_FRAGMENT",
+      "family": "Pitch/Melody",
+      "description": "Break melodic material into smaller cells while preserving ancestry."
+    },
+    "ACG": {
+      "instruction": "MELODY_STRETCH",
+      "family": "Pitch/Melody",
+      "description": "Stretch melodic gestures across a larger time span."
+    },
+    "ACT": {
+      "instruction": "MELODY_HOCKET",
+      "family": "Pitch/Melody",
+      "description": "Distribute melodic material across performers or timbres as a relay."
+    },
+    "AGA": {
+      "instruction": "TUNING_ESTABLISH",
+      "family": "Pitch/Tuning",
+      "description": "Establish the tuning or intonation rule."
+    },
+    "AGC": {
+      "instruction": "PITCH_DRIFT_MICROTONAL",
+      "family": "Pitch/Tuning",
+      "description": "Apply controlled pitch drift or microtonal displacement."
+    },
+    "AGG": {
+      "instruction": "CONSONANCE_FLIP",
+      "family": "Pitch/Tuning",
+      "description": "Flip the current consonance logic into its structured opposite."
+    },
+    "AGT": {
+      "instruction": "REGISTER_SPLIT",
+      "family": "Pitch/Tuning",
+      "description": "Separate musical roles into strongly distinct registers."
+    },
+    "ATA": {
+      "instruction": "PITCH_ANCHOR_DECLARE",
+      "family": "Pitch/Anchor",
+      "description": "Declare the pitch-bearing anchor or invariant as protected reference material."
+    },
+    "ATC": {
+      "instruction": "ANCHOR_PITCH_MUTATE",
+      "family": "Pitch/Anchor",
+      "description": "Allow only the pitch aspect of the anchor to mutate while identity stays recognizable."
+    },
+    "ATG": {
+      "instruction": "START_SPECIMEN",
+      "family": "Control",
+      "description": "Required first codon. Initialize a specimen and reset local modifiers."
+    },
+    "ATT": {
+      "instruction": "PITCH_TO_PERCUSSION",
+      "family": "Pitch/Transduction",
+      "description": "Convert pitch articulation into rhythmic or percussive function without simply becoming drums."
+    },
+    "CAA": {
+      "instruction": "BASE_PULSE_ESTABLISH",
+      "family": "Time/Pulse",
+      "description": "Establish or restate the base pulse."
+    },
+    "CAC": {
+      "instruction": "SUBDIVISION_UP",
+      "family": "Time/Pulse",
+      "description": "Increase internal subdivision while the base pulse can remain stable."
+    },
+    "CAG": {
+      "instruction": "COMPETING_PULSE",
+      "family": "Time/Pulse",
+      "description": "Introduce another valid pulse or grouping so multiple rhythmic truths coexist."
+    },
+    "CAT": {
+      "instruction": "HARD_RHYTHMIC_INTERRUPT",
+      "family": "Time/Pulse",
+      "description": "Interrupt rhythmic continuity abruptly."
+    },
+    "CCA": {
+      "instruction": "ADDITIVE_METER",
+      "family": "Time/Meter",
+      "description": "Introduce additive or asymmetrical meter as an explicit timing jurisdiction."
+    },
+    "CCC": {
+      "instruction": "REPEAT_CURRENT_BEHAVIOR",
+      "family": "Time/Meter",
+      "description": "Repeat the immediately active behavior; repetition strengthens memory and recognizability."
+    },
+    "CCG": {
+      "instruction": "ACCELERATE",
+      "family": "Time/Meter",
+      "description": "Increase apparent or literal speed according to current timing context."
+    },
+    "CCT": {
+      "instruction": "DECELERATE",
+      "family": "Time/Meter",
+      "description": "Reduce apparent or literal speed while preserving other systems."
+    },
+    "CGA": {
+      "instruction": "EVENT_DENSITY_UP",
+      "family": "Time/Density",
+      "description": "Increase event-arrival rate independently of BPM."
+    },
+    "CGC": {
+      "instruction": "EVENT_DENSITY_DOWN",
+      "family": "Time/Density",
+      "description": "Decrease event-arrival rate without necessarily reducing tempo."
+    },
+    "CGG": {
+      "instruction": "PHASE_SHIFT",
+      "family": "Time/Density",
+      "description": "Shift one repeating process against another to change alignment and interference."
+    },
+    "CGT": {
+      "instruction": "SILENCE_GATE",
+      "family": "Time/Density",
+      "description": "Create explicit silence or near-silence as structural material."
+    },
+    "CTA": {
+      "instruction": "TEMPORAL_HOCKET",
+      "family": "Time/Form",
+      "description": "Pass timing responsibility between parts so no single source owns the whole phrase."
+    },
+    "CTC": {
+      "instruction": "DUAL_CLOCK",
+      "family": "Time/Form",
+      "description": "Maintain two incompatible temporal scales at once."
+    },
+    "CTG": {
+      "instruction": "EVENT_DRIVEN_TRANSITION",
+      "family": "Time/Form",
+      "description": "Change arrangement because an event occurs, not because a conventional section timer says so."
+    },
+    "CTT": {
+      "instruction": "HARD_SCENE_CUT",
+      "family": "Time/Form",
+      "description": "Cut directly to a new state with minimal transitional glue."
+    },
+    "GAA": {
+      "instruction": "TIMBRE_ESTABLISH",
+      "family": "Surface/Timbre",
+      "description": "Establish the timbre and instrument palette from the environment."
+    },
+    "GAC": {
+      "instruction": "TIMBRE_CONTAMINATE",
+      "family": "Surface/Timbre",
+      "description": "Introduce a foreign sonic material that changes the palette by contact."
+    },
+    "GAG": {
+      "instruction": "INSTRUMENT_ROLE_SWAP",
+      "family": "Surface/Timbre",
+      "description": "Swap functional roles between instruments or sound sources."
+    },
+    "GAT": {
+      "instruction": "EXPOSE_SINGLE_STEM",
+      "family": "Surface/Timbre",
+      "description": "Strip away support and expose one stem or jurisdiction clearly."
+    },
+    "GCA": {
+      "instruction": "DRY_CLOSE_SPACE",
+      "family": "Surface/Space",
+      "description": "Pull sound into dry, close, local space; reduce shared wash."
+    },
+    "GCC": {
+      "instruction": "WIDEN_SPACE",
+      "family": "Surface/Space",
+      "description": "Increase spatial spread or reverberant field while preserving source identities."
+    },
+    "GCG": {
+      "instruction": "SPECTRAL_MIGRATION",
+      "family": "Surface/Space",
+      "description": "Move energy, register, or spectral emphasis across the sound field."
+    },
+    "GCT": {
+      "instruction": "MEDIUM_DEGRADATION",
+      "family": "Surface/Space",
+      "description": "Make recording-medium damage or lo-fi behavior causally affect the sound."
+    },
+    "GGA": {
+      "instruction": "PERFORMANCE_ESTABLISH",
+      "family": "Performance",
+      "description": "Establish the performance attitude from the environment."
+    },
+    "GGC": {
+      "instruction": "EXTREME_PRECISION",
+      "family": "Performance",
+      "description": "Force hyper-precise execution and articulation."
+    },
+    "GGG": {
+      "instruction": "ESCALATE_PARTICIPATION",
+      "family": "Performance",
+      "description": "Increase participation, intensity, or number of active agents without merely raising volume."
+    },
+    "GGT": {
+      "instruction": "CONTROLLED_COLLAPSE",
+      "family": "Performance",
+      "description": "Let precision degrade into structured collapse while preserving traceable cause."
+    },
+    "GTA": {
+      "instruction": "CAST_SPAWN",
+      "family": "Performance/Cast",
+      "description": "Introduce a new performer or population with its own job."
+    },
+    "GTC": {
+      "instruction": "CALL_RESPONSE",
+      "family": "Performance/Cast",
+      "description": "Create explicit call-and-response between distinct performers or populations."
+    },
+    "GTG": {
+      "instruction": "ROLE_INFECTION",
+      "family": "Performance/Cast",
+      "description": "Allow one role to borrow another role's behavior while remaining distinguishable."
+    },
+    "GTT": {
+      "instruction": "MASS_PARTICIPATION",
+      "family": "Performance/Cast",
+      "description": "Trigger group participation: chant, clap, response, swarm, or another social musical action."
+    },
+    "TAA": {
+      "instruction": "STOP_CURRENT_PROCESS",
+      "family": "Global/Control",
+      "description": "Stop the currently foregrounded process locally; do not necessarily end the specimen."
+    },
+    "TAC": {
+      "instruction": "HOLD_A_FIXED_WHILE_B_MIGRATES",
+      "family": "Global/Operator",
+      "description": "Freeze the current anchor or system while a different active system changes around it."
+    },
+    "TAG": {
+      "instruction": "SECTION_BOUNDARY",
+      "family": "Global/Control",
+      "description": "Close the local phase, preserve accumulated scars, and clear temporary one-shot modifiers."
+    },
+    "TAT": {
+      "instruction": "MAKE_A_BEHAVE_LIKE_B",
+      "family": "Global/Operator",
+      "description": "Make one jurisdiction obey another jurisdiction's mechanics without becoming it."
+    },
+    "TCA": {
+      "instruction": "COMPRESS",
+      "family": "Global/Operator",
+      "description": "Compress current material or transformation into a smaller duration or space."
+    },
+    "TCC": {
+      "instruction": "STRETCH",
+      "family": "Global/Operator",
+      "description": "Stretch current material or transformation across a larger duration or space."
+    },
+    "TCG": {
+      "instruction": "INVERT_RELATIONSHIP",
+      "family": "Global/Operator",
+      "description": "Invert a current relation, dependency, direction, or ordering rule."
+    },
+    "TCT": {
+      "instruction": "FRACTURE",
+      "family": "Global/Operator",
+      "description": "Split a coherent active structure into still-related fragments."
+    },
+    "TGA": {
+      "instruction": "END_SPECIMEN",
+      "family": "Global/Control",
+      "description": "Required final codon. End the specimen and freeze the final ledger."
+    },
+    "TGC": {
+      "instruction": "RETURN_TO_ANCHOR",
+      "family": "Global/Anchor",
+      "description": "Return to the recognizable anchor or invariant after mutation."
+    },
+    "TGG": {
+      "instruction": "REFORM_STRANGER",
+      "family": "Global/Anchor",
+      "description": "Rebuild the current organism after collapse while preserving ancestry and scars."
+    },
+    "TGT": {
+      "instruction": "DELETE_JURISDICTION",
+      "family": "Global/Anchor",
+      "description": "Temporarily remove one whole jurisdiction; remaining systems may not simply inherit its exact job."
+    },
+    "TTA": {
+      "instruction": "PROTECT_NEXT_CODON",
+      "family": "Genome/Meta",
+      "description": "Mark the next executable codon as mutation-protected."
+    },
+    "TTC": {
+      "instruction": "DUPLICATE_PREVIOUS_CODON",
+      "family": "Genome/Meta",
+      "description": "Duplicate the previous executable behavior as a deliberate genetic repeat."
+    },
+    "TTG": {
+      "instruction": "OPEN_MUTATION_HOTSPOT",
+      "family": "Genome/Meta",
+      "description": "Mark the following local cassette as high-probability mutation territory until the next section boundary."
+    },
+    "TTT": {
+      "instruction": "SCAR_LOCK_PREVIOUS",
+      "family": "Genome/Meta",
+      "description": "Fossilize the preceding local behavior or cassette so breeding preferentially preserves it."
+    }
+  }
+}
