@@ -1,0 +1,31 @@
+{
+  "specimen_id": "SLOP-SEQ-001",
+  "name": "ANCHOR UNDER SIEGE / CAST RIOT",
+  "status": "PROCEDURAL / SPECULATIVE ART SYSTEM",
+  "codebook_version": "SLOP-SEQ-v0.1",
+  "sequence_kind": "synthetic DNA-like instruction string; not designed for biological function",
+  "length_bases": 240,
+  "length_codons": 80,
+  "sha256_sequence": "b760f050999805ceb8f2823344597dddf5c7f3767bee233c9c8dcb95807e7601",
+  "environment": {
+    "harmony_system": "Bright close-harmony major-sixth sonorities periodically forced into suspended fourths and narrow dissonant upper clusters; dry and rhythmically exact.",
+    "melodic_system": "Short pennywhistle-like four-note cell plus clipped yodel flips and chromatic relay fragments; melody can hocket across a cast.",
+    "rhythmic_system": "Base pulse around 105 BPM with activity pulse near 210 BPM; 3-against-4 grouping pressure, brief additive-meter incursions, hard stops, and event-driven transitions.",
+    "timbre_atmosphere_system": "Dry kit, elastic/slap bass, bright whistle, cheap fuzz organ, short spring-reverb attacks, handclaps, and deliberate medium damage late in the form.",
+    "performance_attitude": "Deadpan technician precision at first; increasingly populated by excitable respondents, hecklers, chanters, and a mob that acquires musical jobs.",
+    "anchor_invariant": "A four-note bright whistle cell, always recognizable by contour even when pitch, performer, register, or surface changes.",
+    "suno_export_profile": {
+      "style_chars": "975-999",
+      "lyrics_chars": "4900-4999 when vocals are used",
+      "caption_chars": "<=499"
+    }
+  },
+  "protected_logic": [
+    "START_SPECIMEN",
+    "END_SPECIMEN",
+    "PITCH_ANCHOR_DECLARE immediately after TTA protection markers"
+  ],
+  "seq2music_intended_kind": "dna",
+  "seq2music_source": "jvogan/seq2music commit 1240fe1502223256d7d4991ab1925615b4dd916e",
+  "notes": "The same A/C/G/T carrier has two readings: SLOP-SEQ decodes it as composition instructions; Seq2Music independently sonifies it as DNA."
+}
