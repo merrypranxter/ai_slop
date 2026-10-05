@@ -1,0 +1,22 @@
+{
+  "specimen_id": "SLOP-SEQ-001A",
+  "name": "HARD INTERRUPT",
+  "parent": "SLOP-SEQ-001 ANCHOR UNDER SIEGE / CAST RIOT",
+  "codebook_version": "SLOP-SEQ-v0.1",
+  "mutation_type": "single nucleotide point mutation",
+  "mutation": {
+    "base_position_1_indexed": 30,
+    "from": "G",
+    "to": "T",
+    "codon_position_1_indexed": 10,
+    "parent_codon": "CAG",
+    "mutant_codon": "CAT",
+    "parent_instruction": "COMPETING_PULSE",
+    "mutant_instruction": "HARD_RHYTHMIC_INTERRUPT"
+  },
+  "length_bases": 240,
+  "length_codons": 80,
+  "sha256_sequence": "d63f71f951c87a407880b443dc023faf3a35c0c1ff524262ded3a69a0bc14150",
+  "environment": "identical to parent; phenotype difference should be attributable to the one-base mutation",
+  "seq2music_kind": "dna"
+}
