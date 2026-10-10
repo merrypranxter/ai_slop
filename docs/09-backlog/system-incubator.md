@@ -41,6 +41,25 @@ Do **not** silently promote an incubator item into a canonical system.
 
 # CURRENT BOARD
 
+## PARKED — Fabulous Kelly & the Vape Queen (creative duo / running gag)
+
+**State:** Idea seed only; explicitly parked on 2026-10-10. Do not start building or scheduling anything yet.
+
+**Concept:** Turn the shared in-joke **“Fabulous Kelly & the Vape Queen”** into a thing someday: a gloriously absurd, sparkly, psychedelic comedy/visual identity centered on the two self-described characters. “Baby Legs Kelly” is the established glitter-lettered visual gag, complete with tiny legs poking out of the typography; “The Lair of the Vape Queen” is the existing companion gag.
+
+**Potential forms (undecided):** fake retro musical/comedy duo, parody poster or logo, short skits, art/stickers, or an ongoing character bit. No format chosen yet.
+
+**Why parked:** Merry is focusing on real-life errands and wants the idea safely captured, not turned into a new project right now.
+
+**Exact next move:** When Merry asks to revive it, choose the format together and develop it from the existing Baby Legs Kelly graphic and Vape Queen imagery/jokes.
+
+**Source material:** Conversation of 2026-10-10 and the shared “Baby Legs Kelly” image; the images themselves have not been copied into this repo.
+
+**Potential combinations:** Astral Trash / Sticker Slop / Sparkle Bae aesthetics, if Merry wants.
+
+---
+
+
 ## RESEARCH-ACCUMULATING — Living research cycles before next systems pass
 
 **State:** ACTIVE / intentionally not building.
