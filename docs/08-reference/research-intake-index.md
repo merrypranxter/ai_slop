@@ -190,3 +190,15 @@ Major updates rather than new operators:
 - temporal consistency is now explicitly separated from event grammar / semantic epoch preservation.
 
 Strongest convergence: **detect, localize, or classify with one representation; intervene using a different actuator whose material/provenance is explicitly controlled.**
+
+---
+
+## Pliny’s Load of the Day — ongoing Archive Node catalogs (started 2026-10)
+
+Living source directory:
+
+- `ai_readable/pliny_load/`
+
+Daily defensive catalogs of circulating LLM security folklore, classified as VERIFIED / PLAUSIBLE / FOLKLORE with vector tags and design-level defenses. No operational jailbreak content. Metadata index is in the directory README; full report texts land as dated Markdown files when available.
+
+Related earlier harvest: `ai_readable/general/06-ai-slop-pliny-research.md`.
